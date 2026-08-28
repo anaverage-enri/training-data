@@ -1,0 +1,16 @@
+name: Label PR by Changed Paths
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+jobs:
+  labels:
+    permissions:
+      contents: read
+      pull-requests: write
+    uses: anaverage-enri/.github/.github/workflows/path-labeler.yml@main
+
