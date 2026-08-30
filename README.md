@@ -45,3 +45,7 @@ actual logic is maintained centrally.
 Label definitions live in the central manifest rather than in this repo — run
 `label-sync` after they change upstream.
 
+## Workflow
+
+Changes land on `main` through pull requests; both labelers run automatically on
+each PR.
