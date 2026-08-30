@@ -30,3 +30,18 @@ Set in `.gitattributes`:
 
 `.gitignore` covers Python build artifacts (`__pycache__/`, `*.pyc`), virtualenvs (`.venv/`), local secrets (`.env`, `.env.local`), and `.DS_Store`.
 
+## CI
+
+All three workflows are thin callers into reusable workflows in
+[`anaverage-enri/.github`](https://github.com/anaverage-enri/.github), so the
+actual logic is maintained centrally.
+
+| Workflow | Trigger | Permissions | Purpose |
+| --- | --- | --- | --- |
+| `label-sync.yml` | Manual (`workflow_dispatch`) | `contents: read`, `issues: write` | Reconciles this repo's labels with the central manifest. Takes an optional `delete-other-labels` boolean (default `false`) to also remove labels not declared there. |
+| `path-labeler.yml` | PR `opened` / `synchronize` / `reopened` | `contents: read`, `pull-requests: write` | Labels a PR based on which paths it touches. |
+| `size-labeler.yml` | PR `opened` / `synchronize` / `reopened` | `contents: read`, `pull-requests: write` | Labels a PR based on the size of its diff. |
+
+Label definitions live in the central manifest rather than in this repo — run
+`label-sync` after they change upstream.
+
