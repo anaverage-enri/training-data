@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+"""Interactive Garmin Connect login. Run once per machine.
+
+Writes an OAuth token to ~/.garminconnect/. Password is never saved,
+never written to disk, and never enters shell history.
+"""
+
 from getpass import getpass       # reads a password without echoing it
 from pathlib import Path          # filesystem paths; uses / to join
 
