@@ -2,7 +2,9 @@
 
 A personal repository for athletic training data and the Python tooling to work with it.
 
-> **Status:** early scaffolding. Only repository configuration and CI have landed so far — no application code or data files yet.
+> **Status:** early scaffolding. Repository configuration, CI, and the directory
+> layout have landed. The data directories are still empty and no application
+> code has been written yet.
 
 ## Layout
 
@@ -15,18 +17,47 @@ A personal repository for athletic training data and the Python tooling to work 
 │       ├── label-sync.yml   # sync label definitions from the central manifest
 │       ├── path-labeler.yml # label PRs by changed paths
 │       └── size-labeler.yml # label PRs by diff size
+├── bin/                     # shell scripts and hand-run entry points
+├── etc/                     # config templates
+├── docs/                    # notes, especially verified API field mappings
+├── src/
+│   └── training_data/       # all the Python modules  (not yet created)
+├── raw/                     # downloaded .fit files and raw API JSON
+├── activities/              # one small summary JSON per session
+├── streams/                 # one 1-minute-resolution CSV per session
+├── tables/                  # the three rollup CSVs
 └── README.md
 ```
+
+Each directory ships an empty `placeholder.txt` so git tracks it while it is
+still empty.
+
+## Directories
+
+| Path | Purpose |
+| --- | --- |
+| `bin/` | Shell scripts and hand-run entry points. |
+| `etc/` | Config templates (e.g. the launchd plist template). |
+| `docs/` | Notes, especially verified API field mappings. |
+| `src/training_data/` | All the Python modules. |
+| `raw/` | Downloaded `.fit` files and raw API JSON. Never edited. |
+| `activities/` | One small summary JSON per session. |
+| `streams/` | One 1-minute-resolution CSV per session. |
+| `tables/` | The three rollup CSVs. |
+
+Data flows one way: `raw/` is the immutable landing zone, `activities/` and
+`streams/` are derived per-session, and `tables/` holds the rollups built from
+those.
 
 ## File conventions
 
 Set in `.gitattributes`:
 
-| Pattern | Handling | Why |
-| --- | --- | --- |
-| `*.fit` | `binary` | FIT activity files are binary — git shouldn't diff them or rewrite line endings. |
-| `*.csv` | `text eol=lf` | Consistent line endings for tabular exports across platforms. |
-| `*.json` | `text eol=lf` | Same, for JSON exports. |
+| Pattern | Handling | Where it applies | Why |
+| --- | --- | --- | --- |
+| `*.fit` | `binary` | `raw/` | FIT activity files are binary — git shouldn't diff them or rewrite line endings. |
+| `*.csv` | `text eol=lf` | `streams/`, `tables/` | Consistent line endings for tabular exports across platforms. |
+| `*.json` | `text eol=lf` | `raw/`, `activities/` | Same, for JSON exports. |
 
 `.gitignore` covers Python build artifacts (`__pycache__/`, `*.pyc`), virtualenvs (`.venv/`), local secrets (`.env`, `.env.local`), and `.DS_Store`.
 
