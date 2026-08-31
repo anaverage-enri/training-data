@@ -29,25 +29,12 @@ A personal repository for athletic training data and the Python tooling to work 
 └── README.md
 ```
 
-Each directory ships an empty `placeholder.txt` so git tracks it while it is
-still empty.
-
-## Directories
-
-| Path | Purpose |
-| --- | --- |
-| `bin/` | Shell scripts and hand-run entry points. |
-| `etc/` | Config templates (e.g. the launchd plist template). |
-| `docs/` | Notes, especially verified API field mappings. |
-| `src/training_data/` | All the Python modules. |
-| `raw/` | Downloaded `.fit` files and raw API JSON. Never edited. |
-| `activities/` | One small summary JSON per session. |
-| `streams/` | One 1-minute-resolution CSV per session. |
-| `tables/` | The three rollup CSVs. |
-
 Data flows one way: `raw/` is the immutable landing zone, `activities/` and
 `streams/` are derived per-session, and `tables/` holds the rollups built from
 those.
+
+Each directory ships an empty `placeholder.txt` so git tracks it while it is
+still empty.
 
 ## File conventions
 
