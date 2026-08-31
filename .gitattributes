@@ -1,4 +1,9 @@
+# FIT files are binary — stop git trying to diff or convert line endings
 *.fit binary
+*.zip binary
+
+# Force LF on text data files
 *.csv text eol=lf
 *.json text eol=lf
+*.md text eol=lf
 
