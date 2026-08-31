@@ -1,0 +1,33 @@
+# Machine-readable athlete config. Read by src/training_data/config.py.
+# The human/Claude-facing version is ATHLETE.md — keep them in sync.
+
+[profile]
+max_hr = 201
+resting_hr_baseline = 53
+weight_kg = 60.0
+
+# HR zone boundaries in bpm. Each entry is [lower, upper).
+# Sport-specific because run and bike zones differ.
+[zones.run]
+z1 = [0, 142]
+z2 = [143, 157]
+z3 = [158, 171]
+z4 = [172, 186]
+z5 = [187, 201]
+
+[zones.cycling] # input when started cyclying training
+z1 = [0, 0]
+z2 = [0, 0]
+z3 = [0, 0]
+z4 = [0, 0]
+z5 = [0, 0]
+
+[thresholds] # input these after tested
+run_lthr = 0
+run_threshold_pace_s_per_km = 0   # 0:00/km
+bike_ftp = 0
+swim_css_s_per_100m = 0            # 0:00/100m
+
+[load]
+ctl_days = 42   # chronic (fitness) exponential window
+atl_days = 7    # acute (fatigue) exponential window
