@@ -1,7 +1,12 @@
-.env
-.env.local
+# Python
 .venv/
 __pycache__/
 *.pyc
+
+# Local logs from the scheduled job
+.sync.log
+.sync.err
+
+# macOS
 .DS_Store
 
