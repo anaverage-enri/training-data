@@ -1,0 +1,21 @@
+[project]
+name = "training-data"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "anaverage-enri", email = "anaverage.enri@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "garmin-fit-sdk>=21.214.0",
+    "garminconnect==0.3.6",
+    "pandas>=3.0.5",
+]
+
+[project.scripts]
+training-data = "training_data:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
