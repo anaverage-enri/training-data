@@ -57,7 +57,7 @@ def fetch_activities(c: Garmin, state: dict, since: date) -> int:
         stamp = act["startTimeLocal"].replace("-", "").replace(":", "").replace(" ", "-")
         base = f"{stamp}-{aid}"
 
-        out_dir = partition(RAW, start)
+        out_dir = partition(RAW / "activities", start)
 
         # Always refresh metadata — titles and sport types get edited later.
         (out_dir / f"{base}.meta.json").write_text(json.dumps(act, indent=2))
