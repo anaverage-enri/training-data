@@ -95,6 +95,8 @@ def fetch_wellness(c: Garmin, days: int = WELLNESS_WINDOW_DAYS) -> int:
         d = date.today() - timedelta(days=offset)
         iso = d.isoformat()
 
+        print(f"  ↓ {iso}")
+
         # Each endpoint is a separate API call. Bundle into one file per day
         # so decode/rollup only ever opens one file per date.
         payload = {
