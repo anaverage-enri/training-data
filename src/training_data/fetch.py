@@ -125,7 +125,6 @@ def fetch_wellness(c: Garmin, days: int = WELLNESS_WINDOW_DAYS) -> int:
 
     return written
 
-
 def main() -> None:
     c = client()
     state = load_state()
