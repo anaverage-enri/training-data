@@ -21,10 +21,15 @@ ATHLETE_FILE = REPO / "athlete.toml"
 
 TOKENSTORE = Path.home() / ".garminconnect"
 
-# How many days back to re-fetch wellness every run.
-# Garmin revises history: sleep scores recalculate, VO2max backfills,
+# Wellness: Garmin revises history — sleep scores recalculate, VO2max backfills,
 # training status lags a day. Re-fetching a window keeps us in sync.
+# Cost: 7 API calls per day, so 14 days ≈ 98 calls ≈ 2.5 min at 1.5s spacing.
 WELLNESS_WINDOW_DAYS = 14
+
+# Activities: lookback for late uploads and metadata edits. FIT downloads are
+# guarded by .sync-state.json, so a wide window costs one list call, not N.
+# Generous by design — it's nearly free.
+ACTIVITY_LOOKBACK_DAYS = 30
 
 # Seconds to sleep between API calls. Garmin rate-limits aggressively.
 RATE_LIMIT_SLEEP = 1.5

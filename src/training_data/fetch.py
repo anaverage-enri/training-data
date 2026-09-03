@@ -12,6 +12,7 @@ from io import BytesIO
 from garminconnect import Garmin
 
 from training_data.config import (
+    ACTIVITY_LOOKBACK_DAYS,
     RATE_LIMIT_SLEEP,
     RAW,
     STATE_FILE,
@@ -56,7 +57,7 @@ def fetch_activities(c: Garmin, state: dict, since: date) -> int:
         stamp = act["startTimeLocal"].replace("-", "").replace(":", "").replace(" ", "-")
         base = f"{stamp}-{aid}"
 
-        out_dir = partition(RAW, start)
+        out_dir = partition(RAW / "activities", start)
 
         # Always refresh metadata — titles and sport types get edited later.
         (out_dir / f"{base}.meta.json").write_text(json.dumps(act, indent=2))
@@ -94,6 +95,8 @@ def fetch_wellness(c: Garmin, days: int = WELLNESS_WINDOW_DAYS) -> int:
         d = date.today() - timedelta(days=offset)
         iso = d.isoformat()
 
+        print(f"  ↓ {iso}")
+
         # Each endpoint is a separate API call. Bundle into one file per day
         # so decode/rollup only ever opens one file per date.
         payload = {
@@ -122,16 +125,19 @@ def fetch_wellness(c: Garmin, days: int = WELLNESS_WINDOW_DAYS) -> int:
 
     return written
 
-
 def main() -> None:
     c = client()
     state = load_state()
-    since = date.today() - timedelta(days=WELLNESS_WINDOW_DAYS)
 
-    print("Fetching activities...")
+    # -1 because get_activities_by_date is inclusive on BOTH ends:
+    # today-29 .. today is 30 days, not 31.
+    since = date.today() - timedelta(days=ACTIVITY_LOOKBACK_DAYS - 1)
+
+    print(f"Activities: {since} → {date.today()} ({ACTIVITY_LOOKBACK_DAYS} days)")
     n_act = fetch_activities(c, state, since)
 
-    print("Fetching wellness...")
+    first_well = date.today() - timedelta(days=WELLNESS_WINDOW_DAYS - 1)
+    print(f"Wellness:   {first_well} → {date.today()} ({WELLNESS_WINDOW_DAYS} days)")
     n_well = fetch_wellness(c)
 
     save_state(state)
