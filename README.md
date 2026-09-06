@@ -78,6 +78,29 @@ uv run python -m training_data.decode     # raw/ -> activities/ + streams/
 never stored. Every later run reads that token, so no credentials live in the
 repo or the environment.
 
+## Pipeline
+
+| Stage | Module | Status | What it does |
+| --- | --- | --- | --- |
+| Auth | `bin/login.py` | working | Interactive login, once per machine. Caches an OAuth token in `~/.garminconnect/`. |
+| Fetch | `fetch.py` | working | Downloads new activity FITs plus a rolling 14-day window of daily wellness into `raw/`. |
+| Decode | `decode.py` | written, not runnable | Turns each `raw/*.fit` into a summary JSON in `activities/` and a 1-minute CSV in `streams/`. |
+| Rollup | `rollup.py` | not written | Builds the CSVs in `tables/`. |
+| Validate | `validate.py` | not written | Sanity checks over the derived data. |
+
+`decode.py` imports `normalized_power`, `time_in_zones`, and
+`aerobic_decoupling` from `metrics.py`, which is still an empty file — so the
+decode stage raises `ImportError` until those land. Nothing downstream of it
+runs yet either.
+
+Tuning constants live at the top of `config.py`:
+
+| Constant | Value | Why |
+| --- | --- | --- |
+| `WELLNESS_WINDOW_DAYS` | 14 | Garmin revises history — sleep scores recalculate, VO2max backfills, training status lags a day. |
+| `ACTIVITY_LOOKBACK_DAYS` | 30 | Catches late uploads and edited metadata; costs one list call, not N. |
+| `RATE_LIMIT_SLEEP` | 1.5s | Garmin rate-limits aggressively; `garmin.py` also retries with exponential backoff. |
+
 ## Athlete context and state
 
 | File | Read by | Holds |
