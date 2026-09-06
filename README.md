@@ -34,13 +34,17 @@ A personal repository for athletic training data and the Python tooling to work 
 │       ├── config.py        # paths, tuning constants, athlete.toml loader
 │       ├── garmin.py        # authenticated client + retry wrapper
 │       ├── fetch.py         # Garmin Connect -> raw/
-│       └── decode.py        # raw/*.fit -> activities/ + streams/
+│       ├── decode.py        # raw/*.fit -> activities/ + streams/
+│       ├── __init__.py      # package entry point (untracked)
+│       ├── metrics.py       # NP, time-in-zone, decoupling (empty)
+│       ├── rollup.py        # activities/ + streams/ -> tables/ (empty)
+│       └── validate.py      # sanity checks over derived data (empty)
 ├── raw/
 │   ├── activities/YYYY/MM/  # .fit files and their .meta.json siblings
 │   └── wellness/YYYY/MM/    # one JSON per day, all endpoints bundled
 ├── activities/YYYY/MM/      # one small summary JSON per session
 ├── streams/YYYY/MM/         # one 1-minute-resolution CSV per session
-├── tables/                  # the three rollup CSVs
+├── tables/                  # rollup CSVs (not built yet)
 └── README.md
 ```
 
@@ -85,8 +89,8 @@ repo or the environment.
 | Auth | `bin/login.py` | working | Interactive login, once per machine. Caches an OAuth token in `~/.garminconnect/`. |
 | Fetch | `fetch.py` | working | Downloads new activity FITs plus a rolling 14-day window of daily wellness into `raw/`. |
 | Decode | `decode.py` | written, not runnable | Turns each `raw/*.fit` into a summary JSON in `activities/` and a 1-minute CSV in `streams/`. |
-| Rollup | `rollup.py` | not written | Builds the CSVs in `tables/`. |
-| Validate | `validate.py` | not written | Sanity checks over the derived data. |
+| Rollup | `rollup.py` | empty file | Will build the CSVs in `tables/`. |
+| Validate | `validate.py` | empty file | Will sanity-check the derived data. |
 
 `decode.py` imports `normalized_power`, `time_in_zones`, and
 `aerobic_decoupling` from `metrics.py`, which is still an empty file — so the
