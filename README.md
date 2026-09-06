@@ -13,19 +13,33 @@ A personal repository for athletic training data and the Python tooling to work 
 .
 ├── .gitattributes           # file-type handling (binary / line endings)
 ├── .gitignore               # Python, env, and macOS artifacts
+├── .python-version          # 3.13, read by uv
+├── pyproject.toml           # project metadata and dependencies
+├── uv.lock                  # pinned dependency resolution
+├── .sync-state.json         # manifest of already-downloaded activity IDs
+├── athlete.toml             # machine-readable athlete config
+├── ATHLETE.md               # human/Claude-facing athlete context
+├── LOG.md                   # training log, newest entries first
 ├── .github/
 │   └── workflows/
 │       ├── label-sync.yml   # sync label definitions from the central manifest
 │       ├── path-labeler.yml # label PRs by changed paths
 │       └── size-labeler.yml # label PRs by diff size
-├── bin/                     # shell scripts and hand-run entry points
+├── bin/
+│   └── login.py             # one-off interactive Garmin login
 ├── etc/                     # config templates
 ├── docs/                    # notes, especially verified API field mappings
 ├── src/
-│   └── training_data/       # all the Python modules  (not yet created)
-├── raw/                     # downloaded .fit files and raw API JSON
-├── activities/              # one small summary JSON per session
-├── streams/                 # one 1-minute-resolution CSV per session
+│   └── training_data/
+│       ├── config.py        # paths, tuning constants, athlete.toml loader
+│       ├── garmin.py        # authenticated client + retry wrapper
+│       ├── fetch.py         # Garmin Connect -> raw/
+│       └── decode.py        # raw/*.fit -> activities/ + streams/
+├── raw/
+│   ├── activities/YYYY/MM/  # .fit files and their .meta.json siblings
+│   └── wellness/YYYY/MM/    # one JSON per day, all endpoints bundled
+├── activities/YYYY/MM/      # one small summary JSON per session
+├── streams/YYYY/MM/         # one 1-minute-resolution CSV per session
 ├── tables/                  # the three rollup CSVs
 └── README.md
 ```
@@ -34,8 +48,12 @@ Data flows one way: `raw/` is the immutable landing zone, `activities/` and
 `streams/` are derived per-session, and `tables/` holds the rollups built from
 those.
 
-Each directory ships an empty `placeholder.txt` so git tracks it while it is
-still empty.
+Everything under `raw/`, `activities/`, and `streams/` is partitioned as
+`YYYY/MM/` — GitHub caps a single directory at 3,000 entries, and a flat
+folder would hit that in about two years.
+
+Directories with no data yet (`activities/`, `streams/`, `tables/`, `docs/`,
+`etc/`) ship an empty `placeholder.txt` so git tracks them.
 
 ## File conventions
 
