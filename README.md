@@ -123,11 +123,16 @@ Set in `.gitattributes`:
 
 | Pattern | Handling | Where it applies | Why |
 | --- | --- | --- | --- |
-| `*.fit` | `binary` | `raw/` | FIT activity files are binary — git shouldn't diff them or rewrite line endings. |
+| `*.fit` | `binary` | `raw/activities/` | FIT activity files are binary — git shouldn't diff them or rewrite line endings. |
+| `*.zip` | `binary` | anywhere | Same; Garmin serves FIT downloads as ZIP archives. |
 | `*.csv` | `text eol=lf` | `streams/`, `tables/` | Consistent line endings for tabular exports across platforms. |
 | `*.json` | `text eol=lf` | `raw/`, `activities/` | Same, for JSON exports. |
+| `*.md` | `text eol=lf` | anywhere | Same, for prose. |
 
-`.gitignore` covers Python build artifacts (`__pycache__/`, `*.pyc`), virtualenvs (`.venv/`), local secrets (`.env`, `.env.local`), and `.DS_Store`.
+`.gitignore` covers the virtualenv (`.venv/`), Python build artifacts
+(`__pycache__/`, `*.pyc`), the local sync job's logs (`.sync.log`,
+`.sync.err`), and `.DS_Store`. No secrets are ignored because none are
+written into the repo — the Garmin OAuth token lives in `~/.garminconnect/`.
 
 ## CI
 
