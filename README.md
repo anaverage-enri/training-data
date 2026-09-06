@@ -55,6 +55,29 @@ folder would hit that in about two years.
 Directories with no data yet (`activities/`, `streams/`, `tables/`, `docs/`,
 `etc/`) ship an empty `placeholder.txt` so git tracks them.
 
+## Toolchain
+
+Python 3.13 (pinned in `.python-version`), managed with
+[uv](https://docs.astral.sh/uv/). Dependencies are declared in
+`pyproject.toml` and locked in `uv.lock`:
+
+| Package | Used for |
+| --- | --- |
+| `garminconnect` | Garmin Connect API client (pinned to `0.3.6`) |
+| `garmin-fit-sdk` | decoding `.fit` files |
+| `pandas` | rollup tables |
+
+```bash
+uv sync                                   # create .venv and install deps
+uv run python bin/login.py                # once per machine — writes an OAuth token
+uv run python -m training_data.fetch      # Garmin Connect -> raw/
+uv run python -m training_data.decode     # raw/ -> activities/ + streams/
+```
+
+`bin/login.py` writes an OAuth token to `~/.garminconnect/`; the password is
+never stored. Every later run reads that token, so no credentials live in the
+repo or the environment.
+
 ## File conventions
 
 Set in `.gitattributes`:
