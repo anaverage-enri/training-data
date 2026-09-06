@@ -2,9 +2,10 @@
 
 A personal repository for athletic training data and the Python tooling to work with it.
 
-> **Status:** early scaffolding. Repository configuration, CI, and the directory
-> layout have landed. The data directories are still empty and no application
-> code has been written yet.
+> **Status:** the download and decode halves of the pipeline are written and
+> `raw/` holds real data. `fetch.py` is working end to end; `decode.py` is
+> written but not yet runnable (it imports helpers from `metrics.py`, which is
+> still empty). The rollup and validation stages have not been written.
 
 ## Layout
 
