@@ -78,6 +78,22 @@ uv run python -m training_data.decode     # raw/ -> activities/ + streams/
 never stored. Every later run reads that token, so no credentials live in the
 repo or the environment.
 
+## Athlete context and state
+
+| File | Read by | Holds |
+| --- | --- | --- |
+| `athlete.toml` | `config.py` | max HR, resting HR, weight, HR zone boundaries per sport, thresholds (LTHR, FTP, CSS), and the CTL/ATL exponential windows |
+| `ATHLETE.md` | humans and Claude | the same thresholds in prose, plus race block, schedule, injury history, and equipment |
+| `LOG.md` | humans and Claude | session-by-session review notes, newest first |
+| `.sync-state.json` | `fetch.py` | activity IDs already downloaded, and the last sync date |
+
+`athlete.toml` and `ATHLETE.md` overlap on purpose — one is machine-readable,
+one is context. **Update both together.**
+
+`.sync-state.json` is committed deliberately: a fresh clone on a new machine
+knows not to re-download years of history. Activity metadata is refreshed on
+every run regardless, since titles and sport types get edited after the fact.
+
 ## File conventions
 
 Set in `.gitattributes`:
