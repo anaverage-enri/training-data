@@ -67,7 +67,7 @@ Python 3.13 (pinned in `.python-version`), managed with
 
 | Package | Used for |
 | --- | --- |
-| `garminconnect` | Garmin Connect API client (pinned to `0.3.6`) |
+| `garminconnect` | Garmin Connect API client (pinned to `0.3.15`) |
 | `garmin-fit-sdk` | decoding `.fit` files |
 | `pandas` | rollup tables |
 
