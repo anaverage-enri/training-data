@@ -1,7 +1,7 @@
 [project]
 name = "training-data"
 version = "0.1.0"
-description = "Add your description here"
+description = "Sync Garmin Connect data into a repo Claude can read"
 readme = "README.md"
 authors = [
     { name = "anaverage-enri", email = "anaverage.enri@gmail.com" }
@@ -12,9 +12,6 @@ dependencies = [
     "garminconnect==0.3.15",
     "pandas>=3.0.5",
 ]
-
-[project.scripts]
-training-data = "training_data:main"
 
 [build-system]
 requires = ["uv_build>=0.12.7,<0.13.0"]
