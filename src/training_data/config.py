@@ -12,7 +12,6 @@ REPO = Path(__file__).resolve().parents[2]
 RAW = REPO / "raw"
 ACTIVITIES = RAW / "activities"         # <stamp>-<id>.fit and <stamp>-<id>.json
 TABLES = REPO / "tables"
-STATE_FILE = REPO / ".sync-state.json"
 
 TOKENSTORE = Path.home() / ".garminconnect"
 
