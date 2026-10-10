@@ -1,6 +1,6 @@
-"""Central configuration: paths, constants, athlete settings, sport registry.
+"""Central configuration: paths and tuning constants.
 
-No logic beyond simple loaders — one place to change a path.
+No logic beyond partition() — one place to change a path.
 """
 
 from datetime import date
@@ -21,7 +21,7 @@ TOKENSTORE = Path.home() / ".garminconnect"
 # and sessions get renamed. Every run re-fetches this many days.
 REFRESH_DAYS = 14
 
-RATE_LIMIT_SLEEP = 1.5          # seconds between API calls
+RATE_LIMIT_SLEEP = 1.5          # seconds to pause between bursts of API calls
 
 
 def partition(root: Path, d: date) -> Path:
