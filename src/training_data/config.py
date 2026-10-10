@@ -20,14 +20,6 @@ TOKENSTORE = Path.home() / ".garminconnect"
 # and sessions get renamed. Every run re-fetches this many days.
 REFRESH_DAYS = 14
 
-# Garmin revises history: sleep scores recalculate, VO2max backfills,
-# training status lags. Re-fetch a rolling window every run.
-WELLNESS_WINDOW_DAYS = 14
-
-# Activity lookback. FIT downloads are guarded by .sync-state.json, so a wide
-# window costs one list call, not N downloads.
-ACTIVITY_LOOKBACK_DAYS = 45
-
 RATE_LIMIT_SLEEP = 1.5          # seconds between API calls
 
 
