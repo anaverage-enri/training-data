@@ -17,6 +17,7 @@ from training_data.config import (
     ACTIVITIES,
     ACTIVITY_LOOKBACK_DAYS,
     RATE_LIMIT_SLEEP,
+    REFRESH_DAYS,
     WELLNESS,
     WELLNESS_WINDOW_DAYS,
     partition,
@@ -59,6 +60,20 @@ def fill(doc: dict, key: str, label: str, fn: Callable[[], Any], once: bool = Fa
     except Exception as e:
         print(f"  ! {label}: {type(e).__name__}: {e}")
         failed.append(label)
+
+
+def default_since() -> date:
+    """First day of the refresh window.
+
+    Normally REFRESH_DAYS back. If the newest wellness file is older than that
+    — the Mac was off for three weeks — reach back to it instead, so the gap
+    fills itself.
+    """
+    floor = date.today() - timedelta(days=REFRESH_DAYS - 1)
+    files = sorted(WELLNESS.rglob("*.json"))    # YYYY/MM/YYYY-MM-DD sorts by date
+    if not files:
+        return floor
+    return min(floor, date.fromisoformat(files[-1].stem))
 
 
 # ── activities ───────────────────────────────────────────────────────────────
