@@ -1,6 +1,8 @@
 """Download from Garmin Connect into raw/.
 
 Run with:  uv run python -m training_data.fetch [--since YYYY-MM-DD]
+
+Everything is written as Garmin returned it. Nothing is computed here.
 """
 
 import argparse
@@ -285,4 +287,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
