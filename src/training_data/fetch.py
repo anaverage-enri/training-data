@@ -8,6 +8,7 @@ import time
 import zipfile
 from datetime import date, timedelta
 from io import BytesIO
+from pathlib import Path
 
 from garminconnect import Garmin
 
@@ -20,6 +21,11 @@ from training_data.config import (
     partition,
 )
 from training_data.garmin import client, with_retry
+
+
+def load(path: Path) -> dict:
+    """Read a JSON file, or return {} if it does not exist yet."""
+    return json.loads(path.read_text()) if path.exists() else {}
 
 
 def load_state() -> dict:
