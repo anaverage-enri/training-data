@@ -11,7 +11,6 @@ REPO = Path(__file__).resolve().parents[2]
 
 RAW = REPO / "raw"
 ACTIVITIES = REPO / "activities"
-STREAMS = REPO / "streams"
 TABLES = REPO / "tables"
 STATE_FILE = REPO / ".sync-state.json"
 
