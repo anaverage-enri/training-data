@@ -12,6 +12,7 @@ REPO = Path(__file__).resolve().parents[2]
 RAW = REPO / "raw"
 ACTIVITIES = RAW / "activities"         # <stamp>-<id>.fit and <stamp>-<id>.json
 WELLNESS = RAW / "wellness"             # one JSON per day
+PROFILE_FILE = RAW / "profile.json"     # zones, thresholds, personal records
 TABLES = REPO / "tables"
 
 TOKENSTORE = Path.home() / ".garminconnect"
