@@ -85,6 +85,7 @@ def fetch_activities(c: Garmin, since: date) -> int:
         label="list activities",
     )
     new_fits = 0
+    listed = set()                            # every name Connect still knows about
 
     for act in activities:
         aid = str(act["activityId"])
@@ -94,6 +95,7 @@ def fetch_activities(c: Garmin, since: date) -> int:
         # Sortable by time, unique by ID, no spaces or colons.
         stamp = act["startTimeLocal"].replace("-", "").replace(":", "").replace(" ", "-")
         base = f"{stamp}-{aid}"
+        listed.add(base)
         out_dir = partition(ACTIVITIES, start)
         doc_path = out_dir / f"{base}.json"
         fit_path = out_dir / f"{base}.fit"
@@ -124,6 +126,14 @@ def fetch_activities(c: Garmin, since: date) -> int:
             print(f"  ↓ {base}  ({act.get('activityName', 'untitled')})")
         if set(doc) - known - {"summary"}:    # something new was fetched: pause
             time.sleep(RATE_LIMIT_SLEEP)
+
+    # A file inside the window that Connect did not list was deleted there, or
+    # had its start time edited (which gives it a new name). Nothing is removed
+    # automatically: say so, and leave the decision to a human.
+    for path in sorted(ACTIVITIES.rglob("*.json")):
+        day = date.fromisoformat(f"{path.stem[:4]}-{path.stem[4:6]}-{path.stem[6:8]}")
+        if day >= since and path.stem not in listed:
+            print(f"  ? {path.stem} is on disk but no longer in Connect")
 
     return new_fits
 
