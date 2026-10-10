@@ -273,6 +273,9 @@ def main() -> None:
     print(f"Wellness:   {since} → {today}")
     n_days = fetch_wellness(c, since)
 
+    print("Profile")
+    fetch_profile(c)
+
     print(f"✓ {n_fits} new FIT files, {n_days} wellness days refreshed")
     if failed:
         print(f"! {len(failed)} calls failed and will be retried on the next run:")
