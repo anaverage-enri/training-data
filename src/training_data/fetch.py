@@ -176,6 +176,10 @@ def main() -> None:
     n_well = fetch_wellness(c)
 
     print(f"✓ {n_act} new activities, {n_well} wellness days refreshed")
+    if failed:
+        print(f"! {len(failed)} calls failed and will be retried on the next run:")
+        for label in failed:
+            print(f"    {label}")
 
 
 if __name__ == "__main__":
