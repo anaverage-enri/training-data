@@ -3,7 +3,6 @@
 No logic beyond simple loaders — one place to change a path.
 """
 
-import json
 import tomllib
 from datetime import date
 from pathlib import Path
@@ -12,7 +11,6 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[2]
 
 RAW = REPO / "raw"
-REFERENCE = RAW / "reference"          # taxonomy + zones, refreshed each run
 ACTIVITIES = REPO / "activities"
 STREAMS = REPO / "streams"
 TABLES = REPO / "tables"
@@ -38,12 +36,6 @@ def load_athlete() -> dict:
     """Read athlete.toml. 'rb' because tomllib wants bytes."""
     with open(ATHLETE_FILE, "rb") as f:
         return tomllib.load(f)
-
-
-def load_reference(name: str) -> dict | list | None:
-    """Read one file from raw/reference/, or None if fetch hasn't written it."""
-    p = REFERENCE / f"{name}.json"
-    return json.loads(p.read_text()) if p.exists() else None
 
 
 def partition(root: Path, d: date) -> Path:
