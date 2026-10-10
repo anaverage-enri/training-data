@@ -9,7 +9,7 @@ import zipfile
 from datetime import date, timedelta
 from io import BytesIO
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any, Callable, Iterator
 
 from garminconnect import Garmin
 
@@ -136,6 +136,19 @@ def fetch_activities(c: Garmin, since: date) -> int:
             print(f"  ? {path.stem} is on disk but no longer in Connect")
 
     return new_fits
+
+
+# ── wellness ─────────────────────────────────────────────────────────────────
+
+def chunks(start: date, end: date, days: int = 28) -> Iterator[tuple[date, date]]:
+    """Yield (first, last) pairs covering start..end, each at most `days` long.
+
+    Garmin's range endpoints reject long windows, so a backfill is cut up.
+    """
+    while start <= end:
+        last = min(start + timedelta(days=days - 1), end)
+        yield start, last
+        start = last + timedelta(days=1)
 
 
 def fetch_wellness(c: Garmin, days: int = WELLNESS_WINDOW_DAYS) -> int:
