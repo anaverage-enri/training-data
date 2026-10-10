@@ -158,6 +158,16 @@ def by_date(
     return {row[key]: {k: v for k, v in row.items() if k not in drop} for row in rows or []}
 
 
+def strip_series(payload: dict | None) -> dict:
+    """Drop the per-minute arrays from a sleep payload and keep the summary.
+
+    get_sleep_data returns 70-145 KB a night, nearly all of it movement, SpO2
+    and heart-rate samples. What is left — dailySleepDTO plus a few totals —
+    is about 4 KB and holds every number Garmin shows on the sleep screen.
+    """
+    return {k: v for k, v in (payload or {}).items() if not isinstance(v, list)}
+
+
 def fetch_wellness(c: Garmin, days: int = WELLNESS_WINDOW_DAYS) -> int:
     """Re-fetch a rolling window of daily wellness. Overwrites existing files."""
     written = 0
