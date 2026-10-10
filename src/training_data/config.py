@@ -3,7 +3,6 @@
 No logic beyond simple loaders — one place to change a path.
 """
 
-import tomllib
 from datetime import date
 from pathlib import Path
 
@@ -15,7 +14,6 @@ ACTIVITIES = REPO / "activities"
 STREAMS = REPO / "streams"
 TABLES = REPO / "tables"
 STATE_FILE = REPO / ".sync-state.json"
-ATHLETE_FILE = REPO / "athlete.toml"
 
 TOKENSTORE = Path.home() / ".garminconnect"
 
@@ -30,12 +28,6 @@ ACTIVITY_LOOKBACK_DAYS = 45
 RATE_LIMIT_SLEEP = 1.5          # seconds between API calls
 ZONE_GAP_CAP_S = 10             # max seconds credited to one record (absorbs pauses)
 CTL_DAYS, ATL_DAYS = 42, 7
-
-
-def load_athlete() -> dict:
-    """Read athlete.toml. 'rb' because tomllib wants bytes."""
-    with open(ATHLETE_FILE, "rb") as f:
-        return tomllib.load(f)
 
 
 def partition(root: Path, d: date) -> Path:
