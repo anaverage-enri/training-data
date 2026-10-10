@@ -112,6 +112,9 @@ def fetch_activities(c: Garmin, since: date) -> int:
             doc.setdefault("fit", None)             # typed into Connect: no file exists
         fill(doc, "fit", f"fit {base}", lambda: download_fit(c, aid, fit_path), once=True)
 
+        # RPE and feel, split summaries, and the parent/child links of a multisport.
+        fill(doc, "detail", f"detail {base}", lambda: c.get_activity(aid), once=True)
+
         save(doc_path, doc)
 
         if fit_path.exists() and not had_fit:
