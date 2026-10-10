@@ -10,7 +10,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[2]
 
 RAW = REPO / "raw"
-ACTIVITIES = REPO / "activities"
+ACTIVITIES = RAW / "activities"         # <stamp>-<id>.fit and <stamp>-<id>.json
 TABLES = REPO / "tables"
 STATE_FILE = REPO / ".sync-state.json"
 
