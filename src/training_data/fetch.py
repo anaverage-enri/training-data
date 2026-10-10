@@ -17,7 +17,6 @@ from training_data.config import (
     ACTIVITIES,
     ACTIVITY_LOOKBACK_DAYS,
     RATE_LIMIT_SLEEP,
-    RAW,
     WELLNESS,
     WELLNESS_WINDOW_DAYS,
     partition,
@@ -209,43 +208,19 @@ def fetch_day(c: Garmin, d: date, ranges: dict[str, dict[str, dict]]) -> None:
     save(path, doc)
 
 
-def fetch_wellness(c: Garmin, days: int = WELLNESS_WINDOW_DAYS) -> int:
-    """Re-fetch a rolling window of daily wellness. Overwrites existing files."""
+def fetch_wellness(c: Garmin, since: date) -> int:
+    """Re-fetch every day from `since` to today. Overwrites existing files."""
     written = 0
-
-    for offset in range(days):
-        d = date.today() - timedelta(days=offset)
-        iso = d.isoformat()
-
-        print(f"  ↓ {iso}")
-
-        # Each endpoint is a separate API call. Bundle into one file per day
-        # so decode/rollup only ever opens one file per date.
-        payload = {
-            "date": iso,
-            "stats": with_retry(lambda: c.get_stats(iso), label=f"stats {iso}"),
-            "sleep": with_retry(lambda: c.get_sleep_data(iso), label=f"sleep {iso}"),
-            "hrv": with_retry(lambda: c.get_hrv_data(iso), label=f"hrv {iso}"),
-            "body_battery": with_retry(
-                lambda: c.get_body_battery(iso, iso), label=f"body battery {iso}"
-            ),
-            "training_readiness": with_retry(
-                lambda: c.get_training_readiness(iso), label=f"training readiness {iso}"
-            ),
-            "training_status": with_retry(
-                lambda: c.get_training_status(iso), label=f"training status {iso}"
-            ),
-            "max_metrics": with_retry(
-                lambda: c.get_max_metrics(iso), label=f"max metrics {iso}"
-            ),
-        }
-
-        out = partition(RAW / "wellness", d)
-        (out / f"{iso}.json").write_text(json.dumps(payload, indent=2))
-        written += 1
-        time.sleep(RATE_LIMIT_SLEEP)
-
+    for first, last in chunks(since, date.today()):
+        ranges = fetch_ranges(c, first, last)
+        d = first
+        while d <= last:
+            fetch_day(c, d, ranges)
+            written += 1
+            d += timedelta(days=1)
+            time.sleep(RATE_LIMIT_SLEEP)
     return written
+
 
 def main() -> None:
     c = client()
@@ -259,7 +234,7 @@ def main() -> None:
 
     first_well = date.today() - timedelta(days=WELLNESS_WINDOW_DAYS - 1)
     print(f"Wellness:   {first_well} → {date.today()} ({WELLNESS_WINDOW_DAYS} days)")
-    n_well = fetch_wellness(c)
+    n_well = fetch_wellness(c, first_well)
 
     print(f"✓ {n_act} new activities, {n_well} wellness days refreshed")
     if failed:
