@@ -18,6 +18,7 @@ from training_data.config import (
     ACTIVITY_LOOKBACK_DAYS,
     RATE_LIMIT_SLEEP,
     RAW,
+    WELLNESS,
     WELLNESS_WINDOW_DAYS,
     partition,
 )
@@ -186,6 +187,26 @@ def fetch_ranges(c: Garmin, first: date, last: date) -> dict[str, dict[str, dict
     fill(out, "weight", f"weight {s}..{e}",
          lambda: by_date(c.get_weigh_ins(s, e).get("dailyWeightSummaries"), key="summaryDate"))
     return out
+
+
+def fetch_day(c: Garmin, d: date, ranges: dict[str, dict[str, dict]]) -> None:
+    """Write raw/wellness/YYYY/MM/YYYY-MM-DD.json: every source for one day, in one file."""
+    iso = d.isoformat()
+    path = partition(WELLNESS, d) / f"{iso}.json"
+    doc = load(path)
+    doc["date"] = iso
+
+    fill(doc, "stats", f"stats {iso}", lambda: c.get_stats(iso))
+    fill(doc, "sleep", f"sleep {iso}", lambda: strip_series(c.get_sleep_data(iso)))
+    fill(doc, "training_status", f"training status {iso}", lambda: c.get_training_status(iso))
+    # Every snapshot of the day, not just one: tables.py picks the morning one.
+    fill(doc, "training_readiness", f"training readiness {iso}",
+         lambda: c.get_training_readiness(iso))
+
+    for key, rows in ranges.items():
+        doc[key] = rows.get(iso)              # None on a day Garmin has no row for
+
+    save(path, doc)
 
 
 def fetch_wellness(c: Garmin, days: int = WELLNESS_WINDOW_DAYS) -> int:
