@@ -151,6 +151,13 @@ def chunks(start: date, end: date, days: int = 28) -> Iterator[tuple[date, date]
         start = last + timedelta(days=1)
 
 
+def by_date(
+    rows: list[dict] | None, key: str = "calendarDate", drop: tuple[str, ...] = ()
+) -> dict[str, dict]:
+    """Index a list of per-day rows by their date, leaving out the `drop` fields."""
+    return {row[key]: {k: v for k, v in row.items() if k not in drop} for row in rows or []}
+
+
 def fetch_wellness(c: Garmin, days: int = WELLNESS_WINDOW_DAYS) -> int:
     """Re-fetch a rolling window of daily wellness. Overwrites existing files."""
     written = 0
