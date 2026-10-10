@@ -14,10 +14,10 @@ from typing import Any, Callable
 from garminconnect import Garmin
 
 from training_data.config import (
+    ACTIVITIES,
     ACTIVITY_LOOKBACK_DAYS,
     RATE_LIMIT_SLEEP,
     RAW,
-    STATE_FILE,
     WELLNESS_WINDOW_DAYS,
     partition,
 )
@@ -61,22 +61,6 @@ def fill(doc: dict, key: str, label: str, fn: Callable[[], Any], once: bool = Fa
         failed.append(label)
 
 
-def load_state() -> dict:
-    """Read the manifest of already-downloaded activity IDs.
-
-    This file IS committed to git, so a fresh clone on a new machine knows
-    not to re-download years of history.
-    """
-    if STATE_FILE.exists():
-        return json.loads(STATE_FILE.read_text())
-    return {"activity_ids": [], "last_sync": None}
-
-
-def save_state(state: dict) -> None:
-    state["last_sync"] = date.today().isoformat()
-    STATE_FILE.write_text(json.dumps(state, indent=2))
-
-
 # ── activities ───────────────────────────────────────────────────────────────
 
 def download_fit(c: Garmin, aid: str, fit_path: Path) -> str | None:
@@ -93,15 +77,14 @@ def download_fit(c: Garmin, aid: str, fit_path: Path) -> str | None:
     return fit_path.name
 
 
-def fetch_activities(c: Garmin, state: dict, since: date) -> int:
-    """Download new activities. Returns the count of new FIT files."""
-    known = set(state["activity_ids"])       # set = fast membership checks
-    new_count = 0
-
+def fetch_activities(c: Garmin, since: date) -> int:
+    """List activities since `since` and fetch whatever is missing. Returns the new FIT count."""
+    # Not wrapped in fill(): if the list itself fails, the run should fail.
     activities = with_retry(
         lambda: c.get_activities_by_date(since.isoformat(), date.today().isoformat()),
         label="list activities",
     )
+    new_fits = 0
 
     for act in activities:
         aid = str(act["activityId"])
@@ -111,35 +94,33 @@ def fetch_activities(c: Garmin, state: dict, since: date) -> int:
         # Sortable by time, unique by ID, no spaces or colons.
         stamp = act["startTimeLocal"].replace("-", "").replace(":", "").replace(" ", "-")
         base = f"{stamp}-{aid}"
+        out_dir = partition(ACTIVITIES, start)
+        doc_path = out_dir / f"{base}.json"
+        fit_path = out_dir / f"{base}.fit"
 
-        out_dir = partition(RAW / "activities", start)
+        # The JSON document IS the sync state. `summary` is refreshed on every
+        # run, because titles and sport types get edited later. The other keys
+        # are fetched once; a missing key means "not fetched yet".
+        doc = load(doc_path)
+        known = set(doc)                      # keys fetched on earlier runs
+        doc["summary"] = act
 
-        # Always refresh metadata — titles and sport types get edited later.
-        (out_dir / f"{base}.meta.json").write_text(json.dumps(act, indent=2))
+        had_fit = fit_path.exists()
+        if had_fit:
+            doc.setdefault("fit", fit_path.name)    # downloaded on an earlier run
+        elif act.get("manualActivity"):
+            doc.setdefault("fit", None)             # typed into Connect: no file exists
+        fill(doc, "fit", f"fit {base}", lambda: download_fit(c, aid, fit_path), once=True)
 
-        if aid in known:
-            continue                          # already have the FIT, skip
+        save(doc_path, doc)
 
-        print(f"  ↓ {base}  ({act.get('activityName', 'untitled')})")
+        if fit_path.exists() and not had_fit:
+            new_fits += 1
+            print(f"  ↓ {base}  ({act.get('activityName', 'untitled')})")
+        if set(doc) - known - {"summary"}:    # something new was fetched: pause
+            time.sleep(RATE_LIMIT_SLEEP)
 
-        blob = with_retry(
-            lambda: c.download_activity(
-                aid, dl_fmt=Garmin.ActivityDownloadFormat.ORIGINAL
-            ),
-            label=f"download {aid}",
-        )
-
-        # GOTCHA: ORIGINAL returns a ZIP archive, not a bare .fit file.
-        # BytesIO wraps the bytes so zipfile can read them like a file.
-        with zipfile.ZipFile(BytesIO(blob)) as z:
-            name = next(n for n in z.namelist() if n.lower().endswith(".fit"))
-            (out_dir / f"{base}.fit").write_bytes(z.read(name))
-
-        state["activity_ids"].append(aid)
-        new_count += 1
-        time.sleep(RATE_LIMIT_SLEEP)
-
-    return new_count
+    return new_fits
 
 
 def fetch_wellness(c: Garmin, days: int = WELLNESS_WINDOW_DAYS) -> int:
@@ -182,20 +163,18 @@ def fetch_wellness(c: Garmin, days: int = WELLNESS_WINDOW_DAYS) -> int:
 
 def main() -> None:
     c = client()
-    state = load_state()
 
     # -1 because get_activities_by_date is inclusive on BOTH ends:
     # today-29 .. today is 30 days, not 31.
     since = date.today() - timedelta(days=ACTIVITY_LOOKBACK_DAYS - 1)
 
     print(f"Activities: {since} → {date.today()} ({ACTIVITY_LOOKBACK_DAYS} days)")
-    n_act = fetch_activities(c, state, since)
+    n_act = fetch_activities(c, since)
 
     first_well = date.today() - timedelta(days=WELLNESS_WINDOW_DAYS - 1)
     print(f"Wellness:   {first_well} → {date.today()} ({WELLNESS_WINDOW_DAYS} days)")
     n_well = fetch_wellness(c)
 
-    save_state(state)
     print(f"✓ {n_act} new activities, {n_well} wellness days refreshed")
 
 
