@@ -9,6 +9,7 @@ import zipfile
 from datetime import date, timedelta
 from io import BytesIO
 from pathlib import Path
+from typing import Any, Callable
 
 from garminconnect import Garmin
 
@@ -21,6 +22,10 @@ from training_data.config import (
     partition,
 )
 from training_data.garmin import client, with_retry
+
+# Calls that failed for good during this run. They are reported at the end and
+# tried again on the next run; they do not stop this one.
+failed: list[str] = []
 
 
 def load(path: Path) -> dict:
@@ -35,6 +40,25 @@ def save(path: Path, doc: dict) -> None:
     makes an unchanged document byte-identical, so git only sees real changes.
     """
     path.write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+
+
+def fill(doc: dict, key: str, label: str, fn: Callable[[], Any], once: bool = False) -> None:
+    """Set doc[key] = fn().
+
+    once=True skips the call when the key is already there. That is how a FIT
+    or an activity's detail gets fetched exactly one time.
+
+    If the call fails even after retries, doc[key] is left exactly as it was:
+    good data is never overwritten with nothing, and one bad item cannot stop
+    the run. The label is remembered so main() can report it.
+    """
+    if once and key in doc:
+        return
+    try:
+        doc[key] = with_retry(fn, label=label)
+    except Exception as e:
+        print(f"  ! {label}: {type(e).__name__}: {e}")
+        failed.append(label)
 
 
 def load_state() -> dict:
