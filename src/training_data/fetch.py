@@ -28,6 +28,15 @@ def load(path: Path) -> dict:
     return json.loads(path.read_text()) if path.exists() else {}
 
 
+def save(path: Path, doc: dict) -> None:
+    """Write a JSON file with its keys sorted.
+
+    Garmin returns the same fields in a different order on every call. Sorting
+    makes an unchanged document byte-identical, so git only sees real changes.
+    """
+    path.write_text(json.dumps(doc, indent=2, sort_keys=True) + "\n")
+
+
 def load_state() -> dict:
     """Read the manifest of already-downloaded activity IDs.
 
