@@ -168,6 +168,26 @@ def strip_series(payload: dict | None) -> dict:
     return {k: v for k, v in (payload or {}).items() if not isinstance(v, list)}
 
 
+def fetch_ranges(c: Garmin, first: date, last: date) -> dict[str, dict[str, dict]]:
+    """The three endpoints that cover a whole window in ONE call each.
+
+    Returns {"hrv": {"2026-09-01": {...}, ...}, "race_predictions": {...}, "weight": {...}}.
+    An endpoint that failed is simply absent, so the day files keep what they had.
+    """
+    s, e = first.isoformat(), last.isoformat()
+    out: dict = {}
+    fill(out, "hrv", f"hrv {s}..{e}",
+         lambda: by_date((c.get_hrv_data_range(s, e) or {}).get("hrvSummaries")))
+    # Each race-prediction row repeats the window it was asked for. Kept, that
+    # would rewrite every day file every night as the window slides.
+    fill(out, "race_predictions", f"race predictions {s}..{e}",
+         lambda: by_date(c.get_race_predictions(startdate=s, enddate=e, _type="daily"),
+                         drop=("fromCalendarDate", "toCalendarDate")))
+    fill(out, "weight", f"weight {s}..{e}",
+         lambda: by_date(c.get_weigh_ins(s, e).get("dailyWeightSummaries"), key="summaryDate"))
+    return out
+
+
 def fetch_wellness(c: Garmin, days: int = WELLNESS_WINDOW_DAYS) -> int:
     """Re-fetch a rolling window of daily wellness. Overwrites existing files."""
     written = 0
