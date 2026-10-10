@@ -15,11 +15,9 @@ from garminconnect import Garmin
 
 from training_data.config import (
     ACTIVITIES,
-    ACTIVITY_LOOKBACK_DAYS,
     RATE_LIMIT_SLEEP,
     REFRESH_DAYS,
     WELLNESS,
-    WELLNESS_WINDOW_DAYS,
     partition,
 )
 from training_data.garmin import client, with_retry
@@ -238,20 +236,18 @@ def fetch_wellness(c: Garmin, since: date) -> int:
 
 
 def main() -> None:
-    c = client()
+    since = default_since()
+    today = date.today()
 
-    # -1 because get_activities_by_date is inclusive on BOTH ends:
-    # today-29 .. today is 30 days, not 31.
-    since = date.today() - timedelta(days=ACTIVITY_LOOKBACK_DAYS - 1)
+    c = client()                              # raises if the token is missing or rejected
 
-    print(f"Activities: {since} → {date.today()} ({ACTIVITY_LOOKBACK_DAYS} days)")
-    n_act = fetch_activities(c, since)
+    print(f"Activities: {since} → {today}")
+    n_fits = fetch_activities(c, since)
 
-    first_well = date.today() - timedelta(days=WELLNESS_WINDOW_DAYS - 1)
-    print(f"Wellness:   {first_well} → {date.today()} ({WELLNESS_WINDOW_DAYS} days)")
-    n_well = fetch_wellness(c, first_well)
+    print(f"Wellness:   {since} → {today}")
+    n_days = fetch_wellness(c, since)
 
-    print(f"✓ {n_act} new activities, {n_well} wellness days refreshed")
+    print(f"✓ {n_fits} new FIT files, {n_days} wellness days refreshed")
     if failed:
         print(f"! {len(failed)} calls failed and will be retried on the next run:")
         for label in failed:
