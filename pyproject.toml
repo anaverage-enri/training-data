@@ -1,7 +1,7 @@
 [project]
 name = "training-data"
 version = "0.1.0"
-description = "Add your description here"
+description = "Sync Garmin Connect data into a repo Claude can read"
 readme = "README.md"
 authors = [
     { name = "anaverage-enri", email = "anaverage.enri@gmail.com" }
