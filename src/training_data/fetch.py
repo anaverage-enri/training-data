@@ -1,8 +1,9 @@
 """Download from Garmin Connect into raw/.
 
-Run with:  uv run python -m training_data.fetch
+Run with:  uv run python -m training_data.fetch [--since YYYY-MM-DD]
 """
 
+import argparse
 import json
 import time
 import zipfile
@@ -236,7 +237,13 @@ def fetch_wellness(c: Garmin, since: date) -> int:
 
 
 def main() -> None:
-    since = default_since()
+    parser = argparse.ArgumentParser(description="Download from Garmin Connect into raw/.")
+    parser.add_argument(
+        "--since",
+        type=date.fromisoformat,
+        help=f"first day to fetch, YYYY-MM-DD (default: the last {REFRESH_DAYS} days)",
+    )
+    since = parser.parse_args().since or default_since()
     today = date.today()
 
     c = client()                              # raises if the token is missing or rejected
