@@ -26,8 +26,6 @@ WELLNESS_WINDOW_DAYS = 14
 ACTIVITY_LOOKBACK_DAYS = 45
 
 RATE_LIMIT_SLEEP = 1.5          # seconds between API calls
-ZONE_GAP_CAP_S = 10             # max seconds credited to one record (absorbs pauses)
-CTL_DAYS, ATL_DAYS = 42, 7
 
 
 def partition(root: Path, d: date) -> Path:
