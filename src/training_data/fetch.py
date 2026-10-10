@@ -77,6 +77,22 @@ def save_state(state: dict) -> None:
     STATE_FILE.write_text(json.dumps(state, indent=2))
 
 
+# ── activities ───────────────────────────────────────────────────────────────
+
+def download_fit(c: Garmin, aid: str, fit_path: Path) -> str | None:
+    """Download one activity's original file. Returns its name, or None if it has no FIT."""
+    blob = c.download_activity(aid, dl_fmt=Garmin.ActivityDownloadFormat.ORIGINAL)
+
+    # GOTCHA: ORIGINAL returns a ZIP archive, not a bare .fit file.
+    # BytesIO wraps the bytes so zipfile can read them like a file.
+    with zipfile.ZipFile(BytesIO(blob)) as z:
+        names = [n for n in z.namelist() if n.lower().endswith(".fit")]
+        if not names:
+            return None                       # e.g. a session imported as GPX
+        fit_path.write_bytes(z.read(names[0]))
+    return fit_path.name
+
+
 def fetch_activities(c: Garmin, state: dict, since: date) -> int:
     """Download new activities. Returns the count of new FIT files."""
     known = set(state["activity_ids"])       # set = fast membership checks
