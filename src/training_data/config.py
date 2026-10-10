@@ -16,6 +16,10 @@ TABLES = REPO / "tables"
 
 TOKENSTORE = Path.home() / ".garminconnect"
 
+# Garmin revises history: sleep scores recalculate, training status lags a day,
+# and sessions get renamed. Every run re-fetches this many days.
+REFRESH_DAYS = 14
+
 # Garmin revises history: sleep scores recalculate, VO2max backfills,
 # training status lags. Re-fetch a rolling window every run.
 WELLNESS_WINDOW_DAYS = 14
