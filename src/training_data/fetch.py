@@ -16,6 +16,7 @@ from garminconnect import Garmin
 
 from training_data.config import (
     ACTIVITIES,
+    PROFILE_FILE,
     RATE_LIMIT_SLEEP,
     REFRESH_DAYS,
     WELLNESS,
@@ -234,6 +235,24 @@ def fetch_wellness(c: Garmin, since: date) -> int:
             d += timedelta(days=1)
             time.sleep(RATE_LIMIT_SLEEP)
     return written
+
+
+# ── profile ──────────────────────────────────────────────────────────────────
+
+def fetch_profile(c: Garmin) -> None:
+    """Zones, thresholds and personal records, as Garmin has them right now.
+
+    One file, overwritten each run — git history is the record of when a
+    threshold changed.
+    """
+    doc = load(PROFILE_FILE)
+    fill(doc, "hr_zones", "hr zones", lambda: c.get_heart_rate_zones())
+    fill(doc, "power_zones", "power zones", lambda: c.get_power_zones())
+    fill(doc, "lactate_threshold", "lactate threshold",
+         lambda: c.get_lactate_threshold(latest=True))
+    fill(doc, "cycling_ftp", "cycling ftp", lambda: c.get_cycling_ftp())
+    fill(doc, "personal_records", "personal records", lambda: c.get_personal_record())
+    save(PROFILE_FILE, doc)
 
 
 def main() -> None:
