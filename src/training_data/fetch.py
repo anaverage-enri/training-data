@@ -114,6 +114,8 @@ def fetch_activities(c: Garmin, since: date) -> int:
 
         # RPE and feel, split summaries, and the parent/child links of a multisport.
         fill(doc, "detail", f"detail {base}", lambda: c.get_activity(aid), once=True)
+        # Temperature, humidity and dew point at the start.
+        fill(doc, "weather", f"weather {base}", lambda: c.get_activity_weather(aid), once=True)
 
         save(doc_path, doc)
 
