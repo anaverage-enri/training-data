@@ -24,3 +24,9 @@ def kg(grams): return round(grams / 1000, 1)
 def celsius(fahrenheit): return round((fahrenheit - 32) * 5 / 9, 1)
 def r1(x): return round(x, 1)
 def r2(x): return round(x, 2)
+
+
+def clock(seconds: float) -> str:
+    """7998 -> '2:13:18'."""
+    s = int(seconds)
+    return f"{s // 3600}:{s % 3600 // 60:02d}:{s % 60:02d}"
