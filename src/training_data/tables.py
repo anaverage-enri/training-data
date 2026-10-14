@@ -118,3 +118,14 @@ ACTIVITY_COLUMNS: dict[str, Any] = {
     "rpe":              "detail.summaryDTO.directWorkoutRpe",
     "feel":             "detail.summaryDTO.directWorkoutFeel",
 }
+
+
+# ── daily ────────────────────────────────────────────────────────────────────
+
+def primary(by_device: dict | None) -> dict:
+    """Garmin keys training status by device id. Return the primary device's entry."""
+    entries = [v for v in (by_device or {}).values() if isinstance(v, dict)]
+    for entry in entries:
+        if entry.get("primaryTrainingDevice"):
+            return entry
+    return entries[0] if entries else {}
