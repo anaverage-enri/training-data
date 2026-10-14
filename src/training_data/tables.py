@@ -1,7 +1,8 @@
 import csv
+import json
 from typing import Any
 
-from training_data.config import TABLES
+from training_data.config import ACTIVITIES, TABLES, WELLNESS
 
 
 def pick(doc: Any, path: str) -> Any:
@@ -253,3 +254,25 @@ def write_table(prefix: str, rows: list[dict]) -> None:
             w.writeheader()
             w.writerows(group)
         print(f"  → {out.name}  ({len(group)} rows, {len(group[0])} columns)")
+
+
+def main() -> None:
+    activities = []
+    for path in sorted(ACTIVITIES.rglob("*.json")):
+        doc = json.loads(path.read_text())
+        if "summary" in doc:                  # skips anything that is not ours
+            activities.append(build_row(doc, ACTIVITY_COLUMNS))
+    activities.sort(key=lambda r: (r["date"], r["start"]))
+
+    days = [
+        build_row(prepare_day(json.loads(path.read_text())), DAILY_COLUMNS)
+        for path in sorted(WELLNESS.rglob("*.json"))
+    ]
+
+    write_table("activities", activities)
+    write_table("daily", days)
+    print("✓ tables rebuilt")
+
+
+if __name__ == "__main__":
+    main()
