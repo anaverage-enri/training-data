@@ -148,3 +148,14 @@ def wake_readiness(snapshots: list | None) -> dict:
     if not pool:
         return {}
     return min(pool, key=lambda s: s.get("timestampLocal") or "")
+
+
+def prepare_day(doc: dict) -> dict:
+    """Add three shortcut keys so DAILY_COLUMNS can stay plain dotted paths."""
+    status = doc.get("training_status") or {}
+    doc["status"] = primary(pick(status, "mostRecentTrainingStatus.latestTrainingStatusData"))
+    doc["balance"] = primary(
+        pick(status, "mostRecentTrainingLoadBalance.metricsTrainingLoadBalanceDTOMap")
+    )
+    doc["readiness"] = wake_readiness(doc.get("training_readiness"))
+    return doc
