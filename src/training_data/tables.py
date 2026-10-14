@@ -129,3 +129,22 @@ def primary(by_device: dict | None) -> dict:
         if entry.get("primaryTrainingDevice"):
             return entry
     return entries[0] if entries else {}
+
+
+def wake_readiness(snapshots: list | None) -> dict:
+    """The earliest AFTER_WAKEUP_RESET snapshot: the score you woke up with.
+
+    Garmin returns several snapshots a day, newest first, and the score moves
+    a lot. A day can even hold two wake-up entries: on 2026-10-04 there is one
+    at 04:05 (52, before the run) and another at 07:35 (32, after it). The
+    earliest is the one that means "morning readiness".
+
+    Falls back to the earliest snapshot of any kind if the watch never logged
+    a wake-up that day.
+    """
+    snapshots = snapshots or []
+    wake = [s for s in snapshots if s.get("inputContext") == "AFTER_WAKEUP_RESET"]
+    pool = wake or snapshots
+    if not pool:
+        return {}
+    return min(pool, key=lambda s: s.get("timestampLocal") or "")
