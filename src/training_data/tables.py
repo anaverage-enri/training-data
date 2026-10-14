@@ -48,3 +48,16 @@ def below_zone_1(doc: dict) -> float | None:
     if s.get("duration") is None or None in zones:
         return None
     return minutes(max(0.0, s["duration"] - sum(zones)))
+
+
+def cadence(doc: dict) -> float | None:
+    """Whichever cadence the sport has: steps, pedal revs or strokes per minute."""
+    s = doc["summary"]
+    for key in (
+        "averageRunningCadenceInStepsPerMinute",
+        "averageBikingCadenceInRevPerMinute",
+        "averageSwimCadenceInStrokesPerMinute",
+    ):
+        if s.get(key) is not None:
+            return round(s[key])
+    return None
