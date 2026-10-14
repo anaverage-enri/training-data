@@ -218,3 +218,18 @@ DAILY_COLUMNS: dict[str, Any] = {
     "pred_marathon":          ("race_predictions.timeMarathon", clock),
     "weight_kg":              ("weight.latestWeight.weight", kg),
 }
+
+
+# ── plumbing ─────────────────────────────────────────────────────────────────
+
+def build_row(doc: dict, columns: dict[str, Any]) -> dict:
+    """Apply a column map to one document."""
+    row = {}
+    for name, source in columns.items():
+        if callable(source):
+            row[name] = source(doc)
+            continue
+        path, convert = source if isinstance(source, tuple) else (source, None)
+        value = pick(doc, path)
+        row[name] = convert(value) if (convert and value is not None) else value
+    return row
