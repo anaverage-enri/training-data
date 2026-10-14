@@ -61,3 +61,60 @@ def cadence(doc: dict) -> float | None:
         if s.get(key) is not None:
             return round(s[key])
     return None
+
+
+# column name -> where it comes from. Three forms:
+#   "a.b.c"                 copy that field
+#   ("a.b.c", convert)      copy it through a unit conversion
+#   function                call it with the whole document
+ACTIVITY_COLUMNS: dict[str, Any] = {
+    "date":             ("summary.startTimeLocal", lambda t: t[:10]),
+    "start":            ("summary.startTimeLocal", lambda t: t[11:16]),
+    "activity_id":      "summary.activityId",
+    "name":             "summary.activityName",
+    "sport":            "summary.activityType.typeKey",
+    # volume
+    "duration_min":     ("summary.duration", minutes),
+    "moving_min":       ("summary.movingDuration", minutes),
+    "distance_km":      ("summary.distance", km),
+    "elevation_m":      ("summary.elevationGain", round),
+    "speed_kmh":        ("summary.averageSpeed", kmh),
+    # intensity
+    "avg_hr":           ("summary.averageHR", round),
+    "max_hr":           ("summary.maxHR", round),
+    "load":             ("summary.activityTrainingLoad", r1),
+    "te_aerobic":       ("summary.aerobicTrainingEffect", r1),
+    "te_anaerobic":     ("summary.anaerobicTrainingEffect", r1),
+    "te_label":         "summary.trainingEffectLabel",
+    "z0_min":           below_zone_1,
+    "z1_min":           ("summary.hrTimeInZone_1", minutes),
+    "z2_min":           ("summary.hrTimeInZone_2", minutes),
+    "z3_min":           ("summary.hrTimeInZone_3", minutes),
+    "z4_min":           ("summary.hrTimeInZone_4", minutes),
+    "z5_min":           ("summary.hrTimeInZone_5", minutes),
+    # power (running power on runs, a power meter on rides)
+    "avg_power":        ("summary.avgPower", round),
+    "norm_power":       ("summary.normPower", round),
+    "max_power":        ("summary.maxPower", round),
+    "tss":              ("summary.trainingStressScore", r1),
+    "intensity_factor": ("summary.intensityFactor", r2),
+    "max_20min_power":  ("summary.max20MinPower", round),
+    # per sport
+    "cadence":          cadence,
+    "pool_m":           ("summary.poolLength", cm_to_m),
+    "lengths":          "summary.activeLengths",
+    "swolf":            ("summary.averageSwolf", round),
+    "strokes_per_length": ("summary.avgStrokes", r1),
+    "sets":             "summary.activeSets",
+    "reps":             "summary.totalReps",
+    # conditions at the start
+    "weather_temp_c":   ("weather.temp", celsius),
+    "weather_feels_c":  ("weather.apparentTemp", celsius),
+    "humidity_pct":     "weather.relativeHumidity",
+    # body and subjective
+    "vo2max":           "summary.vO2MaxValue",
+    "body_battery_change": "summary.differenceBodyBattery",
+    "calories":         ("summary.calories", round),
+    "rpe":              "detail.summaryDTO.directWorkoutRpe",
+    "feel":             "detail.summaryDTO.directWorkoutFeel",
+}
