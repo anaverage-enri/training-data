@@ -30,3 +30,21 @@ def clock(seconds: float) -> str:
     """7998 -> '2:13:18'."""
     s = int(seconds)
     return f"{s // 3600}:{s % 3600 // 60:02d}:{s % 60:02d}"
+
+
+# ── activities ───────────────────────────────────────────────────────────────
+
+def below_zone_1(doc: dict) -> float | None:
+    """Minutes spent below zone 1.
+
+    Connect's hrTimeInZone_1..5 leave this out, so the five zones do not add
+    up to the session: it is 44% of a badminton session and most of a strength
+    one. This is the single derived column in the table — duration minus the
+    five zones — and it agrees with the FIT's own below-Z1 bucket to within a
+    few seconds.
+    """
+    s = doc["summary"]
+    zones = [s.get(f"hrTimeInZone_{i}") for i in range(1, 6)]
+    if s.get("duration") is None or None in zones:
+        return None
+    return minutes(max(0.0, s["duration"] - sum(zones)))
