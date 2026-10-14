@@ -159,3 +159,62 @@ def prepare_day(doc: dict) -> dict:
     )
     doc["readiness"] = wake_readiness(doc.get("training_readiness"))
     return doc
+
+
+DAILY_COLUMNS: dict[str, Any] = {
+    "date":                   "date",
+    # sleep (last night)
+    "sleep_score":            "sleep.dailySleepDTO.sleepScores.overall.value",
+    "sleep_quality":          "sleep.dailySleepDTO.sleepScores.overall.qualifierKey",
+    "sleep_h":                ("sleep.dailySleepDTO.sleepTimeSeconds", hours),
+    "deep_h":                 ("sleep.dailySleepDTO.deepSleepSeconds", hours),
+    "rem_h":                  ("sleep.dailySleepDTO.remSleepSeconds", hours),
+    "light_h":                ("sleep.dailySleepDTO.lightSleepSeconds", hours),
+    "awake_h":                ("sleep.dailySleepDTO.awakeSleepSeconds", hours),
+    "sleep_need_h":           ("sleep.dailySleepDTO.sleepNeed.actual", min_to_hours),
+    "nap_min":                ("sleep.dailySleepDTO.napTimeSeconds", minutes),
+    "sleep_stress":           ("sleep.dailySleepDTO.avgSleepStress", round),
+    # HRV
+    "hrv":                    "hrv.lastNightAvg",
+    "hrv_7d":                 "hrv.weeklyAvg",
+    "hrv_status":             "hrv.status",
+    "hrv_baseline_low":       "hrv.baseline.balancedLow",
+    "hrv_baseline_high":      "hrv.baseline.balancedUpper",
+    # the day
+    "rhr":                    "stats.restingHeartRate",
+    "rhr_7d":                 "stats.lastSevenDaysAvgRestingHeartRate",
+    "stress_avg":             "stats.averageStressLevel",
+    "stress_max":             "stats.maxStressLevel",
+    "body_battery_high":      "stats.bodyBatteryHighestValue",
+    "body_battery_low":       "stats.bodyBatteryLowestValue",
+    "body_battery_at_wake":   "stats.bodyBatteryAtWakeTime",
+    "steps":                  "stats.totalSteps",
+    "intensity_min_moderate": "stats.moderateIntensityMinutes",
+    "intensity_min_vigorous": "stats.vigorousIntensityMinutes",
+    "active_kcal":            ("stats.activeKilocalories", round),
+    "spo2_avg":               "stats.averageSpo2",
+    "respiration_avg":        "stats.avgWakingRespirationValue",
+    # readiness on waking
+    "readiness":              "readiness.score",
+    "readiness_level":        "readiness.level",
+    "readiness_feedback":     "readiness.feedbackShort",
+    "recovery_time_h":        ("readiness.recoveryTime", min_to_hours),
+    # training status
+    "training_status":        "status.trainingStatusFeedbackPhrase",
+    "acute_load":             "status.acuteTrainingLoadDTO.dailyTrainingLoadAcute",
+    "chronic_load":           "status.acuteTrainingLoadDTO.dailyTrainingLoadChronic",
+    "acwr":                   "status.acuteTrainingLoadDTO.dailyAcuteChronicWorkloadRatio",
+    "acwr_status":            "status.acuteTrainingLoadDTO.acwrStatus",
+    "load_aerobic_low":       ("balance.monthlyLoadAerobicLow", round),
+    "load_aerobic_high":      ("balance.monthlyLoadAerobicHigh", round),
+    "load_anaerobic":         ("balance.monthlyLoadAnaerobic", round),
+    "load_focus":             "balance.trainingBalanceFeedbackPhrase",
+    # fitness
+    "vo2max_run":             "training_status.mostRecentVO2Max.generic.vo2MaxPreciseValue",
+    "vo2max_bike":            "training_status.mostRecentVO2Max.cycling.vo2MaxPreciseValue",
+    "pred_5k":                ("race_predictions.time5K", clock),
+    "pred_10k":               ("race_predictions.time10K", clock),
+    "pred_hm":                ("race_predictions.timeHalfMarathon", clock),
+    "pred_marathon":          ("race_predictions.timeMarathon", clock),
+    "weight_kg":              ("weight.latestWeight.weight", kg),
+}
