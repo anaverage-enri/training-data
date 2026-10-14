@@ -1,4 +1,7 @@
+import csv
 from typing import Any
+
+from training_data.config import TABLES
 
 
 def pick(doc: Any, path: str) -> Any:
@@ -233,3 +236,20 @@ def build_row(doc: dict, columns: dict[str, Any]) -> dict:
         value = pick(doc, path)
         row[name] = convert(value) if (convert and value is not None) else value
     return row
+
+
+def write_table(prefix: str, rows: list[dict]) -> None:
+    """One CSV per year: a finished year stops changing in git."""
+    TABLES.mkdir(exist_ok=True)
+    by_year: dict[str, list[dict]] = {}
+    for row in rows:
+        by_year.setdefault(row["date"][:4], []).append(row)
+
+    for year, group in sorted(by_year.items()):
+        out = TABLES / f"{prefix}-{year}.csv"
+        with open(out, "w", newline="") as f:
+            # lineterminator: csv defaults to \r\n, and .gitattributes wants LF.
+            w = csv.DictWriter(f, fieldnames=list(group[0]), lineterminator="\n")
+            w.writeheader()
+            w.writerows(group)
+        print(f"  → {out.name}  ({len(group)} rows, {len(group[0])} columns)")
