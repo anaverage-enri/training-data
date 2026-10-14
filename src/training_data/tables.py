@@ -1,3 +1,13 @@
+"""Flatten raw/ JSON into the two CSVs Claude reads first.
+
+Run with:  uv run python -m training_data.tables
+
+Every column is a number Garmin computed. This module only selects, renames
+and converts units — the exceptions are listed in the docstrings below.
+Both tables are rebuilt from scratch on every run, so adding a column is one
+line in a dict followed by a re-run.
+"""
+
 import csv
 import json
 from typing import Any
