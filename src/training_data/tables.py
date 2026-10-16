@@ -1,0 +1,288 @@
+"""Flatten raw/ JSON into the two CSVs Claude reads first.
+
+Run with:  uv run python -m training_data.tables
+
+Every column is a number Garmin computed. This module only selects, renames
+and converts units — the exceptions are listed in the docstrings below.
+Both tables are rebuilt from scratch on every run, so adding a column is one
+line in a dict followed by a re-run.
+"""
+
+import csv
+import json
+from typing import Any
+
+from training_data.config import ACTIVITIES, TABLES, WELLNESS
+
+
+def pick(doc: Any, path: str) -> Any:
+    """Follow a dotted path through nested dicts: pick(d, "a.b.c") is d["a"]["b"]["c"].
+
+    Returns None the moment anything is missing, instead of raising.
+    """
+    for key in path.split("."):
+        if not isinstance(doc, dict):
+            return None
+        doc = doc.get(key)
+    return doc
+
+
+# Unit conversions: Garmin's unit in, the table's unit out.
+def minutes(seconds): return round(seconds / 60, 1)
+def hours(seconds): return round(seconds / 3600, 2)
+def min_to_hours(mins): return round(mins / 60, 1)
+def km(metres): return round(metres / 1000, 2)
+def kmh(metres_per_second): return round(metres_per_second * 3.6, 1)
+def cm_to_m(centimetres): return round(centimetres / 100, 1)
+def kg(grams): return round(grams / 1000, 1)
+def celsius(fahrenheit): return round((fahrenheit - 32) * 5 / 9, 1)
+def r1(x): return round(x, 1)
+def r2(x): return round(x, 2)
+
+
+def clock(seconds: float) -> str:
+    """7998 -> '2:13:18'."""
+    s = int(seconds)
+    return f"{s // 3600}:{s % 3600 // 60:02d}:{s % 60:02d}"
+
+
+# ── activities ───────────────────────────────────────────────────────────────
+
+def below_zone_1(doc: dict) -> float | None:
+    """Minutes spent below zone 1.
+
+    Connect's hrTimeInZone_1..5 leave this out, so the five zones do not add
+    up to the session: it is 44% of a badminton session and most of a strength
+    one. This is the single derived column in the table — duration minus the
+    five zones — and it agrees with the FIT's own below-Z1 bucket to within a
+    few seconds.
+    """
+    s = doc["summary"]
+    zones = [s.get(f"hrTimeInZone_{i}") for i in range(1, 6)]
+    if s.get("duration") is None or None in zones:
+        return None
+    return minutes(max(0.0, s["duration"] - sum(zones)))
+
+
+def cadence(doc: dict) -> float | None:
+    """Whichever cadence the sport has: steps, pedal revs or strokes per minute."""
+    s = doc["summary"]
+    for key in (
+        "averageRunningCadenceInStepsPerMinute",
+        "averageBikingCadenceInRevPerMinute",
+        "averageSwimCadenceInStrokesPerMinute",
+    ):
+        if s.get(key) is not None:
+            return round(s[key])
+    return None
+
+
+# column name -> where it comes from. Three forms:
+#   "a.b.c"                 copy that field
+#   ("a.b.c", convert)      copy it through a unit conversion
+#   function                call it with the whole document
+ACTIVITY_COLUMNS: dict[str, Any] = {
+    "date":             ("summary.startTimeLocal", lambda t: t[:10]),
+    "start":            ("summary.startTimeLocal", lambda t: t[11:16]),
+    "activity_id":      "summary.activityId",
+    "name":             "summary.activityName",
+    "sport":            "summary.activityType.typeKey",
+    # volume
+    "duration_min":     ("summary.duration", minutes),
+    "moving_min":       ("summary.movingDuration", minutes),
+    "distance_km":      ("summary.distance", km),
+    "elevation_m":      ("summary.elevationGain", round),
+    "speed_kmh":        ("summary.averageSpeed", kmh),
+    # intensity
+    "avg_hr":           ("summary.averageHR", round),
+    "max_hr":           ("summary.maxHR", round),
+    "load":             ("summary.activityTrainingLoad", r1),
+    "te_aerobic":       ("summary.aerobicTrainingEffect", r1),
+    "te_anaerobic":     ("summary.anaerobicTrainingEffect", r1),
+    "te_label":         "summary.trainingEffectLabel",
+    "z0_min":           below_zone_1,
+    "z1_min":           ("summary.hrTimeInZone_1", minutes),
+    "z2_min":           ("summary.hrTimeInZone_2", minutes),
+    "z3_min":           ("summary.hrTimeInZone_3", minutes),
+    "z4_min":           ("summary.hrTimeInZone_4", minutes),
+    "z5_min":           ("summary.hrTimeInZone_5", minutes),
+    # power (running power on runs, a power meter on rides)
+    "avg_power":        ("summary.avgPower", round),
+    "norm_power":       ("summary.normPower", round),
+    "max_power":        ("summary.maxPower", round),
+    "tss":              ("summary.trainingStressScore", r1),
+    "intensity_factor": ("summary.intensityFactor", r2),
+    "max_20min_power":  ("summary.max20MinPower", round),
+    # per sport
+    "cadence":          cadence,
+    "pool_m":           ("summary.poolLength", cm_to_m),
+    "lengths":          "summary.activeLengths",
+    "swolf":            ("summary.averageSwolf", round),
+    "strokes_per_length": ("summary.avgStrokes", r1),
+    "sets":             "summary.activeSets",
+    "reps":             "summary.totalReps",
+    # conditions at the start
+    "weather_temp_c":   ("weather.temp", celsius),
+    "weather_feels_c":  ("weather.apparentTemp", celsius),
+    "humidity_pct":     "weather.relativeHumidity",
+    # body and subjective
+    "vo2max":           "summary.vO2MaxValue",
+    "body_battery_change": "summary.differenceBodyBattery",
+    "calories":         ("summary.calories", round),
+    "rpe":              "detail.summaryDTO.directWorkoutRpe",
+    "feel":             "detail.summaryDTO.directWorkoutFeel",
+}
+
+
+# ── daily ────────────────────────────────────────────────────────────────────
+
+def primary(by_device: dict | None) -> dict:
+    """Garmin keys training status by device id. Return the primary device's entry."""
+    entries = [v for v in (by_device or {}).values() if isinstance(v, dict)]
+    for entry in entries:
+        if entry.get("primaryTrainingDevice"):
+            return entry
+    return entries[0] if entries else {}
+
+
+def wake_readiness(snapshots: list | None) -> dict:
+    """The earliest AFTER_WAKEUP_RESET snapshot: the score you woke up with.
+
+    Garmin returns several snapshots a day, newest first, and the score moves
+    a lot. A day can even hold two wake-up entries: on 2026-10-04 there is one
+    at 04:05 (52, before the run) and another at 07:35 (32, after it). The
+    earliest is the one that means "morning readiness".
+
+    Falls back to the earliest snapshot of any kind if the watch never logged
+    a wake-up that day.
+    """
+    snapshots = snapshots or []
+    wake = [s for s in snapshots if s.get("inputContext") == "AFTER_WAKEUP_RESET"]
+    pool = wake or snapshots
+    if not pool:
+        return {}
+    return min(pool, key=lambda s: s.get("timestampLocal") or "")
+
+
+def prepare_day(doc: dict) -> dict:
+    """Add three shortcut keys so DAILY_COLUMNS can stay plain dotted paths."""
+    status = doc.get("training_status") or {}
+    doc["status"] = primary(pick(status, "mostRecentTrainingStatus.latestTrainingStatusData"))
+    doc["balance"] = primary(
+        pick(status, "mostRecentTrainingLoadBalance.metricsTrainingLoadBalanceDTOMap")
+    )
+    doc["readiness"] = wake_readiness(doc.get("training_readiness"))
+    return doc
+
+
+DAILY_COLUMNS: dict[str, Any] = {
+    "date":                   "date",
+    # sleep (last night)
+    "sleep_score":            "sleep.dailySleepDTO.sleepScores.overall.value",
+    "sleep_quality":          "sleep.dailySleepDTO.sleepScores.overall.qualifierKey",
+    "sleep_h":                ("sleep.dailySleepDTO.sleepTimeSeconds", hours),
+    "deep_h":                 ("sleep.dailySleepDTO.deepSleepSeconds", hours),
+    "rem_h":                  ("sleep.dailySleepDTO.remSleepSeconds", hours),
+    "light_h":                ("sleep.dailySleepDTO.lightSleepSeconds", hours),
+    "awake_h":                ("sleep.dailySleepDTO.awakeSleepSeconds", hours),
+    "sleep_need_h":           ("sleep.dailySleepDTO.sleepNeed.actual", min_to_hours),
+    "nap_min":                ("sleep.dailySleepDTO.napTimeSeconds", minutes),
+    "sleep_stress":           ("sleep.dailySleepDTO.avgSleepStress", round),
+    # HRV
+    "hrv":                    "hrv.lastNightAvg",
+    "hrv_7d":                 "hrv.weeklyAvg",
+    "hrv_status":             "hrv.status",
+    "hrv_baseline_low":       "hrv.baseline.balancedLow",
+    "hrv_baseline_high":      "hrv.baseline.balancedUpper",
+    # the day
+    "rhr":                    "stats.restingHeartRate",
+    "rhr_7d":                 "stats.lastSevenDaysAvgRestingHeartRate",
+    "stress_avg":             "stats.averageStressLevel",
+    "stress_max":             "stats.maxStressLevel",
+    "body_battery_high":      "stats.bodyBatteryHighestValue",
+    "body_battery_low":       "stats.bodyBatteryLowestValue",
+    "body_battery_at_wake":   "stats.bodyBatteryAtWakeTime",
+    "steps":                  "stats.totalSteps",
+    "intensity_min_moderate": "stats.moderateIntensityMinutes",
+    "intensity_min_vigorous": "stats.vigorousIntensityMinutes",
+    "active_kcal":            ("stats.activeKilocalories", round),
+    "spo2_avg":               "stats.averageSpo2",
+    "respiration_avg":        "stats.avgWakingRespirationValue",
+    # readiness on waking
+    "readiness":              "readiness.score",
+    "readiness_level":        "readiness.level",
+    "readiness_feedback":     "readiness.feedbackShort",
+    "recovery_time_h":        ("readiness.recoveryTime", min_to_hours),
+    # training status
+    "training_status":        "status.trainingStatusFeedbackPhrase",
+    "acute_load":             "status.acuteTrainingLoadDTO.dailyTrainingLoadAcute",
+    "chronic_load":           "status.acuteTrainingLoadDTO.dailyTrainingLoadChronic",
+    "acwr":                   "status.acuteTrainingLoadDTO.dailyAcuteChronicWorkloadRatio",
+    "acwr_status":            "status.acuteTrainingLoadDTO.acwrStatus",
+    "load_aerobic_low":       ("balance.monthlyLoadAerobicLow", round),
+    "load_aerobic_high":      ("balance.monthlyLoadAerobicHigh", round),
+    "load_anaerobic":         ("balance.monthlyLoadAnaerobic", round),
+    "load_focus":             "balance.trainingBalanceFeedbackPhrase",
+    # fitness
+    "vo2max_run":             "training_status.mostRecentVO2Max.generic.vo2MaxPreciseValue",
+    "vo2max_bike":            "training_status.mostRecentVO2Max.cycling.vo2MaxPreciseValue",
+    "pred_5k":                ("race_predictions.time5K", clock),
+    "pred_10k":               ("race_predictions.time10K", clock),
+    "pred_hm":                ("race_predictions.timeHalfMarathon", clock),
+    "pred_marathon":          ("race_predictions.timeMarathon", clock),
+    "weight_kg":              ("weight.latestWeight.weight", kg),
+}
+
+
+# ── plumbing ─────────────────────────────────────────────────────────────────
+
+def build_row(doc: dict, columns: dict[str, Any]) -> dict:
+    """Apply a column map to one document."""
+    row = {}
+    for name, source in columns.items():
+        if callable(source):
+            row[name] = source(doc)
+            continue
+        path, convert = source if isinstance(source, tuple) else (source, None)
+        value = pick(doc, path)
+        row[name] = convert(value) if (convert and value is not None) else value
+    return row
+
+
+def write_table(prefix: str, rows: list[dict]) -> None:
+    """One CSV per year: a finished year stops changing in git."""
+    TABLES.mkdir(exist_ok=True)
+    by_year: dict[str, list[dict]] = {}
+    for row in rows:
+        by_year.setdefault(row["date"][:4], []).append(row)
+
+    for year, group in sorted(by_year.items()):
+        out = TABLES / f"{prefix}-{year}.csv"
+        with open(out, "w", newline="") as f:
+            # lineterminator: csv defaults to \r\n, and .gitattributes wants LF.
+            w = csv.DictWriter(f, fieldnames=list(group[0]), lineterminator="\n")
+            w.writeheader()
+            w.writerows(group)
+        print(f"  → {out.name}  ({len(group)} rows, {len(group[0])} columns)")
+
+
+def main() -> None:
+    activities = []
+    for path in sorted(ACTIVITIES.rglob("*.json")):
+        doc = json.loads(path.read_text())
+        if "summary" in doc:                  # skips anything that is not ours
+            activities.append(build_row(doc, ACTIVITY_COLUMNS))
+    activities.sort(key=lambda r: (r["date"], r["start"]))
+
+    days = [
+        build_row(prepare_day(json.loads(path.read_text())), DAILY_COLUMNS)
+        for path in sorted(WELLNESS.rglob("*.json"))
+    ]
+
+    write_table("activities", activities)
+    write_table("daily", days)
+    print("✓ tables rebuilt")
+
+
+if __name__ == "__main__":
+    main()
