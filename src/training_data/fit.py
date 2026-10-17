@@ -61,3 +61,13 @@ def print_table(title: str, rows: list[dict], columns: list[str]) -> None:
     print(f"\n{title}")
     for row in [header] + cells:
         print("  " + "  ".join(cell.rjust(width) for cell, width in zip(row, widths)))
+
+
+def print_fields(title: str, mesg: dict) -> None:
+    """Print every named field of one message, skipping GPS corners and blanks."""
+    print(f"\n{title}")
+    for key, value in mesg.items():
+        # Unnamed fields have integer keys; _lat/_long are raw GPS units.
+        if not isinstance(key, str) or key.endswith(("_lat", "_long")) or value is None:
+            continue
+        print(f"  {key:36s} {text(value)}")
