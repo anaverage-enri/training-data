@@ -7,6 +7,9 @@ from garmin_fit_sdk import Decoder, Stream
 
 from training_data.config import ACTIVITIES
 
+# Garmin closes the top power zone with a boundary of 4000 W. Treat it as "no upper limit".
+OPEN_ENDED = 4000
+
 
 def read_fit(path: Path | str) -> dict:
     """Decode a FIT file into a dict of message lists.
@@ -71,3 +74,34 @@ def print_fields(title: str, mesg: dict) -> None:
         if not isinstance(key, str) or key.endswith(("_lat", "_long")) or value is None:
             continue
         print(f"  {key:36s} {text(value)}")
+
+
+def print_zones(messages: dict) -> None:
+    """The watch's own time-in-zone totals for the whole session.
+
+    Files also carry one entry per lap, so take the one that refers to the
+    session. HR has one more bucket than it has boundaries: the first is time
+    BELOW zone 1, which Connect's five-zone summary leaves out.
+    """
+    entry = next(
+        (m for m in messages.get("time_in_zone_mesgs", []) if m.get("reference_mesg") == "session"),
+        None,
+    )
+    if not entry:
+        return
+    for name, bounds_key, times_key in (
+        ("HR zones (bpm)", "hr_zone_high_boundary", "time_in_hr_zone"),
+        ("Power zones (W)", "power_zone_high_boundary", "time_in_power_zone"),
+    ):
+        bounds, times = entry.get(bounds_key), entry.get(times_key)
+        if not bounds or not times:
+            continue
+        print(f"\n{name}")
+        for i, seconds in enumerate(times):
+            low = bounds[i - 1] if i > 0 else 0
+            high = bounds[i] if i < len(bounds) else None
+            if low is None or low >= OPEN_ENDED:      # unused slot: runs have 5 power zones
+                continue
+            top = high is None or high >= OPEN_ENDED
+            label = f">{low}" if top else f"{low}-{high}"
+            print(f"  {label:>10}  {seconds / 60:6.1f} min")
