@@ -1,6 +1,9 @@
+import sys
 from pathlib import Path
 
 from garmin_fit_sdk import Decoder, Stream
+
+from training_data.config import ACTIVITIES
 
 
 def read_fit(path: Path | str) -> dict:
@@ -19,3 +22,13 @@ def read_fit(path: Path | str) -> dict:
     if errors:
         raise RuntimeError(f"{Path(path).name}: {errors}")
     return messages
+
+
+def find(target: str) -> Path:
+    """Accept a path, or an activity id as printed in tables/activities-*.csv."""
+    if Path(target).exists():
+        return Path(target)
+    matches = sorted(ACTIVITIES.rglob(f"*-{target}.fit"))
+    if not matches:
+        sys.exit(f"no FIT file found for '{target}'")
+    return matches[0]
