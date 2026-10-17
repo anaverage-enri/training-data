@@ -47,3 +47,17 @@ def text(value: Any) -> str:
     if isinstance(value, list):               # e.g. a set's exercise category
         return "/".join(dict.fromkeys(str(v) for v in value))
     return str(value)
+
+
+def print_table(title: str, rows: list[dict], columns: list[str]) -> None:
+    """Print rows as an aligned table, dropping columns that are empty in every row."""
+    columns = [c for c in columns if any(r.get(c) is not None for r in rows)]
+    if not rows or not columns:
+        return
+    cells = [[str(i + 1)] + [text(r.get(c)) for c in columns] for i, r in enumerate(rows)]
+    header = ["#"] + columns
+    widths = [max(len(header[i]), *(len(row[i]) for row in cells)) for i in range(len(header))]
+
+    print(f"\n{title}")
+    for row in [header] + cells:
+        print("  " + "  ".join(cell.rjust(width) for cell, width in zip(row, widths)))
