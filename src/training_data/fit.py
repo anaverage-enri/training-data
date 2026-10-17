@@ -1,3 +1,4 @@
+import argparse
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -7,6 +8,16 @@ from garmin_fit_sdk import Decoder, Stream
 
 from training_data.config import ACTIVITIES
 
+LAP_COLUMNS = [
+    "total_timer_time", "total_distance", "avg_heart_rate", "max_heart_rate",
+    "enhanced_avg_speed", "avg_power", "normalized_power", "avg_cadence",
+    "total_ascent", "num_active_lengths", "total_strokes", "intensity", "lap_trigger",
+]
+LENGTH_COLUMNS = [
+    "length_type", "total_timer_time", "swim_stroke", "total_strokes",
+    "avg_speed", "avg_swimming_cadence",
+]
+SET_COLUMNS = ["set_type", "category", "repetitions", "weight", "duration"]
 RECORD_COLUMNS = [
     "heart_rate", "enhanced_speed", "power", "cadence",
     "enhanced_altitude", "enhanced_respiration_rate", "temperature",
@@ -135,3 +146,31 @@ def stream(records: list[dict], every_s: int) -> list[dict]:
             row[field] = sum(values) / len(values) if values else None
         rows.append(row)
     return rows
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Print one FIT file as text.")
+    parser.add_argument("target", help="activity id, or path to a .fit file")
+    parser.add_argument(
+        "--records", type=int, metavar="N",
+        help="also print the stream, averaged every N seconds (1 = every sample)",
+    )
+    args = parser.parse_args()
+
+    path = find(args.target)
+    messages = read_fit(path)
+
+    print(f"# {path.name}")
+    for session in messages.get("session_mesgs", []):
+        print_fields("Session", session)
+    print_zones(messages)
+    print_table("Laps", messages.get("lap_mesgs", []), LAP_COLUMNS)
+    print_table("Lengths", messages.get("length_mesgs", []), LENGTH_COLUMNS)
+    print_table("Sets", messages.get("set_mesgs", []), SET_COLUMNS)
+    if args.records:
+        rows = stream(messages.get("record_mesgs", []), args.records)
+        print_table(f"Stream, every {args.records} s", rows, ["elapsed"] + RECORD_COLUMNS)
+
+
+if __name__ == "__main__":
+    main()
