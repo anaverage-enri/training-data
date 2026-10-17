@@ -7,6 +7,11 @@ from garmin_fit_sdk import Decoder, Stream
 
 from training_data.config import ACTIVITIES
 
+RECORD_COLUMNS = [
+    "heart_rate", "enhanced_speed", "power", "cadence",
+    "enhanced_altitude", "enhanced_respiration_rate", "temperature",
+]
+
 # Garmin closes the top power zone with a boundary of 4000 W. Treat it as "no upper limit".
 OPEN_ENDED = 4000
 
@@ -105,3 +110,28 @@ def print_zones(messages: dict) -> None:
             top = high is None or high >= OPEN_ENDED
             label = f">{low}" if top else f"{low}-{high}"
             print(f"  {label:>10}  {seconds / 60:6.1f} min")
+
+
+def stream(records: list[dict], every_s: int) -> list[dict]:
+    """Average the stream into buckets of `every_s` seconds of ELAPSED time.
+
+    Bucketing by list position would be wrong: samples are not evenly spaced
+    (badminton records every ~4 s), so 60 records is not one minute.
+    """
+    usable = [r for r in records if r.get("timestamp")]
+    if not usable:
+        return []
+    t0 = usable[0]["timestamp"]
+    buckets: dict[int, list[dict]] = {}
+    for r in usable:
+        buckets.setdefault(int((r["timestamp"] - t0).total_seconds() // every_s), []).append(r)
+
+    rows = []
+    for n in sorted(buckets):
+        elapsed = n * every_s
+        row: dict = {"elapsed": f"{elapsed // 3600}:{elapsed % 3600 // 60:02d}:{elapsed % 60:02d}"}
+        for field in RECORD_COLUMNS:
+            values = [r[field] for r in buckets[n] if r.get(field) is not None]
+            row[field] = sum(values) / len(values) if values else None
+        rows.append(row)
+    return rows
