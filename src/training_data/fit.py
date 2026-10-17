@@ -1,3 +1,14 @@
+"""Read one FIT file on demand.
+
+Run with:  uv run python -m training_data.fit <activity id or path> [--records N]
+
+In code:   from training_data.fit import read_fit
+           records = read_fit(path)["record_mesgs"]     # every sample the watch wrote
+
+Nothing here is stored. The FIT stays the single source of truth for laps,
+swim lengths, strength sets and the full-resolution stream.
+"""
+
 import argparse
 import sys
 from datetime import datetime
