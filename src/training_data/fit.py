@@ -1,5 +1,7 @@
 import sys
+from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 from garmin_fit_sdk import Decoder, Stream
 
@@ -32,3 +34,16 @@ def find(target: str) -> Path:
     if not matches:
         sys.exit(f"no FIT file found for '{target}'")
     return matches[0]
+
+
+def text(value: Any) -> str:
+    """Format one value for printing."""
+    if value is None:
+        return ""
+    if isinstance(value, float):
+        return f"{value:.2f}"
+    if isinstance(value, datetime):           # FIT timestamps are UTC
+        return f"{value:%Y-%m-%d %H:%M:%S} UTC"
+    if isinstance(value, list):               # e.g. a set's exercise category
+        return "/".join(dict.fromkeys(str(v) for v in value))
+    return str(value)
