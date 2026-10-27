@@ -10,6 +10,7 @@ set -euo pipefail
 cd "$(dirname "${BASH_SOURCE[0]}")/.."
 
 UV=/opt/homebrew/bin/uv           # absolute path: launchd has almost no PATH
+DATA=(raw tables LOG.md)          # the only paths this script ever commits
 export PYTHONUNBUFFERED=1         # so .sync.log fills as the run goes, not at the end
 
 # Under launchd nobody is watching a terminal, so a failed run says so on screen.
@@ -37,4 +38,13 @@ fi
 if [[ "$branch" != "main" ]]; then
   echo "· on '$branch', not main: data refreshed, commit skipped"
   exit 0
+fi
+
+git add -- "${DATA[@]}"
+if git diff --cached --quiet -- "${DATA[@]}"; then
+  echo "· nothing new"
+else
+  # The trailing paths make this commit ONLY the data, even if you have other
+  # changes staged.
+  git commit --quiet -m "chore(data): sync $(date +%F)" -- "${DATA[@]}"
 fi
