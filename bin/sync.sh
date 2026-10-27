@@ -48,3 +48,11 @@ else
   # changes staged.
   git commit --quiet -m "chore(data): sync $(date +%F)" -- "${DATA[@]}"
 fi
+
+# Push whenever main is ahead of GitHub. That includes a commit an earlier run
+# made but could not push, so a network blip repairs itself the next day.
+git pull --quiet --rebase --autostash     # pick up code merged on GitHub first
+if [[ -n "$(git rev-list '@{u}..HEAD')" ]]; then
+  git push --quiet
+  echo "✓ pushed $(date +%F)"
+fi
