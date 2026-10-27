@@ -12,6 +12,14 @@ cd "$(dirname "${BASH_SOURCE[0]}")/.."
 UV=/opt/homebrew/bin/uv           # absolute path: launchd has almost no PATH
 export PYTHONUNBUFFERED=1         # so .sync.log fills as the run goes, not at the end
 
+# Under launchd nobody is watching a terminal, so a failed run says so on screen.
+fail() {
+  echo "✗ $1" >&2
+  osascript -e "display notification \"$1\" with title \"training-data sync\"" || true
+  exit 1
+}
+trap 'fail "Garmin sync failed. See .sync.err"' ERR
+
 echo "── sync $(date '+%F %T') ──"
 
 "$UV" run python -m training_data.fetch "$@"
