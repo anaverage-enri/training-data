@@ -24,3 +24,10 @@ echo "── sync $(date '+%F %T') ──"
 
 "$UV" run python -m training_data.fetch "$@"
 "$UV" run python -m training_data.tables
+
+# A rebase that stopped on a conflict leaves the repo on no branch at all, and
+# every later run would quietly skip the commit. Refuse loudly instead.
+branch="$(git branch --show-current)"
+if [[ -z "$branch" || -d "$(git rev-parse --git-path rebase-merge)" ]]; then
+  fail "Repo is mid-rebase or on a detached HEAD. Fix it by hand."
+fi
