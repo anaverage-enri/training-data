@@ -31,3 +31,10 @@ branch="$(git branch --show-current)"
 if [[ -z "$branch" || -d "$(git rev-parse --git-path rebase-merge)" ]]; then
   fail "Repo is mid-rebase or on a detached HEAD. Fix it by hand."
 fi
+
+# Data only ever lands on main. On a feature branch the files are refreshed on
+# disk and left uncommitted; the next run on main picks them up.
+if [[ "$branch" != "main" ]]; then
+  echo "· on '$branch', not main: data refreshed, commit skipped"
+  exit 0
+fi
