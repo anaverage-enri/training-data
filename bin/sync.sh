@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 #
+# Garmin sync: fetch -> tables -> commit -> push.
+#
+# Run by launchd once a day, and by hand whenever you want fresh data:
+#   ./bin/sync.sh                      # the usual 14-day refresh
+#   ./bin/sync.sh --since 2026-09-01   # backfill from a date
+#
 # set -e : abort on any command failing
 # set -u : abort on an undefined variable
 # set -o pipefail : a failure anywhere in a pipe fails the whole pipe
