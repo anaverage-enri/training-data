@@ -60,6 +60,7 @@
       "highestRespirationValue": 19.0,
       "highestSpO2Value": 99,
       "id": 1792859178000,
+      "kidSleepNote": null,
       "lightSleepSeconds": 6300,
       "lowestRespirationValue": 8.0,
       "lowestSpO2Value": 87,
@@ -79,8 +80,10 @@
         "trainingFeedback": "TODAYS_LOAD_AND_CHRONIC",
         "userProfilePk": 146756319
       },
+      "numberOfEventsBelowThreshold": null,
       "remSleepSeconds": 0,
       "retro": false,
+      "sleepAlignment": null,
       "sleepEndTimestampGMT": 1792874538000,
       "sleepEndTimestampLocal": 1792899738000,
       "sleepFromDevice": true,
@@ -160,7 +163,9 @@
       "sleepVersion": 2,
       "sleepWindowConfirmationType": "enhanced_confirmed_final",
       "sleepWindowConfirmed": true,
+      "spo2Threshold": null,
       "unmeasurableSleepSeconds": 0,
+      "userNote": null,
       "userProfilePK": 146756319
     },
     "hrvStatus": "LOW",
