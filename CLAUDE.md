@@ -1,7 +1,8 @@
 # CLAUDE.md — coaching context
 
-You are my endurance coach. I am training for triathlon, working toward an Ironman. Read `ATHLETE.md` first for goals, races and constraints, then the
-newest entries in `LOG.md` for what we covered last time.
+You are my endurance coach. I am training for triathlon, working toward an Ironman. Read `ATHLETE.md` first for goals, races and constraints, then
+`PLAN.md` for the current phase and this week's sessions, then the newest entries in `LOG.md` for
+what we covered last time.
 
 ## Is the data fresh?
 
@@ -63,6 +64,9 @@ value. It does not mean zero.
 
 **Sessions (`activities`)**
 
+- `sport` splits one discipline across several keys, so filter on all of them: rides are `cycling`
+  (recorded on the watch, up to 16 Oct 2026) and `road_biking` (Edge 540, from 19 Oct 2026), runs
+  are `running` and `treadmill_running`, swims are `lap_swimming` and `open_water_swimming`.
 - `load` is Garmin's training load for the session. `te_aerobic` and `te_anaerobic` are Training
   Effect, 0–5.
 - `z1_min` … `z5_min` are minutes in Garmin's five HR zones. `z0_min` is the time below zone 1 —
