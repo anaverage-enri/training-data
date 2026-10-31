@@ -50,11 +50,38 @@ changes when the data says it should, and every change goes in `LOG.md`.
 
 ### Galaxy Run, Sunday 22 Nov
 
-**Target: 2:15–2:18.**
-- Sub-2:15 is possible on a good day with the pacing below.
-- Sub-2:10 (6:10/km) is out of reach this time: the 10K says about 2:22, and no training run has
-  gone past 18 km.
-- Whatever the clock says, success is even pacing, no cramps, and a PB under 2:25:57.
+**Target: sub-2:10**, your A goal, set on 29 Oct.
+- That is 6:10/km.
+- The watch read 21.16 km on 18 Oct, so aim for **6:07 on the watch**. 6:10 on the watch
+  finishes at about 2:10:30.
+
+**Where the data stands:**
+- At HR 180–181 you ran 6:14–6:15/km for 4–5 km (24 Sep and 1 Oct, 05:00 starts, 26 °C
+  feels-like).
+- Two build weeks won't move fitness much.
+- On 18 Oct, km 3–5 at 6:03–6:18 put HR at 188–189, and the cramps started at km 13.
+
+So the plan rests on an early, firm check. Whatever the clock says, success is a PB under
+2:25:57 with no cramps.
+
+Set auto-lap to 1 km.
+
+| km | Pace on the watch | HR |
+|---|---|---|
+| 1 | 6:12–6:15 | settle in; HR lags in the first km |
+| 2–4 | 6:07 (6:05–6:09) | **check km 3 and km 4**: lap HR over 182 on either → Plan B |
+| 5–15 | 6:07 (6:05–6:09) | ≤ 185; two laps in a row over → 6:20 to km 18 |
+| 16–21.1 | hold it; from km 18, race what is left | — |
+
+- **Projection:** 6:13 for km 1, then 20.16 km at 6:07, gives 2:09:32. Easing to 6:20 somewhere
+  in km 5–15 lands at about 2:11–2:13.
+- **Plan B**, after the km 4 check: 6:30–6:35 at HR ≤ 180 to km 18, then push. That lands around
+  2:16.
+
+**The 2:15 plan.** Start on this instead of 6:07 if any of these holds:
+- under 5 h of sleep on Saturday night
+- feels-like of 29 °C or more at the start
+- a cramp, or a calf or hamstring twinge, on 8 or 15 Nov
 
 | km | Pace | HR cap |
 |---|---|---|
@@ -62,10 +89,15 @@ changes when the data says it should, and every change goes in `LOG.md`.
 | 6–15 | 6:20–6:25 | ≤ 182 |
 | 16–21.1 | hold it; from km 18, race what is left | — |
 
-- On 18 Oct, HR was 182–189 on km 2–8. Keep the first 5 km under the cap even if it feels slow.
+- Keep the first 5 km under the cap even if it feels slow.
 - Projection: 32:55 + 63:40 + 38:07 at 6:15/km = 2:14:42.
-- **Fallback:** if HR is above 178 at 6:35 by km 4 (heat, a short night), run 6:30–6:35 to
-  km 18, then push. That lands around 2:18.
+
+**The race-pace sessions** on 5, 8, 12 and 15 Nov show what 6:07 costs. The W3 review reads
+them.
+- The Sunday mornings count most, because they are run in race weather.
+- If 6:07 kept pushing HR over 182 there, the km 4 check will probably fire. Starting on the
+  2:15 plan would then be about a minute faster than Plan B, and less likely to end in cramps.
+- You decide at that review.
 
 **Fuel:**
 - Breakfast 2.5–3 h before the start: about 100 g of carbohydrate, food you know.
@@ -135,7 +167,7 @@ for the headwind, the bridges and the U-turns.
 
 ## The season
 
-- **Hours** include the two lessons, about 3 h a week.
+- **Hours** include the two lessons (about 3 h a week) and the gym (about 2.5 h a week in Base).
 - **Long ride:** Sunday from 04:30, with a brick run straight after.
 - **Long run:** Saturday from about 06:30. It means N km or 2:15, whichever comes first; in heat
   the clock ends the run, not the distance. It stays at HR ≤ 157 except for planned segments.
@@ -145,31 +177,31 @@ for the headwind, the bridges and the U-turns.
 |---|---|---|---|---|---|---|
 | 0 | 26 Oct | Absorb | ~7 | — | Sun 1 Nov: 12 km easy | easy only |
 | 1 | 2 Nov | Galaxy build | 10.5 | — (Tue/Fri 60–90 min) | Sun 8: **18 km rehearsal** | |
-| 2 | 9 Nov | Galaxy build | 10.5 | — | Sun 15: 15 km, 6 at HMP | |
+| 2 | 9 Nov | Galaxy build | 10.5 | — | Sun 15: 15 km, 6 at race pace | |
 | 3 | 16 Nov | Taper + race | 6.5 | — | **Sun 22: Galaxy Run** | |
-| 4 | 23 Nov | Recover + test | 8 | Sun 29: FTP test + 10 min | — | Sat 28: swim benchmark |
-| 5 | 30 Nov | Base 1 | 12 | 2:15 + 10 | 13 km | aero bars fitted |
-| 6 | 7 Dec | Base 1 | 12.5 | 2:30 + 10 | 14 km | |
-| 7 | 14 Dec | Base 1 | 13 | 2:45 + 10 | 15 km | |
-| 8 | 21 Dec | Recovery | 8.5 | 2:00 easy | 10 km | Sat 26: 400 m continuous |
-| 9 | 28 Dec | Base 2 | 12.5 | 2:45 + 15 | 15 km | Fri 1 Jan: 2:00 ride |
-| 10 | 4 Jan | Base 2 | 13 | 3:00 + 15 | 16 km | |
-| 11 | 11 Jan | Base 2 | 13.5 | 3:00 + 15, 2×20 min at 76–80 % | 16 km | Sat 16: 800 m continuous |
-| 12 | 18 Jan | Recovery + tests | 9 | Sun 24: **sea trip 1** + 1:30 easy | 10 km | Tue 19 FTP, Sat 23 CSS |
-| 13 | 25 Jan | Build | 13.5 | 3:15 + 20, 2×30 min race power | 17 km, last 3 at 70.3 effort | |
-| 14 | 1 Feb | Build / Tết | 12 | Fri 5 (holiday): 3:15 + 20 | Thu 4 (holiday): 17 km | Sat 6–Sun 7: family |
-| 15 | 8 Feb | Tết recovery | 8 | Tue 9 (holiday): 2:00; Sun 14: 2:30 | Sat 13: 12 km | holiday to Wed 10 |
-| 16 | 15 Feb | Build | 13.5 | 3:15 + 20, 2×40 min race power | 17 km, last 4 at 70.3 | Sat 20: 1,200 m continuous |
-| 17 | 22 Feb | Build | 14 | 3:30 + 25, 3×30 min race power | 18 km, last 5 at 70.3 | |
-| 18 | 1 Mar | Build | 14.5 | 3:30 + 30, 2×45 min race power | 18 km, 3×3 km at 70.3 | Sat 6: 1,500 m continuous |
-| 19 | 8 Mar | Recovery + tests | 9 | Sun 14: **sea trip 2** + 2:00 on the coast | 10 km | Tue 9 FTP, Sat 13 CSS, **swim decision** |
-| 20 | 15 Mar | Specific | 14 | 3:30 + 30, 90 min race power | 18 km, last 6 at 70.3 | |
-| 21 | 22 Mar | Specific | 14.5 | 3:45 + 40, 2×50 min race power | 18 km (19 if all green) | |
-| 22 | 29 Mar | Specific | 14.5 | **Simulation Sun 4 Apr:** 90 km race power + 60 min run | Sat 3: 1.9 km sea swim | **sea trip 3**, Vũng Tàu |
-| 23 | 5 Apr | Recovery | 9 | 2:30 easy | 12 km | |
-| 24 | 12 Apr | Specific | 14 | Sun 18: 3:30, 2×45 min race power + 40 min run | Sat 17: 14 km + 2,000 m swim | home simulation |
-| 25 | 19 Apr | Specific (−15 %) | 12 | 3:00 + 20, 60 min race power | 16 km, last 5 at 70.3 | |
-| 26 | 26 Apr | Taper | 8.5 | Sun 2 May: 2:00 + 15, 2×15 min race power | Sat 1 May: 12 km | Fri 30 Apr: optional sea swim |
+| 4 | 23 Nov | Recover + test | 9 | Sun 29: FTP test + 10 min | — | Sat 28: swim benchmark |
+| 5 | 30 Nov | Base 1 | 13.5 | 2:15 + 10 | 13 km | aero bars fitted |
+| 6 | 7 Dec | Base 1 | 14 | 2:30 + 10 | 14 km | |
+| 7 | 14 Dec | Base 1 | 14.5 | 2:45 + 10 | 15 km | |
+| 8 | 21 Dec | Recovery | 9 | 2:00 easy | 10 km | Sat 26: 400 m continuous |
+| 9 | 28 Dec | Base 2 | 14 | 2:45 + 15 | 15 km | Fri 1 Jan: 2:00 ride |
+| 10 | 4 Jan | Base 2 | 14.5 | 3:00 + 15 | 16 km | |
+| 11 | 11 Jan | Base 2 | 15 | 3:00 + 15, 2×20 min at 76–80 % | 16 km | Sat 16: 800 m continuous |
+| 12 | 18 Jan | Recovery + tests | 9.5 | Sun 24: **sea trip 1** + 1:30 easy | 10 km | Tue 19 FTP, Sat 23 CSS |
+| 13 | 25 Jan | Build | 14.5 | 3:15 + 20, 2×30 min race power | 17 km, last 3 at 70.3 effort | |
+| 14 | 1 Feb | Build / Tết | 13 | Fri 5 (holiday): 3:15 + 20 | Thu 4 (holiday): 17 km | Sat 6–Sun 7: family |
+| 15 | 8 Feb | Tết recovery | 8.5 | Tue 9 (holiday): 2:00; Sun 14: 2:30 | Sat 13: 12 km | holiday to Wed 10 |
+| 16 | 15 Feb | Build | 14.5 | 3:15 + 20, 2×40 min race power | 17 km, last 4 at 70.3 | Sat 20: 1,200 m continuous |
+| 17 | 22 Feb | Build | 15 | 3:30 + 25, 3×30 min race power | 18 km, last 5 at 70.3 | |
+| 18 | 1 Mar | Build | 15.5 | 3:30 + 30, 2×45 min race power | 18 km, 3×3 km at 70.3 | Sat 6: 1,500 m continuous |
+| 19 | 8 Mar | Recovery + tests | 9.5 | Sun 14: **sea trip 2** + 2:00 on the coast | 10 km | Tue 9 FTP, Sat 13 CSS, **swim decision** |
+| 20 | 15 Mar | Specific | 14.5 | 3:30 + 30, 90 min race power | 18 km, last 6 at 70.3 | |
+| 21 | 22 Mar | Specific | 15 | 3:45 + 40, 2×50 min race power | 18 km (19 if all green) | |
+| 22 | 29 Mar | Specific | 15 | **Simulation Sun 4 Apr:** 90 km race power + 60 min run | Sat 3: 1.9 km sea swim | **sea trip 3**, Vũng Tàu |
+| 23 | 5 Apr | Recovery | 9.5 | 2:30 easy | 12 km | |
+| 24 | 12 Apr | Specific | 14.5 | Sun 18: 3:30, 2×45 min race power + 40 min run | Sat 17: 14 km + 2,000 m swim | home simulation |
+| 25 | 19 Apr | Specific (−15 %) | 12.5 | 3:00 + 20, 60 min race power | 16 km, last 5 at 70.3 | |
+| 26 | 26 Apr | Taper | 9 | Sun 2 May: 2:00 + 15, 2×15 min race power | Sat 1 May: 12 km | Fri 30 Apr: optional sea swim |
 | 27 | 3 May | Race week | 5 + race | Tue 4: 1:00, 3×5 min race power | — | travel Thu 6; **race Sun 9** |
 
 - **Pattern:** 3 weeks building, then a recovery week at about 60–65 % of the week before. The
@@ -181,9 +213,9 @@ for the headwind, the bridges and the U-turns.
 - **Tết:** the 4–10 Feb holiday is still a proposal. If the official days differ, put W14's long
   run and long ride on the first two holiday days, and keep mùng 1–3 (Sat 6–Mon 8 Feb) for
   family. If you travel without the bike, swap the rides for runs and swims.
-- **Too much in a week?** Peak weeks reach 14–14.5 h. Drop in this order:
+- **Too much in a week?** Peak weeks reach 15–15.5 h. Drop in this order:
   1. the optional Tuesday run
-  2. strength B
+  2. Upper B, cut to 2 sets or skipped
   3. shorten the Friday ride
   4. take 30 min off the long ride
 
@@ -191,14 +223,16 @@ for the headwind, the bridges and the U-turns.
 
 ## The week
 
+The week from 30 Nov. The Galaxy block (W0–W4) has its own day tables below.
+
 | Day | Morning | Evening | Lights-out |
 |---|---|---|---|
-| Mon | rest | **strength A**, in the old badminton slot | 22:00 |
-| Tue | **bike quality**, 04:45–06:15 | optional easy run, 25–35 min (from Base 2, only when HRV is in range) | 23:00 |
+| Mon | rest | **gym: Upper A**, in the old badminton slot | 22:00 |
+| Tue | **bike quality**, 04:45–06:15 | **gym: Legs**; from Base 2, an optional 20–30 min easy run before it, only when HRV is in range | 23:00 |
 | Wed | — | swim lesson | ~23:00 |
-| Thu | sleep in | **run quality** at ~18:30, then strength B | 22:00 |
+| Thu | sleep in | **run quality** at ~18:30 | 22:00 |
 | Fri | easy ride, 04:45–06:00 | swim lesson | ~23:00 |
-| Sat | **long run**, from ~06:30 | own swim, 45–60 min | 21:30 |
+| Sat | **long run**, from ~06:30 | own swim, 45–60 min, then **gym: Upper B** | 21:30 |
 | Sun | **long ride** from 04:30 + brick run | 20–30 min nap | 23:00 |
 
 - Three early starts a week: Tuesday, Friday and Sunday. No early start the morning after a
@@ -206,15 +240,39 @@ for the headwind, the bridges and the U-turns.
 - The lights-out times are part of the plan. The early starts only work with them.
 - There is no Wednesday run because the lesson takes the evening.
 - The Saturday run starts at 06:30 rather than mid-morning to keep the time in the heat down.
-- Saturday afternoon is the default for the third swim. Move it to any day the pool suits.
+- Saturday afternoon is the default for the third swim, with Upper B straight after it. If the
+  gym and the pool are in different places, swim first. If the gym doesn't fit after the swim,
+  skip Upper B that week.
 - If the feels-like temperature is above 35 °C at 18:30, start Thursday's run at 19:30 and cut
   the hard part by a third.
 - Badminton pauses until after 9 May. It was the one high-impact, side-to-side, Z4–Z5 session of
   the week, and it landed the day after the long session.
 
+**Where the gym goes:**
+- **Legs on Tuesday evening**, about 12 h after the bike intervals. The hard work stays on one
+  day.
+  - Wednesday asks nothing of the legs.
+  - Thursday's run is 48 h later, and Saturday's long run 4 days later.
+  - No leg session falls on the evening before a key session.
+- **Upper A on Monday.** The legs rest after the long ride, Tuesday's ride is untouched, and the
+  Wednesday lesson is 48 h later.
+- **Upper B on Saturday, after the own swim.**
+  - You come to the swim fresh, and the next lesson is 4 days later.
+  - Sunday's ride is untouched.
+  - Skip it when the Saturday holds a sea trip, a simulation or family time.
+- **Saturday night is the risk.** Before the plan, it averaged 4.2 h ahead of the Sunday long
+  sessions.
+  - Reviews read Sunday's `sleep_h`, which is the Saturday night.
+  - If it averages under 5.5 h over the weeks with Upper B, Upper B moves to Thursday from 07:00 or
+    drops to 2 sets.
+- **No gym on Thursday.** The run is the hard session, and lights-out is 22:00 before the
+  Friday ride.
+
 **When the trainer arrives:**
 - Tuesday's bike quality moves to about 19:00 indoors, with a 10–15 min run straight after.
   Tuesday morning becomes a sleep-in, which leaves two early starts.
+- Legs moves to Wednesday, 06:30–07:30. The lesson that evening works the arms, and Thursday's
+  run is about 35 h later.
 - From Build, an optional 30–45 min easy spin goes on Thursday.
 - FTP tests move indoors.
 - Note the date in `ATHLETE.md`.
@@ -238,38 +296,107 @@ place.
 
 **Run zones** are Garmin's: Z2 143–157, Z3 158–172, Z4 173–187.
 
-| Phase | Tue bike quality | Fri ride | Thu run quality (by HR in heat) | Sat own swim | Strength |
+| Phase | Tue bike quality | Fri ride | Thu run quality (by HR in heat) | Sat own swim | Gym |
 |---|---|---|---|---|---|
-| Galaxy, W1–3 | 75–90 min Z2 + 6×1 min at 95–105 rpm | 60–75 min Z2 | W1 3×2 km, W2 2×4 km at 6:20–6:28 (HR ≤ 182); W3 2×1 km | drills from the lessons + 8–12×25 m freestyle | current routine on Mon (push-ups, squats, ~15 min); B bodyweight, 2 sets, on Thu; none in W3 |
-| Base 1, W5–7 | 1:15: 3×10 min tempo at 80–90 rpm + 6×1 min spin-ups | 1:00 Z2; first rides on the aero bars | 8×30–45 s uphill on bridge ramps; W7 6×2 min at 10K effort | 12–16×50 m → 6×100 m; add 50–100 m to one continuous swim each week | A 45 min + B 20 min |
-| Base 2, W9–11 | 1:30: sweet spot 3×12 → 3×15 → 2×20 min | 1:00 Z2 on the bars | 3×8 → 3×10 → 4×10 min at HR 173–180 | 4×200 m → continuous 600–800 m | A 45 + B 20 (add pogo hops and skips) |
-| Build, W13–18 | 1:30: threshold 4×8 → 3×10 → 2×15 → 2×20 min | 1:15 with 2×15 min at race power | tempo 2×15 → 25 → 30 min at HR 170–178; every other week 5×1 km at 10K effort | CSS sets 8–10×100 m at CSS + 5 s; 3×400 m with sighting; continuous 1,000 → 1,500 m | A 40 (3×5–6) + B 10 |
-| Specific, W20–25 | 1:30: 3×20 min at race power + 5×1 min at 110 % for the bridges | 1:15–1:30 with 30 min at race power | 30–40 min at 70.3 effort, or 3×10 min at threshold | 2,000 m continuous with sighting; 4×400 m at race pace; no push-offs from the wall | A 30–40 (2×5) |
-| Taper, W26–27 | 1:00 with 3×8 min at race power | 45–60 min easy | 4×5 min at 70.3 effort | 1,500 m with 6×100 m at race pace | one short A in W26 |
+| Galaxy, W1–3 | 75–90 min Z2 + 6×1 min at 95–105 rpm | 60–75 min Z2 | W1 3×2 km, W2 2×4 km at 6:07–6:10, lap HR ≤ 182; W3 2×1 km at 6:07 | drills from the lessons + 8–12×25 m freestyle | Upper A on Mon, 2 sets, light; none in W3 |
+| Base 1, W5–7 | 1:15: 3×10 min tempo at 80–90 rpm + 6×1 min spin-ups | 1:00 Z2; first rides on the aero bars | 8×30–45 s uphill on bridge ramps; W7 6×2 min at 10K effort | 12–16×50 m → 6×100 m; add 50–100 m to one continuous swim each week | Upper A 45 min + Legs 50–55 (moderate loads) + Upper B 45 |
+| Base 2, W9–11 | 1:30: sweet spot 3×12 → 3×15 → 2×20 min | 1:00 Z2 on the bars | 3×8 → 3×10 → 4×10 min at HR 173–180 | 4×200 m → continuous 600–800 m | Upper A 45 + Legs 55 (add pogo hops and A-skips) + Upper B 45 |
+| Build, W13–18 | 1:30: threshold 4×8 → 3×10 → 2×15 → 2×20 min | 1:15 with 2×15 min at race power | tempo 2×15 → 25 → 30 min at HR 170–178; every other week 5×1 km at 10K effort | CSS sets 8–10×100 m at CSS + 5 s; 3×400 m with sighting; continuous 1,000 → 1,500 m | Upper A 45 + Legs 35 (squat and RDL 3×5–6, the rest at 2 sets) + Upper B 30 (2 sets) |
+| Specific, W20–25 | 1:30: 3×20 min at race power + 5×1 min at 110 % for the bridges | 1:15–1:30 with 30 min at race power | 30–40 min at 70.3 effort, or 3×10 min at threshold | 2,000 m continuous with sighting; 4×400 m at race pace; no push-offs from the wall | Upper 40 (A's four main lifts at 2 sets + lateral raise, face pull, ab wheel) + Legs 30 (squat and RDL 2×5, calves); no Upper B |
+| Taper, W26–27 | 1:00 with 3×8 min at race power | 45–60 min easy | 4×5 min at 70.3 effort | 1,500 m with 6×100 m at race pace | a short Upper and a short Legs in W26; none in W27 |
 
-**Strength A** (Monday, gym), from 30 Nov. Leave 2–3 reps in reserve.
-- squat or leg press, 3–4×5–8
-- Romanian deadlift, 3×6–8
-- Bulgarian split squat, 3×6–8 per leg
-- calf raises, slow on the way down: straight knee 3×10–12, bent knee 3×12–15
-- pull-up or lat pulldown, 3×6–10
-- push-up or bench press, 3×8–12
-- Pallof press, side plank, dead bug
+**Gym**, three sessions from 30 Nov. Until then, only Upper A on Mondays, light. Two goals:
+- strength and durability for the race
+- physique: chest, shoulders, back, arms, abs and legs
 
-Keep the loads moderate for the first three weeks, so Tuesday's ride is not sore.
+How the week is split:
+- **Upper / Legs / Upper.** The upper body gets two sessions, so every physique muscle is hit
+  twice a week.
+- **The legs get one heavy session.** Every run and ride trains them too, and leg soreness is
+  what costs the key sessions. Rønnestad & Mujika use two heavy leg sessions a week in
+  preparation phases; one is the price of the physique work. If the squat and the RDL stall by
+  the W12 review, a second, short leg session goes in.
+- **Durability lives in Legs:**
+  - single-leg work
+  - slow calf raises, for the cramps
+  - the Copenhagen plank
+  - band walks for the hips
+- **Shoulders for the swim:**
+  - band rotator-cuff work in every upper warm-up, and face pulls
+  - no dips
+  - no heavy barbell overhead press
 
-**Strength B** (Thursday, after the run):
-- single-leg RDL
-- step-ups
-- single-leg calf raises
-- band hip abduction
-- Copenhagen plank
-- swim-cord pulls
+**Upper A: strength** (Monday, ~45 min).
+- Warm up with band external rotation and band pull-aparts, 2×15 each, then light sets of the
+  first two lifts.
+- Alternate 1 with 2, and 3 with 4.
+
+| # | Exercise | Sets × reps | Rest | For |
+|---|---|---|---|---|
+| 1 | Bench press: dumbbells, or a barbell with the safety bars set | 3 × 6–10 | 2 min | chest |
+| 2 | Pull-up, assisted on the machine, or lat pulldown | 3 × 6–10 | 2 min | lats, the swim pull |
+| 3 | Seated dumbbell shoulder press, elbows slightly forward | 3 × 8–10 | 90 s | shoulders |
+| 4 | Chest-supported row: machine, or dumbbells on an incline bench | 3 × 8–10 | 90 s | upper back |
+| 5 | Superset: dumbbell curl + overhead cable triceps extension | 2 × 10–12 | 60 s | arms |
+| 6 | Superset: hanging knee raise + Pallof press | 3 × 8–12 / 2 × 10 per side | 60 s | abs; core for the run and the aero bars |
+
+**Legs** (Tuesday evening, 50–55 min).
+- Warm up with:
+  - 5 min of easy spinning or walking
+  - leg swings
+  - band lateral walks, 2 × 10 steps each way
+  - 10 bodyweight squats
+- From Base 2, add pogo hops 3×20 and A-skips 2×20 m.
+
+| # | Exercise | Sets × reps | Rest | For |
+|---|---|---|---|---|
+| 1 | Back squat; learn it as a goblet squat, or use the leg press if your back complains | 3 × 5–8 | 2–3 min | quads, glutes; bike power |
+| 2 | Romanian deadlift | 3 × 6–8 | 2 min | hamstrings, glutes; the run |
+| 3 | Bulgarian split squat, dumbbells | 2 × 8 per leg in W5–W7, then 3 | 90 s | single-leg strength |
+| 4 | Superset: leg curl + standing calf raise, 3 s down | 3 × 10–12 | 60–90 s | hamstrings; calves, Achilles |
+| 5 | Tri-set: seated calf raise, 3 s down + Copenhagen plank + cable crunch | 3 × 12–15 / 2 × 20–30 s per side / 3 × 10–15 | 60 s | soleus, for the cramps; groin; abs |
+
+**Upper B: physique** (Saturday, after the own swim, 45–50 min).
+- Warm up with band external rotation, 2×15. The swim has done the rest.
+
+| # | Exercise | Sets × reps | Rest | For |
+|---|---|---|---|---|
+| 1 | Incline dumbbell press | 3 × 8–12 | 90 s | upper chest |
+| 2 | Lat pulldown, neutral or close grip | 3 × 10–12 | 90 s | lats |
+| 3 | Superset: pec deck or cable fly + seated cable row | 3 × 12–15 / 3 × 10–12 | 60–90 s | chest; mid-back |
+| 4 | Superset: lateral raise (cable or dumbbell) + face pull | 3 × 12–15 | 60 s | side delts; rear delts, rotator cuff |
+| 5 | Superset: EZ-bar curl + rope pushdown | 3 × 10–15 | 60 s | arms |
+| 6 | Ab wheel rollout, from the knees | 3 × 6–10 | 60 s | abs |
+
+**Hard sets a week in Base:**
+
+| Muscle | Sets | Also worked by |
+|---|---|---|
+| Chest | 9 | |
+| Back | 12 | face pulls |
+| Shoulders | 9 | every press |
+| Biceps / triceps | 5 / 5 | every pull and press |
+| Abs | 11 | |
+| Quads, glutes | 5–6 | every ride |
+| Hamstrings | 6 | every run |
+| Calves | 6 | every run |
+
+**How hard:**
+- **Legs:** always leave 2–3 reps in reserve. Keep the loads moderate in W5–W7, so Thursday's
+  run is not sore.
+- **Upper body:** leave 1–2 reps in reserve on the last set, or 2–3 in the first three weeks.
+- **Tempo:** lower every rep over 2–3 s, the calf raises above all.
+- **Progression:** when every set reaches the top of its rep range, add the smallest step the
+  next time.
+- **Technique:** if the gym offers an induction, use it in W4 to learn the squat, the RDL and
+  the bench.
+- **Logging:** record every session on the watch as Strength, so the sets and reps reach the
+  table.
 
 **Recovery weeks:**
 - Long ride 2:00–2:30 easy, long run 10–12 km.
 - Tests replace the intervals.
-- Strength A drops to 2 sets.
+- Every gym session drops to 2 sets.
 
 **Sea trips (Vũng Tàu):**
 - January: first open water, 3×10–15 min.
@@ -300,6 +427,11 @@ Keep the loads moderate for the first three weeks, so Tuesday's ride is not sore
 
 ## Galaxy block, day by day
 
+**Race-pace rule** for every session at 6:07–6:10: lap HR stays at or below 182, the line the
+race checks at km 3–4. If the pace needs more, slow down.
+- On Thursday evenings the heat will make you slow down. Heat costs pace, not fitness.
+- The Sunday mornings are the real test of 6:07. Note the km where HR crossed 182.
+
 ### W0, 26 Oct–1 Nov: absorb
 Easy only. The one early start is Sunday's easy run.
 
@@ -320,17 +452,17 @@ run 8 km instead.
 
 | Day | Session |
 |---|---|
-| Mon 2 | current routine: push-ups and squats, ~15 min (strength A starts 30 Nov) |
+| Mon 2 | gym: Upper A at 2 sets, light (3–4 reps in reserve), to learn the machines. Until the membership starts: push-ups and band rows, 2–3 sets, ~15 min |
 | Tue 3 | 75 min Z2 (HR ≤ 147) with 6×1 min at 95–105 rpm |
 | Wed 4 | lesson |
-| Thu 5 | 15 min easy, 3×2 km at 6:20–6:28 (HR ≤ 182) with 2 min jog, 10 min easy; then B, bodyweight, 2 sets |
+| Thu 5 | 15 min easy, 3×2 km at 6:07–6:10 with 2 min jog, 10 min easy |
 | Fri 6 | 60–75 min Z2; lesson |
 | Sat 7 | 35 min easy + 6×20 s strides; own swim #1; lights-out 21:00 |
 | Sun 8 | **dress rehearsal** |
 
 **Dress rehearsal, Sunday 8 Nov:**
 - Start at the race start time, or 04:30 if it is not published yet.
-- 18 km or 2:15: 12 km at HR ≤ 157, then 5 km at 6:22–6:30, then 1 km easy. If the easy part runs
+- 18 km or 2:15: 12 km at HR ≤ 157, then 5 km at 6:07–6:10, then 1 km easy. If the easy part runs
   long, shorten it and keep the 5 km.
 - Race breakfast, race shoes and race kit. A gel 10 min before, then gels at 35, 70 and 105 min.
 - Write down everything you eat and drink.
@@ -339,13 +471,13 @@ run 8 km instead.
 
 | Day | Session |
 |---|---|
-| Mon 9 | current routine, ~15 min |
+| Mon 9 | gym: Upper A at 2 sets, light |
 | Tue 10 | 75–90 min Z2 with spin-ups |
 | Wed 11 | lesson |
-| Thu 12 | 15 min easy, 2×4 km at 6:20–6:25 (HR ≤ 182) with 3 min jog, 10 min easy; then B, bodyweight |
+| Thu 12 | 15 min easy, 2×4 km at 6:07–6:10 with 3 min jog, 10 min easy |
 | Fri 13 | 60 min Z2; lesson |
 | Sat 14 | 35–40 min easy + strides; own swim #2 |
-| Sun 15 | 15 km from 04:30: 8 easy, 6 at 6:20–6:25, 1 easy; second fuel rehearsal |
+| Sun 15 | 15 km from 04:30: 8 easy, 6 at 6:07–6:10, 1 easy; second fuel rehearsal |
 
 ### W3, 16–22 Nov
 
@@ -354,7 +486,7 @@ run 8 km instead.
 | Mon 16 | rest + mobility |
 | Tue 17 | 60 min easy with 3×2 min brisk |
 | Wed 18 | lesson, easy |
-| Thu 19 | 7 km: 3 easy, 2×1 km at 6:20, 2 easy |
+| Thu 19 | 7 km: 3 easy, 2×1 km at 6:07, 2 easy |
 | Fri 20 | sleep in; skip or shorten the lesson; lights-out 22:00 |
 | Sat 21 | 20 min shakeout + 4 strides; bib pickup at SECC; carbohydrate-rich meals you know (6–8 g/kg); lights-out ~20:30 |
 | Sun 22 | **Galaxy Run** |
@@ -364,9 +496,9 @@ run 8 km instead.
 | Day | Session |
 |---|---|
 | Mon 23 | rest |
-| Tue 24 | optional 45 min spin |
+| Tue 24 | optional 45 min spin; gym in the evening: Upper A, 2 sets |
 | Wed 25 | lesson |
-| Thu 26 | 30 min easy if nothing is sore |
+| Thu 26 | 30 min easy if nothing is sore; then learn the Legs lifts at an easy weight, 2×8: goblet squat, Romanian deadlift, split squat, leg curl, calf raises |
 | Fri 27 | 60 min Z2 with 3×1 min hard; lesson |
 | Sat 28 | 30 min easy; **swim benchmark** in the afternoon |
 | Sun 29 | **FTP test** at 05:00, then a 10 min jog |
@@ -406,7 +538,7 @@ Read everything over 7-day windows.
 
 - **HRV below the floor for 3+ days, or poor readiness:** if 7-day HRV is below the baseline floor
   (48 ms today) for 3+ days, or readiness is below 30 on 3 of the last 5 mornings, the next
-  quality session goes easy and strength A drops to 2 sets.
+  quality session goes easy and the gym drops to 2 sets.
 - **Sustained strain:** if 7-day HRV is below the floor for 7+ days, or Garmin says STRAINED at
   two reviews in a row, start the recovery week now and shift the block by a week.
 - **Short night:** under 5 h before an early start, do that session easy and shorter. Never pair
@@ -427,6 +559,14 @@ Read everything over 7-day windows.
   products.
 - Runs over 75 min: 30–60 g an hour.
 - Every long session is gut training for race day (Jeukendrup).
+
+**Eating for the gym:**
+- Protein about 1.6–2 g/kg a day, which is 100–125 g at 62 kg (Morton 2018). Spread it over 3–4
+  meals, one of them soon after each gym session.
+- No dieting in this block. How much the abs show depends mostly on body fat, but eating too
+  little costs the training.
+- Weigh in once a week, on the same morning, in Garmin Connect, so `weight_kg` fills in. A
+  steady drop means eat more.
 
 **Sweat rate:**
 - Weigh yourself nude before and after three long sessions in different heat.
@@ -500,5 +640,6 @@ than usual. They did not go with dehydration or blood sodium (Schwellnus 2011).
 - [Bosquet 2007: taper meta-analysis](https://pubmed.ncbi.nlm.nih.gov/17762369/)
 - [Jeukendrup: carbohydrate intake during exercise](https://www.mysportscience.com/post/2015/05/27/recommendations-for-carb-intake-during-exercise)
 - [Rønnestad & Mujika 2014: strength training for running and cycling](https://www.inigomujika.com/en/2013/08/13/optimizing-strength-training-for-running-and-cycling-endurance-performance-a-review-2/3040/)
+- [Morton 2018: protein supplementation and resistance training](https://pubmed.ncbi.nlm.nih.gov/28698222/)
 - [Walsh 2021: sleep and the athlete](https://bjsm.bmj.com/content/55/7/356.abstract)
 - [Best Bike Split: 70.3 bike pacing](https://www.bestbikesplit.com/blog/pacing-70-3-bike-leg-intensity-factor-tss)

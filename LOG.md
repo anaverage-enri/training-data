@@ -4,6 +4,76 @@ Newest entries at the top. AGENTS (Claude) appends here at the end of each revie
 
 ---
 
+## 2026-10-29 — Gym program; Galaxy Run raced for sub-2:10
+
+**What Enri asked**
+- A gym program three times a week at a gym with machines, for physique as well as the race:
+  chest, shoulders, back, arms, abs and legs. Designed from scratch rather than around the old
+  routine, with the week rearranged where that helps.
+- Train and race the Galaxy Run for sub-2:10, and fall back in the race if needed.
+- `ATHLETE.md`'s week to match `PLAN.md`.
+
+**Found**
+- At HR 180–181, both at 05:00 and 26 °C feels-like: 6:14/km for 4 km on 24 Sep, and 6:15/km
+  for 5 km on 1 Oct.
+- Sub-2:10 is 6:10/km for 21.1 km. The watch read 21.16 km on 18 Oct, so 6:10 on the watch
+  finishes at about 2:10:30.
+- Evening runs since August were at 33–41 °C feels-like.
+- Strength on record: 12–15 min bodyweight routines and two 45-min runner sessions in September.
+  No loaded lifting.
+- 29 Oct: still STRAINED. 7-day HRV is 44 (LOW), readiness 48, and Garmin's half prediction
+  2:13:26.
+
+**Agreed**
+- **Galaxy Run:** Enri chose to race for sub-2:10.
+  - Claude recommended the 2:15 plan with upgrade gates, best case about 2:13. The reasons: no
+    start that keeps HR down for 5 km leaves 2:10 on the table, and a fallback only fires after
+    the cost is paid.
+  - **Race pace:** 6:07 on the watch.
+  - **Plan B:** switch at once if lap HR on km 3 or km 4 is over 182. Then 6:30–6:35, about 2:16.
+  - **km 5–15:** HR ≤ 185.
+  - **Start on the 2:15 plan instead** if Saturday night is under 5 h, if feels-like is 29 °C or
+    more at the start, or if 8 or 15 Nov bring a cramp or a twinge.
+  - **Race-pace sessions:** 6:07–6:10 with lap HR ≤ 182. The heat will slow the Thursdays, so the
+    Sunday mornings are the read on 6:07.
+- **Gym:** rebuilt from scratch. The first draft went back because it had too little chest and
+  kept the old A/B.
+  - **The week:** Upper A on Monday; Legs on Tuesday evening, after the bike session; Upper B on
+    Saturday, after the own swim. No gym on Thursday.
+  - **Hard sets a week in Base:** chest 9, back 12, shoulders 9, arms 5 + 5, abs 11. Legs get one
+    heavy session, with the durability work inside it.
+  - **Start:** Mondays at the gym from the day the membership starts (Upper A, light). No leg
+    lifting before the race. The Legs lifts are learned on 26 Nov, and all three sessions start
+    on 30 Nov.
+  - **Hours:** Base is 13.5–15 h, and the peak is 15.5 h (W18). Upper B is the first thing
+    trimmed, and it pauses in Specific.
+  - **Food:** protein 1.6–2 g/kg a day, and a weekly weigh-in in Connect.
+- **`ATHLETE.md`:**
+  - The week now mirrors `PLAN.md`.
+  - Badminton is paused until 9 May.
+  - The Galaxy Run A goal is sub-2:10.
+
+**Re-pushed W1 to the Garmin calendar** (same day, when Enri asked)
+
+| Date | Out | In |
+|---|---|---|
+| Mon 2 | Strength · Routine | Strength · Upper A light |
+| Thu 5 | Run · 3×2 km @ HMP, Strength · B bodyweight | Run · 3×2 km @ 6:07 |
+| Sun 8 | Run · LR 18 km rehearsal | Run · LR 18 km rehearsal @ 6:07 |
+
+- The watch's pace band is 6:05–6:12, a little wider than the 6:07–6:10 aim, so it doesn't beep
+  at every stride. Each step's note gives the aim and the lap HR cap of 182.
+- The replaced workouts stay in the library, unscheduled.
+
+**Next**
+- **Gym:** register, then note the date and the place in `ATHLETE.md`.
+- **W3 review (~16 Nov):** read what 6:07 cost on 8 and 15 Nov. Decide whether to start the race
+  at 6:07 or on the 2:15 plan.
+- **From 30 Nov:** watch Saturday-night sleep in the weeks with Upper B. If Sunday's `sleep_h`
+  averages under 5.5 h, Upper B moves.
+
+---
+
 ## 2026-10-29 — W1 pushed to the Garmin Connect calendar
 
 **Agreed**
