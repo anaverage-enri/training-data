@@ -12,12 +12,17 @@
   started: 20 sessions in June 2026, 2 in October. Paused from November until after the 70.3;
   the last session was 26th October.
 - **Running:** since June 2026 (first logged run 31st May). Longest training run 18 km, on 30th
-  August and 27th September.
+  August and 27th September. Most outdoor runs are on one ~392 m loop, always counter-clockwise
+  (49 runs and 386 km to 1st November), so the left leg is always on the inside.
 - **Swimming:** breaststroke since secondary school. Learning freestyle, and will race the 70.3 in
   freestyle.
   - Freestyle: 50–200 m continuous on 28th October 2026.
+  - 30th October 2026: two 400 m ladders with 30 s rests, 12:14 and 10:00. Each 100 m held more
+    freestyle than the last, from 25 m to the full 100 m, and the rest was breaststroke.
   - Lessons every Wednesday and Friday evening in a 50 m pool. The breaststroke lengths in lesson
     data are the coach's warm-up, cool-down and drills.
+  - The 30th October lesson was logged in drill mode, so more of it got counted: 2.1 km, against
+    0.15–1 km in earlier lessons. Part of that jump is logging, not volume.
   - One open-water swim so far: 500 m at Quy Nhơn, 12th August 2026.
 - **Cycling:** bike bought 27th September 2026, first ride that evening. Longest ride 150 km, 25th
   October 2026.
@@ -58,6 +63,10 @@
   - From 30th November: three sessions a week (Upper A, Legs, Upper B), at a gym with machines
     and free weights.
   - Before that: Upper A on Mondays only.
+  - Membership from 2nd November 2026. The place isn't recorded yet.
+  - The gym is shared, so machines get taken and people work in. Sessions run in straight sets:
+    every set of one exercise before the next, with no supersets or alternating pairs. Rest steps
+    on the watch end on the lap button, not on a timer. Both since 2nd November 2026.
 
 ## Weekly schedule
 Trains every day. Only the swim lessons are fixed; the rest can move to fit the training plan.
@@ -93,7 +102,10 @@ Not tested yet: bike FTP and swim CSS. Garmin's FTP left its 200 W placeholder o
 2026, the day of the 150 km ride, but not from a test.
 
 ## Injury history and constraints
-- No injuries so far (27th October 2026).
+- No diagnosed injuries so far (2nd November 2026).
+- Knees, 1st November 2026: mild pain on the outside of the left knee late in an easy 12 km, gone
+  by that night, and a bit on the outside of the right knee. No stride change in the data. Not seen
+  by a physio. To be reassessed if it shows up again during a session.
 - Cramps in the 18th October half marathon (see Race history): the open issue before 22nd
   November.
 
