@@ -4,6 +4,124 @@ Newest entries at the top. AGENTS (Claude) appends here at the end of each revie
 
 ---
 
+## 2026-11-02 — Gym: straight sets
+
+**What Enri said**
+- `Strength · Upper A light` puts several exercises in one repeat group and cycles through them,
+  so the session keeps switching machines and setting up again. Finish every set of one exercise
+  before moving to the next.
+- Rest steps keep ending on the lap button, as agreed in the entry below.
+
+**Agreed**
+- Every gym workout runs in straight sets, warm-up included: no supersets, alternating pairs or
+  tri-sets.
+- `PLAN.md`:
+  - Upper A, Legs and Upper B list one exercise per row, and "Alternate 1 with 2, and 3 with 4"
+    is gone. Exercises, sets, reps and rests are unchanged.
+  - Two swaps put same-cable exercises together: the Pallof press before the hanging knee raise
+    in Upper A, and the rope pushdown before the EZ-bar curl in Upper B.
+  - An **Order** rule joins **Rest** under "How hard".
+- `ATHLETE.md`: both rules sit with the gym constraints.
+
+**Next**
+- **W2 push:** `Strength · Upper A light` on Garmin still has the alternating groups. Rebuild it in
+  straight sets, in place. It is only scheduled on Mon 2.
+- **From 30 Nov:** read `duration_min` for the three gym sessions against the plan's 45, 50–55 and
+  45–50 min.
+
+---
+
+## 2026-11-02 — W0 review; W1–W2 held
+
+**What Enri said**
+- Wanted to ride on Saturday, but heavy rain all day meant no session. The plan had a 40 min easy
+  run that day, and no ride in W0.
+- Sunday's 12 km: mild pain on the outside of the left knee late in the run, gone by that night,
+  and a bit on the outside of the right knee. Asked whether it is the IT band, from the 150 km ride.
+- Gym membership starts 2 Nov.
+- HRV is still unbalanced, and Enri is sure it isn't illness.
+- Sleep was a mess this week. Enri will address it in W1.
+
+**Found**
+- **Week:** 7.1 h and load 431, on target and about half the week before. 49 % of run time was in
+  Z0–2, against the 75 % guardrail. Both runs were in evening heat.
+- **Sun 1 Nov:** 12 km from 17:32 at 35.6 °C feels-like, 8:34/km, HR 155, with 52 % of the time above
+  the 157 cap. 7-day HRV was 44, so the rule said 8 km.
+- **Knees:**
+  - No stride change: stance balance 50.1 in both the first and last third. On 18 Oct, limping
+    moved it by 0.8. Stops came every 5 laps to 9.8 km, then three extra at 10.7, 11.0 and 11.5 km,
+    which is probably when the pain started.
+  - Late, outer and gone at rest fits the IT band, but that is usually one-sided. Pain on both sides
+    points to something both legs shared:
+    - the 150 km ride, 4× the longest before it, at a median 83 rpm while pedalling
+    - the half, with cramps in both quads and about 7 km of limping
+    - cadence, 170 spm, the lowest of 14 long runs since August
+    - the shoes, 526 km of running on record
+  - The ~392 m loop has been run counter-clockwise on all 49 runs, about 975 laps, so the left leg is
+    always on the inside. That is noted, but with pain on both sides it isn't the lead suspect.
+- **HRV:**
+  - Median 51 in the 30 days before the half, 44.5 since. None of the last 14 nights reached 50,
+    and resting HR is up about 3 bpm.
+  - The half and the 150 km are two of the three biggest loads on record (514 and 478), seven days
+    apart, each after under 3 h of sleep. HRV averaged 44.4 in the week between them and 44.4 in the
+    week after the ride.
+  - LOW changed to UNBALANCED only because Garmin's range moved. The 7-day average stayed at 44.
+  - Respiration and SpO2 are normal. The data can't separate the causes. Sleep length alone doesn't
+    explain it: 6.65 h is above the season average of 6.0 h.
+- **Sleep:**
+  - Bedtimes averaged 01:30 on six nights, against 22:47 three weeks earlier.
+  - Saturday's 4.6 h is too low. Enri slept, woke around 05:00 and slept again, and the watch kept
+    only the second block.
+  - A readiness snapshot of `AFTER_WAKEUP_RESET` before the logged sleep start is the tell. Check
+    for it before trusting a short night.
+- **Swim, 30 Oct:**
+  - Biggest swim load on record (120, next 97), and HRV was 36 that night, the lowest since June.
+  - The 400 m reps (12:14 and 10:00) were ladders with 30 s rests: 25 m freestyle + 75 m breaststroke,
+    then 50 + 50, then 75 + 25, then 100 m freestyle. The 400 m milestone stays open.
+  - Drill-mode logging means more of the lesson distance got counted: 2.1 km, against 0.15–1 km in
+    earlier lessons. Part of that jump is logging, not volume.
+
+**Guardrails**
+- **Sustained strain** fired on 29 Oct. 7-day HRV was below the floor for all 10 days from 23 Oct to
+  1 Nov. Enri chose to hold the plan, so the rule is not being acted on.
+- **Thu 5 Nov:** "next quality session goes easy" still applies if 7-day HRV is below the floor that
+  morning. Clearing 47 by then would take about 49.5 a night, and no night has reached 50 since
+  19 Oct.
+- **Pain:** the rule did not fire. The pain was mild, didn't build and didn't change the stride.
+
+**Recommended and declined**
+- Claude recommended W1 as a second easy week of about 8 h, with no race pace on 5 Nov and 12 km
+  instead of the 18 km on 8 Nov, and W2 as the only build week.
+- Enri chose to keep W1–W2 as written and reassess if the pain shows up again during a session.
+
+**Agreed**
+- W1–W2 hold.
+- Band lateral walks, 2×15 steps each way, go into the Monday gym sessions.
+
+**Pushed to the Garmin calendar** (same day, when Enri asked)
+- `Strength · Upper A light`, updated in place: band lateral walks added to the warm-up group, and
+  the "No gym yet?" note removed. It is only scheduled on Mon 2 so far.
+- Its seven rest steps now end on the lap button, with the old time kept as a guide in each step's
+  note. Enri shares machines and works in with others, so a rest timer doesn't fit. This applies to
+  every gym workout from now on.
+- The other six W1 entries already matched `PLAN.md`. W2 isn't on the calendar yet.
+
+**Next**
+- **Thu 5:** check the HRV guardrail that morning.
+- **Sun 8:** note whether either knee hurts, and at which km.
+- **Weigh in:** nothing logged since 18 Oct.
+- **Shoes:** check the outer heel for wear.
+- **Bike fit:** still by 30 Nov. Mention both knees and the 42/58 power balance reading, which is
+  unverified.
+- **Gym:** add the place to `ATHLETE.md` once Enri gives it.
+
+**Sources**
+- [Heiderscheit 2011: step rate and joint loading](https://pubmed.ncbi.nlm.nih.gov/20581720/)
+- [Viellehner 2016: joint moments in curve sprinting](https://ojs.ub.uni-konstanz.de/cpa/article/view/6977)
+- [Roosens 2023: intrinsic risk factors for IT band syndrome](https://journalofsportsmedicine.org/full-text/702/eng)
+
+---
+
 ## 2026-10-29 — Gym program; Galaxy Run raced for sub-2:10
 
 **What Enri asked**
