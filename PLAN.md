@@ -298,7 +298,7 @@ place.
 
 | Phase | Tue bike quality | Fri ride | Thu run quality (by HR in heat) | Sat own swim | Gym |
 |---|---|---|---|---|---|
-| Galaxy, W1–3 | 75–90 min Z2 + 6×1 min at 95–105 rpm | 60–75 min Z2 | W1 3×2 km, W2 2×4 km at 6:07–6:10, lap HR ≤ 182; W3 2×1 km at 6:07 | drills from the lessons + 8–12×25 m freestyle | Upper A on Mon, 2 sets, light; none in W3 |
+| Galaxy, W1–3 | 75–90 min Z2 + 6×1 min at 95–105 rpm | 60–75 min Z2 | W1 3×2 km, W2 2×4 km at 6:07–6:10, lap HR ≤ 182; W3 2×1 km at 6:07 | drills from the lessons + 8–12×25 m freestyle | Upper A on Mon, 2 sets, light, + band lateral walks 2×15 steps each way; none in W3 |
 | Base 1, W5–7 | 1:15: 3×10 min tempo at 80–90 rpm + 6×1 min spin-ups | 1:00 Z2; first rides on the aero bars | 8×30–45 s uphill on bridge ramps; W7 6×2 min at 10K effort | 12–16×50 m → 6×100 m; add 50–100 m to one continuous swim each week | Upper A 45 min + Legs 50–55 (moderate loads) + Upper B 45 |
 | Base 2, W9–11 | 1:30: sweet spot 3×12 → 3×15 → 2×20 min | 1:00 Z2 on the bars | 3×8 → 3×10 → 4×10 min at HR 173–180 | 4×200 m → continuous 600–800 m | Upper A 45 + Legs 55 (add pogo hops and A-skips) + Upper B 45 |
 | Build, W13–18 | 1:30: threshold 4×8 → 3×10 → 2×15 → 2×20 min | 1:15 with 2×15 min at race power | tempo 2×15 → 25 → 30 min at HR 170–178; every other week 5×1 km at 10K effort | CSS sets 8–10×100 m at CSS + 5 s; 3×400 m with sighting; continuous 1,000 → 1,500 m | Upper A 45 + Legs 35 (squat and RDL 3×5–6, the rest at 2 sets) + Upper B 30 (2 sets) |
@@ -327,9 +327,8 @@ How the week is split:
   - no heavy barbell overhead press
 
 **Upper A: strength** (Monday, ~45 min).
-- Warm up with band external rotation and band pull-aparts, 2×15 each, then light sets of the
-  first two lifts.
-- Alternate 1 with 2, and 3 with 4.
+- Warm up with band external rotation and band pull-aparts, 2×15 each. Do a light set or two
+  before each of the first two lifts.
 
 | # | Exercise | Sets × reps | Rest | For |
 |---|---|---|---|---|
@@ -337,8 +336,10 @@ How the week is split:
 | 2 | Pull-up, assisted on the machine, or lat pulldown | 3 × 6–10 | 2 min | lats, the swim pull |
 | 3 | Seated dumbbell shoulder press, elbows slightly forward | 3 × 8–10 | 90 s | shoulders |
 | 4 | Chest-supported row: machine, or dumbbells on an incline bench | 3 × 8–10 | 90 s | upper back |
-| 5 | Superset: dumbbell curl + overhead cable triceps extension | 2 × 10–12 | 60 s | arms |
-| 6 | Superset: hanging knee raise + Pallof press | 3 × 8–12 / 2 × 10 per side | 60 s | abs; core for the run and the aero bars |
+| 5 | Dumbbell curl | 2 × 10–12 | 60 s | biceps |
+| 6 | Overhead cable triceps extension | 2 × 10–12 | 60 s | triceps |
+| 7 | Pallof press | 2 × 10 per side | 60 s | core for the run and the aero bars |
+| 8 | Hanging knee raise | 3 × 8–12 | 60 s | abs |
 
 **Legs** (Tuesday evening, 50–55 min).
 - Warm up with:
@@ -353,8 +354,11 @@ How the week is split:
 | 1 | Back squat; learn it as a goblet squat, or use the leg press if your back complains | 3 × 5–8 | 2–3 min | quads, glutes; bike power |
 | 2 | Romanian deadlift | 3 × 6–8 | 2 min | hamstrings, glutes; the run |
 | 3 | Bulgarian split squat, dumbbells | 2 × 8 per leg in W5–W7, then 3 | 90 s | single-leg strength |
-| 4 | Superset: leg curl + standing calf raise, 3 s down | 3 × 10–12 | 60–90 s | hamstrings; calves, Achilles |
-| 5 | Tri-set: seated calf raise, 3 s down + Copenhagen plank + cable crunch | 3 × 12–15 / 2 × 20–30 s per side / 3 × 10–15 | 60 s | soleus, for the cramps; groin; abs |
+| 4 | Leg curl | 3 × 10–12 | 60–90 s | hamstrings |
+| 5 | Standing calf raise, 3 s down | 3 × 10–12 | 60–90 s | calves, Achilles |
+| 6 | Seated calf raise, 3 s down | 3 × 12–15 | 60 s | soleus, for the cramps |
+| 7 | Copenhagen plank | 2 × 20–30 s per side | 60 s | groin |
+| 8 | Cable crunch | 3 × 10–15 | 60 s | abs |
 
 **Upper B: physique** (Saturday, after the own swim, 45–50 min).
 - Warm up with band external rotation, 2×15. The swim has done the rest.
@@ -363,10 +367,13 @@ How the week is split:
 |---|---|---|---|---|
 | 1 | Incline dumbbell press | 3 × 8–12 | 90 s | upper chest |
 | 2 | Lat pulldown, neutral or close grip | 3 × 10–12 | 90 s | lats |
-| 3 | Superset: pec deck or cable fly + seated cable row | 3 × 12–15 / 3 × 10–12 | 60–90 s | chest; mid-back |
-| 4 | Superset: lateral raise (cable or dumbbell) + face pull | 3 × 12–15 | 60 s | side delts; rear delts, rotator cuff |
-| 5 | Superset: EZ-bar curl + rope pushdown | 3 × 10–15 | 60 s | arms |
-| 6 | Ab wheel rollout, from the knees | 3 × 6–10 | 60 s | abs |
+| 3 | Pec deck or cable fly | 3 × 12–15 | 60–90 s | chest |
+| 4 | Seated cable row | 3 × 10–12 | 60–90 s | mid-back |
+| 5 | Lateral raise, cable or dumbbell | 3 × 12–15 | 60 s | side delts |
+| 6 | Face pull | 3 × 12–15 | 60 s | rear delts, rotator cuff |
+| 7 | Rope pushdown | 3 × 10–15 | 60 s | triceps |
+| 8 | EZ-bar curl | 3 × 10–15 | 60 s | biceps |
+| 9 | Ab wheel rollout, from the knees | 3 × 6–10 | 60 s | abs |
 
 **Hard sets a week in Base:**
 
@@ -392,6 +399,10 @@ How the week is split:
   the bench.
 - **Logging:** record every session on the watch as Strength, so the sets and reps reach the
   table.
+- **Order:** straight sets, warm-up included. Finish every set of one exercise before you start
+  the next, so each station is set up once. No supersets and no alternating pairs.
+- **Rest:** the rest times are guides. On the watch, rest steps end when you press lap, so you can
+  share a machine or work in with someone.
 
 **Recovery weeks:**
 - Long ride 2:00–2:30 easy, long run 10–12 km.
@@ -452,7 +463,7 @@ run 8 km instead.
 
 | Day | Session |
 |---|---|
-| Mon 2 | gym: Upper A at 2 sets, light (3–4 reps in reserve), to learn the machines. Until the membership starts: push-ups and band rows, 2–3 sets, ~15 min |
+| Mon 2 | gym: Upper A at 2 sets, light (3–4 reps in reserve), to learn the machines; band lateral walks, 2×15 steps each way |
 | Tue 3 | 75 min Z2 (HR ≤ 147) with 6×1 min at 95–105 rpm |
 | Wed 4 | lesson |
 | Thu 5 | 15 min easy, 3×2 km at 6:07–6:10 with 2 min jog, 10 min easy |
@@ -471,7 +482,7 @@ run 8 km instead.
 
 | Day | Session |
 |---|---|
-| Mon 9 | gym: Upper A at 2 sets, light |
+| Mon 9 | gym: Upper A at 2 sets, light; band lateral walks, 2×15 steps each way |
 | Tue 10 | 75–90 min Z2 with spin-ups |
 | Wed 11 | lesson |
 | Thu 12 | 15 min easy, 2×4 km at 6:07–6:10 with 3 min jog, 10 min easy |
