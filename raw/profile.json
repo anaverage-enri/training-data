@@ -1,34 +1,34 @@
 {
   "cycling_ftp": {
     "biometricSourceType": "CHANGE_LOG",
-    "calendarDate": "2026-10-25T13:22:16.0",
-    "functionalThresholdPower": 152,
+    "calendarDate": "2026-11-03T06:42:10.0",
+    "functionalThresholdPower": 155,
     "isStale": false,
-    "sequence": 1792909341914,
+    "sequence": 1793663737794,
     "sport": "CYCLING",
     "userProfilePK": 146756319,
-    "version": 1792909341914
+    "version": 1793663737794
   },
   "hr_zones": [
     {
       "changeState": "UNCHANGED",
       "lactateThresholdHeartRateUsed": 179,
       "maxHeartRateUsed": 203,
-      "restingHeartRateUsed": 53,
+      "restingHeartRateUsed": 52,
       "restingHrAutoUpdateUsed": true,
       "sport": "DEFAULT",
       "trainingMethod": "HR_RESERVE",
-      "zone1Floor": 101,
-      "zone2Floor": 122,
-      "zone3Floor": 142,
-      "zone4Floor": 163,
-      "zone5Floor": 184
+      "zone1Floor": 100,
+      "zone2Floor": 121,
+      "zone3Floor": 141,
+      "zone4Floor": 162,
+      "zone5Floor": 183
     },
     {
       "changeState": "UNCHANGED",
       "lactateThresholdHeartRateUsed": 195,
       "maxHeartRateUsed": 203,
-      "restingHeartRateUsed": 53,
+      "restingHeartRateUsed": 52,
       "restingHrAutoUpdateUsed": true,
       "sport": "RUNNING",
       "trainingMethod": "HR_RESERVE",
@@ -40,17 +40,17 @@
     },
     {
       "changeState": "UNCHANGED",
-      "lactateThresholdHeartRateUsed": 162,
+      "lactateThresholdHeartRateUsed": 163,
       "maxHeartRateUsed": 188,
-      "restingHeartRateUsed": 53,
+      "restingHeartRateUsed": 52,
       "restingHrAutoUpdateUsed": true,
       "sport": "CYCLING",
       "trainingMethod": "HR_RESERVE",
-      "zone1Floor": 122,
+      "zone1Floor": 121,
       "zone2Floor": 134,
-      "zone3Floor": 148,
+      "zone3Floor": 147,
       "zone4Floor": 161,
-      "zone5Floor": 175
+      "zone5Floor": 174
     }
   ],
   "lactate_threshold": {
@@ -67,13 +67,13 @@
       "weightCreateTime": "2026-10-18T11:44:12.956"
     },
     "speed_and_heart_rate": {
-      "calendarDate": "2026-10-27T19:22:04.305",
+      "calendarDate": "2026-11-03T06:55:37.657",
       "heartRate": 195,
-      "heartRateCycling": 162,
-      "sequence": 1793103724355,
+      "heartRateCycling": 163,
+      "sequence": 1793663737721,
       "speed": 0.30833247,
       "userProfilePK": 146756319,
-      "version": 1793103724355
+      "version": 1793663737721
     }
   },
   "personal_records": [
@@ -353,14 +353,14 @@
       "activityType": null,
       "id": 2938770805,
       "poolLengthUnit": null,
-      "prStartTimeGmt": 1793466000000,
-      "prStartTimeGmtFormatted": "2026-10-31T17:00:00.0",
-      "prStartTimeLocal": 1793491200000,
-      "prStartTimeLocalFormatted": "2026-11-01T00:00:00.0",
+      "prStartTimeGmt": 1793725200000,
+      "prStartTimeGmtFormatted": "2026-11-03T17:00:00.0",
+      "prStartTimeLocal": 1793750400000,
+      "prStartTimeLocalFormatted": "2026-11-04T00:00:00.0",
       "prTypeLabelKey": null,
       "status": "ACCEPTED",
       "typeId": 16,
-      "value": 1.0
+      "value": 4.0
     },
     {
       "actStartDateTimeInGMTFormatted": "2026-10-30T10:40:28.0",
@@ -411,28 +411,28 @@
   ],
   "power_zones": [
     {
-      "functionalThresholdPower": 152.0,
+      "functionalThresholdPower": 155.0,
       "sport": "CYCLING",
       "userLocalTime": null,
       "zone1Floor": 0.0,
-      "zone2Floor": 84.0,
-      "zone3Floor": 114.0,
-      "zone4Floor": 137.0,
-      "zone5Floor": 160.0,
-      "zone6Floor": 182.0,
-      "zone7Floor": 228.0
+      "zone2Floor": 86.0,
+      "zone3Floor": 116.0,
+      "zone4Floor": 140.0,
+      "zone5Floor": 163.0,
+      "zone6Floor": 186.0,
+      "zone7Floor": 233.0
     },
     {
-      "functionalThresholdPower": 91.0,
+      "functionalThresholdPower": 93.0,
       "sport": "CROSS_COUNTRY_SKIING",
       "userLocalTime": null,
       "zone1Floor": 0.0,
-      "zone2Floor": 50.0,
-      "zone3Floor": 68.0,
-      "zone4Floor": 82.0,
-      "zone5Floor": 96.0,
-      "zone6Floor": 109.0,
-      "zone7Floor": 137.0
+      "zone2Floor": 51.0,
+      "zone3Floor": 70.0,
+      "zone4Floor": 84.0,
+      "zone5Floor": 98.0,
+      "zone6Floor": 112.0,
+      "zone7Floor": 140.0
     },
     {
       "functionalThresholdPower": 273.0,
