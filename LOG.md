@@ -4,6 +4,48 @@ Newest entries at the top. AGENTS (Claude) appends here at the end of each revie
 
 ---
 
+## 2026-11-06 — Own swim moved to Monday 06:00
+
+**What Enri asked**
+- Why Saturday holds three sessions from 30 Nov (long run, own swim, Upper B), rather than the
+  own swim on Monday morning.
+- The own swim is at a 25 m pool 15 min from home by motorbike. The lesson pool is about 1 h away.
+- Swim at 06:00 to stay out of the sun. Enri will go to bed early on Sunday to make it work.
+
+**Found**
+- `PLAN.md` never weighed Monday for the swim. Its reasons for Saturday were about Upper B: the
+  swim was its warm-up, and Upper B sat 4 days before the Wednesday lesson. Monday morning had
+  been left as rest after the long ride.
+- Wed/Fri/Sat put three swims into about 3 days, Saturday's less than 24 h after the Friday
+  lesson, then none for 4. Mon/Wed/Fri gives one every 2–2.5 days.
+- Sleep since 1 Aug, by the night ending on each day: Sunday 4.65 h (Saturday night, the
+  shortest), Monday 7.32 h (Sunday night, the longest; over 8 h on 6 of the last 8). Monday
+  readiness averages 34, the lowest of the week. These are weeks before the plan.
+
+**Recommended and declined**
+- Claude's pick, if a Monday swim needed an alarm, was to keep Saturday and protect the Sunday
+  night. Enri chose 06:00, out of the sun, with an earlier Sunday night.
+
+**Agreed**
+- From 30 Nov the own swim is Monday at 06:00. Saturday is the long run and Upper B.
+- Sunday lights-out moves from 23:00 to 21:30, with the nap before 15:00. That leaves about 8 h
+  in bed before a 05:20 alarm.
+- Four early starts a week: Sunday, Monday, Tuesday and Friday.
+- Dated Saturday swims keep their dates and take Upper B's slot: the four milestones, the CSS
+  tests on 23 Jan and 13 Mar, the sea swim on 3 Apr and the simulation swim on 17 Apr.
+  - That week's Monday swim is 30 min easy.
+  - Upper B is skipped in W8, W11, W12, W16, W18 and W19. Specific has none.
+- Mon 8 Feb is a Tết family day, so W15 has no Monday swim.
+- Upper B warms up like Upper A now, since no swim comes before it.
+- The Galaxy block (W1–W4) keeps its Saturday swims.
+
+**Next**
+- **W5 push:** the own swim goes on Mondays, and Upper B's warm-up group changes.
+- **From 30 Nov:** read Monday's `sleep_h`, which is the Sunday night. If it averages under 7 h
+  over the swim weeks, the swim moves later or back to Saturday.
+
+---
+
 ## 2026-11-02 — Gym: straight sets
 
 **What Enri said**

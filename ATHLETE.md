@@ -19,8 +19,9 @@
   - Freestyle: 50–200 m continuous on 28th October 2026.
   - 30th October 2026: two 400 m ladders with 30 s rests, 12:14 and 10:00. Each 100 m held more
     freestyle than the last, from 25 m to the full 100 m, and the rest was breaststroke.
-  - Lessons every Wednesday and Friday evening in a 50 m pool. The breaststroke lengths in lesson
-    data are the coach's warm-up, cool-down and drills.
+  - Lessons every Wednesday and Friday evening in a 50 m pool, about 1 h away by motorbike. The
+    breaststroke lengths in lesson data are the coach's warm-up, cool-down and drills.
+  - Own swims are in a 25 m pool 15 min from home by motorbike, at 06:00 to stay out of the sun.
   - The 30th October lesson was logged in drill mode, so more of it got counted: 2.1 km, against
     0.15–1 km in earlier lessons. Part of that jump is logging, not volume.
   - One open-water swim so far: 500 m at Quy Nhơn, 12th August 2026.
@@ -75,17 +76,17 @@ The Galaxy Run block in November has its own days in `PLAN.md`.
 
 | Day | Morning | Evening |
 |---|---|---|
-| Monday | rest | gym: Upper A |
+| Monday | own swim, 06:00 | gym: Upper A |
 | Tuesday | bike quality | gym: Legs |
 | Wednesday | — | swim lesson (fixed) |
 | Thursday | sleep in | run quality |
 | Friday | easy ride | swim lesson (fixed) |
-| Saturday | long run | own swim, then gym: Upper B |
+| Saturday | long run | gym: Upper B |
 | Sunday | long ride + brick run | nap |
 
 - Badminton is paused until after 9th May 2027. It was on Monday, 19:00–21:00.
-- Three early starts a week: Tuesday, Friday and Sunday. Never on the morning after a lesson
-  night.
+- Four early starts a week: Sunday, Monday, Tuesday and Friday. Never on the morning after a
+  lesson night. Sunday lights-out is 21:30 for the Monday swim.
 
 Time constraints:
 - **Rides:** 04:00–06:30. Fewer vehicles, less dust and fewer people, so the ride is about

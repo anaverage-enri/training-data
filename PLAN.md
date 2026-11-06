@@ -212,7 +212,8 @@ for the headwind, the bridges and the U-turns.
   30 days. The Galaxy Run itself is the one exception (Frandsen 2025).
 - **Tết:** the 4–10 Feb holiday is still a proposal. If the official days differ, put W14's long
   run and long ride on the first two holiday days, and keep mùng 1–3 (Sat 6–Mon 8 Feb) for
-  family. If you travel without the bike, swap the rides for runs and swims.
+  family. If you travel without the bike, swap the rides for runs and swims. Mon 8 Feb is one of
+  the family days, so W15 has no Monday swim.
 - **Too much in a week?** Peak weeks reach 15–15.5 h. Drop in this order:
   1. the optional Tuesday run
   2. Upper B, cut to 2 sets or skipped
@@ -227,22 +228,25 @@ The week from 30 Nov. The Galaxy block (W0–W4) has its own day tables below.
 
 | Day | Morning | Evening | Lights-out |
 |---|---|---|---|
-| Mon | rest | **gym: Upper A**, in the old badminton slot | 22:00 |
+| Mon | **own swim**, 06:00, 45–60 min | **gym: Upper A**, in the old badminton slot | 22:00 |
 | Tue | **bike quality**, 04:45–06:15 | **gym: Legs**; from Base 2, an optional 20–30 min easy run before it, only when HRV is in range | 23:00 |
 | Wed | — | swim lesson | ~23:00 |
 | Thu | sleep in | **run quality** at ~18:30 | 22:00 |
 | Fri | easy ride, 04:45–06:00 | swim lesson | ~23:00 |
-| Sat | **long run**, from ~06:30 | own swim, 45–60 min, then **gym: Upper B** | 21:30 |
-| Sun | **long ride** from 04:30 + brick run | 20–30 min nap | 23:00 |
+| Sat | **long run**, from ~06:30 | **gym: Upper B**, in the afternoon | 21:30 |
+| Sun | **long ride** from 04:30 + brick run | 20–30 min nap, before 15:00 | 21:30 |
 
-- Three early starts a week: Tuesday, Friday and Sunday. No early start the morning after a
-  lesson night.
+- Four early starts a week: Sunday, Monday, Tuesday and Friday. No early start the morning after
+  a lesson night.
 - The lights-out times are part of the plan. The early starts only work with them.
 - There is no Wednesday run because the lesson takes the evening.
 - The Saturday run starts at 06:30 rather than mid-morning to keep the time in the heat down.
-- Saturday afternoon is the default for the third swim, with Upper B straight after it. If the
-  gym and the pool are in different places, swim first. If the gym doesn't fit after the swim,
-  skip Upper B that week.
+- The own swim is Monday at 06:00, out of the sun, at the 25 m pool 15 min from home. With the
+  two lessons the swims fall Mon/Wed/Fri, one every 2–2.5 days, rather than three in about 3 days
+  and then none for 4.
+- Sunday lights-out is 21:30 for that swim. An alarm at about 05:20 still leaves about 8 h in
+  bed, so Sunday night stays the catch-up night after the short Saturday one. Keep the Sunday nap
+  before 15:00.
 - If the feels-like temperature is above 35 °C at 18:30, start Thursday's run at 19:30 and cut
   the hard part by a third.
 - Badminton pauses until after 9 May. It was the one high-impact, side-to-side, Z4–Z5 session of
@@ -254,12 +258,13 @@ The week from 30 Nov. The Galaxy block (W0–W4) has its own day tables below.
   - Wednesday asks nothing of the legs.
   - Thursday's run is 48 h later, and Saturday's long run 4 days later.
   - No leg session falls on the evening before a key session.
-- **Upper A on Monday.** The legs rest after the long ride, Tuesday's ride is untouched, and the
-  Wednesday lesson is 48 h later.
-- **Upper B on Saturday, after the own swim.**
-  - You come to the swim fresh, and the next lesson is 4 days later.
+- **Upper A on Monday evening.** The legs rest after the long ride, Tuesday's ride is untouched,
+  and the Wednesday lesson is 48 h later. The 06:00 swim comes about 13 h earlier, so the swim
+  is done fresh.
+- **Upper B on Saturday afternoon.**
+  - The next lesson is 4 days later, and the Monday swim about 40 h later.
   - Sunday's ride is untouched.
-  - Skip it when the Saturday holds a sea trip, a simulation or family time.
+  - Skip it when the Saturday holds a dated swim, a sea trip, a simulation or family time.
 - **Saturday night is the risk.** Before the plan, it averaged 4.2 h ahead of the Sunday long
   sessions.
   - Reviews read Sunday's `sleep_h`, which is the Saturday night.
@@ -270,7 +275,7 @@ The week from 30 Nov. The Galaxy block (W0–W4) has its own day tables below.
 
 **When the trainer arrives:**
 - Tuesday's bike quality moves to about 19:00 indoors, with a 10–15 min run straight after.
-  Tuesday morning becomes a sleep-in, which leaves two early starts.
+  Tuesday morning becomes a sleep-in, which leaves three early starts.
 - Legs moves to Wednesday, 06:30–07:30. The lesson that evening works the arms, and Thursday's
   run is about 35 h later.
 - From Build, an optional 30–45 min easy spin goes on Thursday.
@@ -296,7 +301,7 @@ place.
 
 **Run zones** are Garmin's: Z2 143–157, Z3 158–172, Z4 173–187.
 
-| Phase | Tue bike quality | Fri ride | Thu run quality (by HR in heat) | Sat own swim | Gym |
+| Phase | Tue bike quality | Fri ride | Thu run quality (by HR in heat) | Mon own swim | Gym |
 |---|---|---|---|---|---|
 | Galaxy, W1–3 | 75–90 min Z2 + 6×1 min at 95–105 rpm | 60–75 min Z2 | W1 3×2 km, W2 2×4 km at 6:07–6:10, lap HR ≤ 182; W3 2×1 km at 6:07 | drills from the lessons + 8–12×25 m freestyle | Upper A on Mon, 2 sets, light, + band lateral walks 2×15 steps each way; none in W3 |
 | Base 1, W5–7 | 1:15: 3×10 min tempo at 80–90 rpm + 6×1 min spin-ups | 1:00 Z2; first rides on the aero bars | 8×30–45 s uphill on bridge ramps; W7 6×2 min at 10K effort | 12–16×50 m → 6×100 m; add 50–100 m to one continuous swim each week | Upper A 45 min + Legs 50–55 (moderate loads) + Upper B 45 |
@@ -360,8 +365,9 @@ How the week is split:
 | 7 | Copenhagen plank | 2 × 20–30 s per side | 60 s | groin |
 | 8 | Cable crunch | 3 × 10–15 | 60 s | abs |
 
-**Upper B: physique** (Saturday, after the own swim, 45–50 min).
-- Warm up with band external rotation, 2×15. The swim has done the rest.
+**Upper B: physique** (Saturday afternoon, 45–50 min).
+- Warm up with band external rotation and band pull-aparts, 2×15 each. Do a light set or two
+  before each of the first two lifts.
 
 | # | Exercise | Sets × reps | Rest | For |
 |---|---|---|---|---|
@@ -426,6 +432,13 @@ How the week is split:
 | Sat 6 Mar | 1,500 m |
 | early April | 2,000 m in the pool |
 | Sat 3 Apr | 1.9 km in the sea |
+
+**Dated Saturday swims** keep their dates: the dated milestones above, the CSS tests on 23 Jan
+and 13 Mar, and the simulation swim on 17 Apr.
+- The swim takes Upper B's slot that afternoon, and Upper B is skipped that week. Saturday never
+  holds more than two sessions.
+- That week's Monday swim is 30 min easy, so the arms come fresh to the test. It also keeps the
+  hours in line: W18 stays at 15.5 h, W22 reaches 15.5 h and W24 15 h.
 
 **Swim decision, Sunday 14 Mar:**
 - **1,500 m continuous done:** race in freestyle.
