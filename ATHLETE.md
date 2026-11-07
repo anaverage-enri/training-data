@@ -9,14 +9,21 @@
 
 ## Background
 - **Badminton:** since September 2024, 4–5 sessions a week for two years. Cut back once running
-  started: 20 sessions in June 2026, 2 in October. Now once a week, Monday evening.
+  started: 20 sessions in June 2026, 2 in October. Paused from November until after the 70.3;
+  the last session was 26th October.
 - **Running:** since June 2026 (first logged run 31st May). Longest training run 18 km, on 30th
-  August and 27th September.
+  August and 27th September. Most outdoor runs are on one ~392 m loop, always counter-clockwise
+  (49 runs and 386 km to 1st November), so the left leg is always on the inside.
 - **Swimming:** breaststroke since secondary school. Learning freestyle, and will race the 70.3 in
   freestyle.
   - Freestyle: 50–200 m continuous on 28th October 2026.
-  - Lessons every Wednesday and Friday evening in a 50 m pool. The breaststroke lengths in lesson
-    data are the coach's warm-up, cool-down and drills.
+  - 30th October 2026: two 400 m ladders with 30 s rests, 12:14 and 10:00. Each 100 m held more
+    freestyle than the last, from 25 m to the full 100 m, and the rest was breaststroke.
+  - Lessons every Wednesday and Friday evening in a 50 m pool, about 1 h away by motorbike. The
+    breaststroke lengths in lesson data are the coach's warm-up, cool-down and drills.
+  - Own swims are in a 25 m pool 15 min from home by motorbike, at 06:00 to stay out of the sun.
+  - The 30th October lesson was logged in drill mode, so more of it got counted: 2.1 km, against
+    0.15–1 km in earlier lessons. Part of that jump is logging, not volume.
   - One open-water swim so far: 500 m at Quy Nhơn, 12th August 2026.
 - **Cycling:** bike bought 27th September 2026, first ride that evening. Longest ride 150 km, 25th
   October 2026.
@@ -35,7 +42,8 @@
 
 ## Upcoming events
 - **22nd November 2026:** Galaxy Run 2026, 21KM (https://vm.vnexpress.net/galaxy-run-2-2026)
-  - Registered. A redemption run for 18th October. Goal sub-2:15, stretch sub-2:10.
+  - Registered. A redemption run for 18th October. A goal sub-2:10, set on 29th October. Pacing
+    and fallbacks are in `PLAN.md`.
 - **9th May 2027:** Ironman 70.3 Da Nang (https://www.ironman.com/races/im703-danang)
   - Goal sub-7:00, stretch sub-6:30. Swim in freestyle.
 
@@ -44,23 +52,41 @@
 - **Phase:** Galaxy Run block to 29th November (W0–W4), then Base 1 from 30th November.
   Calendar and sessions in `PLAN.md`.
 - **Weekly hours available:** 12+ (swim, bike, run, long run, long ride, brick, gym)
-- **Weekly hours target:** 10.5 h in the November build weeks (W1–W2), less in the taper and
-  recovery weeks; 12–13.5 h in Base, 13.5–14.5 h in Build and Specific; recovery weeks about
-  60–65 %. The two lessons are about 3 h of it.
-- **Gym is for:** strength, durability, mobility, functional work and physique
+- **Weekly hours target:**
+  - November build weeks (W1–W2): 10.5 h. Less in the taper and recovery weeks.
+  - Base: 13.5–15 h.
+  - Build: 13–15.5 h.
+  - Specific: 12.5–15 h.
+  - Recovery weeks: about 60–65 % of the week before.
+  - The two lessons are about 3 h of each week, and the gym about 2.5 h in Base.
+- **Gym is for:** strength, durability, mobility, functional work and physique (chest,
+  shoulders, back, arms, abs, legs).
+  - From 30th November: three sessions a week (Upper A, Legs, Upper B), at a gym with machines
+    and free weights.
+  - Before that: Upper A on Mondays only.
+  - Membership from 2nd November 2026. The place isn't recorded yet.
+  - The gym is shared, so machines get taken and people work in. Sessions run in straight sets:
+    every set of one exercise before the next, with no supersets or alternating pairs. Rest steps
+    on the watch end on the lap button, not on a timer. Both since 2nd November 2026.
 
 ## Weekly schedule
 Trains every day. Only the swim lessons are fixed; the rest can move to fit the training plan.
-From 2nd November the week follows `PLAN.md`.
+The week follows `PLAN.md`, which holds the sessions. This is its shape from 30th November.
+The Galaxy Run block in November has its own days in `PLAN.md`.
 
-- **Monday:** badminton, 19:00–21:00. Can be dropped for triathlon or gym work if the plan
-  needs the slot.
-- **Tuesday:** ride, run
-- **Wednesday:** push-ups and squats; swim lesson (fixed)
-- **Thursday:** run
-- **Friday:** ride; swim lesson (fixed)
-- **Saturday:** used to be badminton
-- **Sunday:** long run
+| Day | Morning | Evening |
+|---|---|---|
+| Monday | own swim, 06:00 | gym: Upper A |
+| Tuesday | bike quality | gym: Legs |
+| Wednesday | — | swim lesson (fixed) |
+| Thursday | sleep in | run quality |
+| Friday | easy ride | swim lesson (fixed) |
+| Saturday | long run | gym: Upper B |
+| Sunday | long ride + brick run | nap |
+
+- Badminton is paused until after 9th May 2027. It was on Monday, 19:00–21:00.
+- Four early starts a week: Sunday, Monday, Tuesday and Friday. Never on the morning after a
+  lesson night. Sunday lights-out is 21:30 for the Monday swim.
 
 Time constraints:
 - **Rides:** 04:00–06:30. Fewer vehicles, less dust and fewer people, so the ride is about
@@ -77,7 +103,10 @@ Not tested yet: bike FTP and swim CSS. Garmin's FTP left its 200 W placeholder o
 2026, the day of the 150 km ride, but not from a test.
 
 ## Injury history and constraints
-- No injuries so far (27th October 2026).
+- No diagnosed injuries so far (2nd November 2026).
+- Knees, 1st November 2026: mild pain on the outside of the left knee late in an easy 12 km, gone
+  by that night, and a bit on the outside of the right knee. No stride change in the data. Not seen
+  by a physio. To be reassessed if it shows up again during a session.
 - Cramps in the 18th October half marathon (see Race history): the open issue before 22nd
   November.
 
