@@ -13,13 +13,13 @@
     {
       "changeState": "UNCHANGED",
       "lactateThresholdHeartRateUsed": 179,
-      "maxHeartRateUsed": 203,
-      "restingHeartRateUsed": 52,
+      "maxHeartRateUsed": 202,
+      "restingHeartRateUsed": 54,
       "restingHrAutoUpdateUsed": true,
       "sport": "DEFAULT",
       "trainingMethod": "HR_RESERVE",
-      "zone1Floor": 100,
-      "zone2Floor": 121,
+      "zone1Floor": 101,
+      "zone2Floor": 122,
       "zone3Floor": 141,
       "zone4Floor": 162,
       "zone5Floor": 183
@@ -27,30 +27,44 @@
     {
       "changeState": "UNCHANGED",
       "lactateThresholdHeartRateUsed": 195,
-      "maxHeartRateUsed": 203,
-      "restingHeartRateUsed": 52,
+      "maxHeartRateUsed": 202,
+      "restingHeartRateUsed": 54,
       "restingHrAutoUpdateUsed": true,
       "sport": "RUNNING",
       "trainingMethod": "HR_RESERVE",
       "zone1Floor": 128,
       "zone2Floor": 143,
       "zone3Floor": 158,
-      "zone4Floor": 173,
-      "zone5Floor": 188
+      "zone4Floor": 172,
+      "zone5Floor": 187
     },
     {
       "changeState": "UNCHANGED",
       "lactateThresholdHeartRateUsed": 163,
       "maxHeartRateUsed": 188,
-      "restingHeartRateUsed": 52,
+      "restingHeartRateUsed": 54,
       "restingHrAutoUpdateUsed": true,
       "sport": "CYCLING",
       "trainingMethod": "HR_RESERVE",
-      "zone1Floor": 121,
+      "zone1Floor": 122,
       "zone2Floor": 134,
-      "zone3Floor": 147,
+      "zone3Floor": 148,
       "zone4Floor": 161,
-      "zone5Floor": 174
+      "zone5Floor": 175
+    },
+    {
+      "changeState": "UNCHANGED",
+      "lactateThresholdHeartRateUsed": 179,
+      "maxHeartRateUsed": 193,
+      "restingHeartRateUsed": 54,
+      "restingHrAutoUpdateUsed": true,
+      "sport": "SWIMMING",
+      "trainingMethod": "HR_RESERVE",
+      "zone1Floor": 124,
+      "zone2Floor": 137,
+      "zone3Floor": 151,
+      "zone4Floor": 165,
+      "zone5Floor": 179
     }
   ],
   "lactate_threshold": {
@@ -230,23 +244,23 @@
       "value": 281.0
     },
     {
-      "actStartDateTimeInGMTFormatted": "2026-10-24T21:33:15.0",
-      "activityId": 24842296080,
+      "actStartDateTimeInGMTFormatted": "2026-11-05T21:33:42.0",
+      "activityId": 24981569097,
       "activityName": "Huyen Hoc Mon Road Cycling",
-      "activityStartDateTimeInGMT": 1792877595000,
-      "activityStartDateTimeLocal": 1792902795000,
-      "activityStartDateTimeLocalFormatted": "2026-10-25T04:33:15.0",
+      "activityStartDateTimeInGMT": 1793914422000,
+      "activityStartDateTimeLocal": 1793939622000,
+      "activityStartDateTimeLocalFormatted": "2026-11-06T04:33:42.0",
       "activityType": "road_biking",
-      "id": 3063765316,
+      "id": 3072036450,
       "poolLengthUnit": null,
-      "prStartTimeGmt": 1792877595000,
-      "prStartTimeGmtFormatted": "2026-10-24T21:33:15.0",
+      "prStartTimeGmt": 1793914422000,
+      "prStartTimeGmtFormatted": "2026-11-05T21:33:42.0",
       "prStartTimeLocal": null,
       "prStartTimeLocalFormatted": null,
       "prTypeLabelKey": null,
       "status": "ACCEPTED",
       "typeId": 10,
-      "value": 121.04333333333334
+      "value": 124.0125
     },
     {
       "actStartDateTimeInGMTFormatted": "2026-10-24T21:33:15.0",
@@ -353,14 +367,14 @@
       "activityType": null,
       "id": 2938770805,
       "poolLengthUnit": null,
-      "prStartTimeGmt": 1793725200000,
-      "prStartTimeGmtFormatted": "2026-11-03T17:00:00.0",
-      "prStartTimeLocal": 1793750400000,
-      "prStartTimeLocalFormatted": "2026-11-04T00:00:00.0",
+      "prStartTimeGmt": 1794070800000,
+      "prStartTimeGmtFormatted": "2026-11-07T17:00:00.0",
+      "prStartTimeLocal": 1794096000000,
+      "prStartTimeLocalFormatted": "2026-11-08T00:00:00.0",
       "prTypeLabelKey": null,
       "status": "ACCEPTED",
       "typeId": 16,
-      "value": 4.0
+      "value": 8.0
     },
     {
       "actStartDateTimeInGMTFormatted": "2026-10-30T10:40:28.0",
@@ -407,6 +421,29 @@
       "status": "ACCEPTED",
       "typeId": 18,
       "value": 28.687000274658203
+    },
+    {
+      "actStartDateTimeInGMTFormatted": "2026-11-07T09:24:34.0",
+      "activityId": 24995603356,
+      "activityName": "Pool Swim",
+      "activityStartDateTimeInGMT": 1794043474000,
+      "activityStartDateTimeLocal": 1794068674000,
+      "activityStartDateTimeLocalFormatted": "2026-11-07T16:24:34.0",
+      "activityType": "lap_swimming",
+      "id": 3072864637,
+      "poolLengthUnit": {
+        "factor": 100.0,
+        "id": 1,
+        "key": "meter"
+      },
+      "prStartTimeGmt": 1794043909000,
+      "prStartTimeGmtFormatted": "2026-11-07T09:31:49.0",
+      "prStartTimeLocal": null,
+      "prStartTimeLocalFormatted": null,
+      "prTypeLabelKey": null,
+      "status": "ACCEPTED",
+      "typeId": 20,
+      "value": 696.0590209960938
     }
   ],
   "power_zones": [

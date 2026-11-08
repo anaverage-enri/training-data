@@ -485,6 +485,7 @@
     "minElevation": 8.399999618530273,
     "minRespirationRate": 21.670000076293945,
     "minTemperature": 29.0,
+    "moderateIntensityMinutes": 17,
     "movingDuration": 3343.0280151367188,
     "normPower": 230.0,
     "ownerDisplayName": "26dc30cf-54cc-420c-a2f3-7025ae58f36b",
@@ -679,6 +680,7 @@
       "ROLE_GCW_USER"
     ],
     "vO2MaxValue": 40.0,
+    "vigorousIntensityMinutes": 39,
     "waterEstimated": 930.0,
     "workoutId": 1745201466
   },
