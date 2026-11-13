@@ -478,6 +478,8 @@
         "fitnessAge": null,
         "fitnessAgeDescription": null,
         "maxMetCategory": 1,
+        "sport": "CYCLING",
+        "subSport": "ROAD",
         "vo2MaxPreciseValue": 44.1,
         "vo2MaxValue": 44.0
       },
@@ -486,6 +488,8 @@
         "fitnessAge": null,
         "fitnessAgeDescription": null,
         "maxMetCategory": 0,
+        "sport": "RUNNING",
+        "subSport": "GENERIC",
         "vo2MaxPreciseValue": 41.5,
         "vo2MaxValue": 42.0
       },

@@ -4,6 +4,177 @@ Newest entries at the top. AGENTS (Claude) appends here at the end of each revie
 
 ---
 
+## 2026-11-08 — W1 review; W2 held, Thu 12 capped
+
+**What Enri said**
+- Sat own swim: the lesson coach said to swim as much freestyle as possible, so the planned drills
+  were skipped.
+- Sun rehearsal: woke late and ran on a gym treadmill from 08:33. Belt 6.8–7.0 km/h easy, 9.9 km/h
+  for the 5 km and 10.0 for its last 500 m. The watch over-read, so its 5 km step began at belt
+  11 km and the cool-down became 2 km. Fans came on after 6–8 km and helped a lot.
+- Sun fuel: the planned breakfast, a gel 15 min before, then a gel every 30–35 min. The short stops
+  were for gels and sips of water.
+- Sun body: no cramp, twinge or tightness. Outer left knee, stride unchanged: 2–3/10 over the
+  first 11 km, 0–1 in the fast 5 km, 3–4 in the last 2 km. Gone by the evening, and not felt on the
+  evening ride.
+- Saturday's 17 freestyle lengths in a row were continuous. Enri thinks the 25 m pool helped and
+  wants to try it in the 50 m pool.
+- Fri ride: felt good, pushed a little. Sun 16:46 ride: a leisure ride, for air and a clear head.
+- The Galaxy Run start time isn't announced yet.
+
+**Found**
+- **Week:** 13.8 h against 10.5, or 11.7 h without the Sunday afternoon ride. Load 1,407: the
+  biggest week since early June, and 1.5× any week since July (max 940). W0 was 431.
+  - Run 31.6 km, ride 4.3 h (105 km), swim 4.0 h (5.85 km), gym 81 min.
+  - ACWR 1.58 (1,351 / 855), shown as 1.5 and HIGH. Training status PRODUCTIVE.
+- **Recovery:**
+  - 7-day HRV 44–45, below the floor every day since 23 Oct: 17 days. Nightly 48–49 early
+    in the week, then 42, 41, 39, 39. Resting HR rose from 50–53 to 54–56.
+  - Readiness 1 on Fri, Sat and Sun.
+    - Mostly Garmin's recovery time: 49–59 h, factor 21–29 %. Thursday's run, Friday's ride and
+      the two biggest swims on record fell inside 48 h.
+    - On Friday, the 3.6 h night as well.
+  - Sleep averaged 6.7 h, with bedtimes 22:53–02:16.
+    - Friday: 3.6 h, from 23:23 to a 03:46 alarm, before the 04:33 ride.
+    - Saturday: lights-out was planned at 21:00; sleep ran 23:36–06:48.
+- **Thu 5, 3×2 km @ 6:07** (18:19, 37.8 °C feels-like):
+  - km 6:02/6:10, 6:02/5:54, 5:56/5:56. Lap HR 175/182, 180/188, 182/188, max 191.
+  - Five of six km were faster than 6:07–6:10, and lap HR passed 182 on the second km of reps 2
+    and 3. The cool-down was 1:39, not 10 min.
+  - Load 264 and TE 4.6, the week's biggest session. It repeats the old "HMP" pattern of running
+    faster than planned.
+- **Fri 6 ride** (04:33, after 3.6 h of sleep):
+  - Planned 60–75 min of Z2 (HR ≤ 147).
+  - Ridden: 54 min at 27.9 km/h, HR 147, NP 128, IF 0.83, with 9.5 min over 186 W. Garmin called it
+    TEMPO, load 235.
+  - 124 W is a new best 20 min.
+- **Sat 7 easy run** (treadmill, 11:47): HR 154, with 37 % of the 35 min above 157.
+- **Sat 7 own swim, 25 m pool:**
+  - 425 m of continuous freestyle: 17 lengths in 12:48, about 3:01/100 m. On 28 Oct it was
+    50–200 m.
+  - 49 freestyle lengths (1,225 m) and 33 breaststroke. No lesson has logged more than 5
+    freestyle lengths.
+  - Freestyle median about 2:57/100 m, breaststroke about 2:44.
+  - Load 159, the biggest swim on record. Friday's lesson (137) is second.
+- **Sun 8 rehearsal** (treadmill, 08:33):
+  - The watch read 19.7 km before it was calibrated to 18.0, so Connect's lap paces are about
+    10 % fast. Read the belt speeds instead.
+  - 11 km at 6.8–7.0 km/h: HR 153. Of its 25 min above 157, 23 came before the fans.
+  - The fans cut HR from about 158 to 153 at the same or a slightly higher belt speed, late in the
+    run, when drift should push it up. Still air indoors cost about 5 bpm.
+  - 5 km at 9.9 km/h (about 6:04/km), the last 500 m at 10.0. HR by 5-min block: 165, 175, 177,
+    177, 179, 180, 180; max 182, so at or under 182 throughout.
+- **Sun 8 ride** (16:46): 48 km in 2:09, HR 125, NP 103, at 38.3 °C feels-like. Load 114.
+- **6:07 so far:**
+  - Outdoors in evening heat (Thu), at 5:54–6:02: lap HR reached 188. A pessimistic read.
+  - Indoors with fans (Sun), about 6:04 for 30 min after 11 km: HR at or under 182, averaging 176.
+    An optimistic read, since the belt's calibration is unknown.
+  - Race morning sits between the two. 15 Nov is the only race-weather read left.
+  - No cramp or twinge on 8 Nov, so that 2:15-plan trigger didn't fire.
+- **Knee:** the second episode in 8 days, on the outer left knee both times.
+  - Sunday was on a flat, straight treadmill, so the counter-clockwise loop can't explain it.
+  - Of the 2 Nov suspects, that leaves the shoes (about 560 km), the bike (no fit yet) and the
+    easy-pace cadence.
+  - The pattern, for a physio if it comes to that:
+    - worse at 8:30–8:50/km and about 170 spm
+    - eased at about 6:04/km and about 188 spm
+    - back in the slow cool-down
+- **FTP:** Garmin's estimate has been 155 W since 3 Nov (`raw/profile.json`), and the Edge uses
+  it: Friday's IF 0.83 is NP 128 / 155. It is still untested.
+
+**Guardrails**
+- **Readiness** below 30 on 3 of the last 5 mornings (1, 1, 1): Thu 12 goes easy. Enri kept the
+  2×4 km with a strict cap (below).
+- **Sustained strain:** 7-day HRV below the floor for 17 days. Enri held the plan on 2 Nov.
+- **ACWR** 1.58, HIGH: W2 stays at or under 10.5 h.
+- **Short night:** 3.6 h before Friday's ride, so the ride should have been easy and shorter.
+  Feeling good after 3.6 h is the case the rule is written for.
+- **Thu 5:** 7-day HRV was 45, under the 47 floor, so the session should have gone easy.
+- **Zones:** 45 % of run time in Z0–2, against 75 %.
+  - Race pace is a quarter to a third of W1–W2's planned run time, so 75 % is out of reach in
+    this block.
+  - The part to fix is easy running above 157.
+- **Pain:** the last 2 km went from 2–3 to 3–4, which meets "gets worse as you run". W2 has no run
+  until Thursday, so the 2 days off happen anyway.
+- **Long run:** 18 km is within 10 % of the 21.1 km on 18 Oct.
+
+**Recommended and declined**
+- Claude recommended running Thu 12 easy, per the readiness guardrail: 40 min at HR ≤ 155 with
+  strides. Enri chose the 2×4 km with a strict cap.
+- Claude recommended a physio this week, since the knee came back during a session. Enri: "It's
+  getting better. Nothing for now, I'll keep a close watch."
+
+**Agreed**
+- W2 holds, run as written, with nothing added.
+- **Thu 12, 2×4 km:**
+  - Never faster than 6:07.
+  - When lap HR passes 182, slow down until it's back under, even to 6:30 in the heat.
+  - Stop if the knee reaches 4/10.
+  - The full 10 min cool-down.
+- **Sun 15:** from 04:30, since the start time isn't out.
+- **Own swims:** as much freestyle as possible, as the lesson coach says.
+
+**Pushed to the Garmin calendar** (same day, when Enri asked)
+
+| Date | Workout |
+|---|---|
+| Mon 9 | Strength · Upper A light |
+| Tue 10 | Ride · Z2 75' + spin-ups |
+| Thu 12 | Run · 2×4 km @ 6:07 (new) |
+| Fri 13 | Ride · Z2 60' (new) |
+| Sat 14 | Run · Easy 35' + strides, then Swim · Freestyle, easy (new) |
+| Sun 15 | Run · LR 15 km, 6 @ 6:07 (new) |
+
+- `Strength · Upper A light`, rebuilt in place in straight sets: 11 groups, one exercise each, in
+  `PLAN.md` order, with lap-button rests and `PLAN.md`'s rest guides (2 min for the bench and the
+  pulldown, 90 s for the press and the row, 60 s for the rest).
+- Tuesday reuses W1's 75 min ride. The plan allows 75–90, and ACWR is HIGH.
+- The race-pace steps on Thu 12 and Sun 15 use a 6:05–6:30 band.
+  - The fast end beeps at real over-pacing but not at GPS jitter.
+  - The slow end lets the lap-HR-182 rule slow the pace without the watch nagging.
+  - The 6:07–6:10 aim, the HR rule and the 4/10 knee stop are in each step's note.
+- Thu 12 has no repeat group, so no jog step sits between the second rep and the cool-down. In W1
+  the session ended during that jog.
+- `Swim · Freestyle, easy`, 25 m pool, 1,100 m: 200 m breaststroke, 4×50 m free (20 s rest),
+  4×100 m free (30 s), 200 m free continuous, 100 m easy. About half of Saturday's 2.05 km,
+  because the 15 km is the next morning.
+- `Swim · Drills + 25s` stays in the library.
+
+**Next**
+- **Thu 12:** put Lap HR on the watch screen.
+- **Thu night:** lights-out 22:00 before Friday's ride. Under 5 h means easy and shorter.
+- **Sat 14:** the swim at an easy effort, since it's the day before the 15 km.
+- **Sat 14 lights-out, 21:00:** Sunday depends on it.
+  - On 7 Nov lights-out slipped to 23:36.
+  - Under 5 h before a 04:30 start turns Sunday easy under the short-night rule, and that loses
+    the only race-weather read of 6:07.
+- **Sun 15:**
+  - 8 km easy at HR ≤ 157, 6 km at 6:07–6:10, 1 km easy.
+  - Note the km where lap HR crosses 182.
+  - Write the fuel down to the gram and the millilitre.
+- **Easy means easy:** rides at HR ≤ 147, easy runs at HR ≤ 157, and a fan from the start on any
+  treadmill.
+- **Cadence, optional:** on easy runs only, and never on race day, try about 178 spm, 5 % above
+  the usual 170.
+- **Leisure rides** are fine for the head. Keep them short and in Z1 (HR under 122), and count them
+  in the week's hours.
+- **Knee:** score it 0–10, with the km, on every run. The pain guardrail stands.
+- **Next review (~15–16 Nov):** remind Enri to check the Galaxy Run start time. Read Thu 12 and
+  Sun 15 for the start decision.
+- **Swim:** try the continuous freestyle in the 50 m pool before calling the 400 m milestone done.
+  The 28 Nov benchmark decides whether the milestones move forward.
+- **Still open:**
+  - a weigh-in (none since 18 Oct)
+  - the outer heel of the shoes
+  - the gym's name for `ATHLETE.md`
+  - aero bars and a bike fit by 30 Nov; tell the fitter about the left knee and the unverified
+    42/58 power-balance reading
+
+**Sources**
+- [Heiderscheit 2011: step rate and joint loading](https://pubmed.ncbi.nlm.nih.gov/20581720/)
+
+---
+
 ## 2026-11-06 — Own swim moved to Monday 06:00
 
 **What Enri asked**
