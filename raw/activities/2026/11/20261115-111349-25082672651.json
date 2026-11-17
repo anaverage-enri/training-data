@@ -394,7 +394,7 @@
     "minActivityLapDuration": 415.3380126953125,
     "minRespirationRate": 21.760000228881836,
     "minTemperature": 29.0,
-    "moderateIntensityMinutes": 2,
+    "moderateIntensityMinutes": 12,
     "movingDuration": 6622.264892578125,
     "normPower": 211.0,
     "ownerDisplayName": "26dc30cf-54cc-420c-a2f3-7025ae58f36b",
@@ -546,7 +546,7 @@
       "ROLE_GARMIN_USER",
       "ROLE_GCW_USER"
     ],
-    "vigorousIntensityMinutes": 108,
+    "vigorousIntensityMinutes": 98,
     "waterEstimated": 1797.0,
     "workoutId": 1755282626
   },
