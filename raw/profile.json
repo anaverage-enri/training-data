@@ -168,23 +168,23 @@
       "value": 3555.386962890625
     },
     {
-      "actStartDateTimeInGMTFormatted": "2026-10-17T21:02:04.0",
-      "activityId": 24762163033,
-      "activityName": "Quan 2 - Garmin Run 2026 (21KM)",
-      "activityStartDateTimeInGMT": 1792270924000,
-      "activityStartDateTimeLocal": 1792296124000,
-      "activityStartDateTimeLocalFormatted": "2026-10-18T04:02:04.0",
+      "actStartDateTimeInGMTFormatted": "2026-11-21T20:29:04.0",
+      "activityId": 25157073845,
+      "activityName": "Quan 7 Running",
+      "activityStartDateTimeInGMT": 1795292944000,
+      "activityStartDateTimeLocal": 1795318144000,
+      "activityStartDateTimeLocalFormatted": "2026-11-22T03:29:04.0",
       "activityType": "running",
-      "id": 3058555611,
+      "id": 3083572044,
       "poolLengthUnit": null,
-      "prStartTimeGmt": 1792270950000,
-      "prStartTimeGmtFormatted": "2026-10-17T21:02:30.0",
+      "prStartTimeGmt": 1795267744000,
+      "prStartTimeGmtFormatted": "2026-11-21T13:29:04.0",
       "prStartTimeLocal": null,
       "prStartTimeLocalFormatted": null,
       "prTypeLabelKey": null,
       "status": "ACCEPTED",
       "typeId": 5,
-      "value": 8729.609375
+      "value": 7686.797
     },
     {
       "actStartDateTimeInGMTFormatted": "2026-10-17T21:02:04.0",

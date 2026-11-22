@@ -345,6 +345,7 @@
     "avgVerticalRatio": 8.90999984741211,
     "beginTimestamp": 1795292944000,
     "bmrCalories": 164.0,
+    "calendarEventUuid": "16953cea-52a9-4830-aaa8-e79d9f9b983a",
     "calories": 1217.0,
     "decoDive": false,
     "deviceId": 3494485772,
@@ -359,9 +360,9 @@
     "endLongitude": 106.72502562403679,
     "endTimeGMT": "2026-11-21 22:40:44",
     "eventType": {
-      "sortOrder": 10,
-      "typeId": 9,
-      "typeKey": "uncategorized"
+      "sortOrder": 5,
+      "typeId": 1,
+      "typeKey": "race"
     },
     "fastestSplit_1000": 302.7439880371094,
     "fastestSplit_10000": 3555.386962890625,
@@ -407,6 +408,9 @@
     "minTemperature": 29.0,
     "moderateIntensityMinutes": 2,
     "movingDuration": 7680.8740156292915,
+    "multiDayActivityUUIDs": [
+      "39f268cd-2762-4025-82fe-c7f64e384671"
+    ],
     "normPower": 249.0,
     "ownerDisplayName": "26dc30cf-54cc-420c-a2f3-7025ae58f36b",
     "ownerFullName": "Enri",
