@@ -4,6 +4,386 @@ Newest entries at the top. AGENTS (Claude) appends here at the end of each revie
 
 ---
 
+## 2026-11-24 — First trainer rides on Zwift; Upper A skipped; FTP test on Zwift
+
+**What Enri said**
+- Set up the ThinkRider X2 Max with Zwift and rode it twice: a 5-min test and a 46-min easy spin.
+- Zwift connects to the trainer, the crank meter (its power source) and the HRM 600. It records
+  the ride and uploads it to Garmin Connect and Strava.
+- Skipped Upper A for a personal matter.
+- The left knee is pain-free on stairs. The cleats are yellow.
+- Asked:
+  - which device should record trainer rides
+  - how to know during the FTP test whether a power can be held
+  - whether to use one of Zwift's tests: FTP Ramp Test, FTP Ramp Test [Lite] or FTP Test
+    [Standard]
+
+**Found**
+- **Recording:** both rides are Zwift uploads, `virtual_ride` in the table.
+  - Garmin leaves TSS and IF blank on them, and the speed is Zwift's virtual speed.
+  - Power is the crank meter's, on the same scale as the outdoor rides.
+- **The 46-min spin rode above the plan's Z2 by power:**
+  - NP 125 W: IF ≈ 0.81 on Garmin's 155 W, 0.82 on the plan's 152.
+  - Garmin's power zones: 14.6 min in Z2, 17.6 in Z3, 8.1 in Z4, 2.6 above. The plan's Z2 is
+    85–114 W.
+  - The route was flat (38 m over 24 km), so the minute power of 88–159 W was effort, not
+    terrain.
+  - HR read milder: 141 on average, in cycling Z2 (134–147), with 8.6 min in Z3 and 2.9 % drift.
+  - At similar power outdoors, HR was similar: 0.89 W per beat on NP, against 0.87 on 6 Nov
+    (NP 128, HR 147). So the gap is between Garmin's untested 155 W FTP and its cycling HR zones,
+    and the test settles it. Until then, the plan's watt targets stand.
+  - Load 100, about the same as the 88-min ride on 17 Nov (107). Ridden on 4.5 h of sleep and
+    readiness 5.
+  - Best 20 min 126 W, the highest on record (124 on 6 Nov).
+  - Cadence 77 on average, 83 median while pedalling, 39 % of it at 85 rpm or more. Edge rides
+    have been 61–76.
+- **Best powers on record:** 147 W for 5 min (6 Oct), 132 for 10 (6 Oct), 126 for 20 (today).
+  None was all-out.
+- **Recovery:**
+  - Readiness 2, 2, 5 and 5 from 21 Nov.
+  - 7-day HRV 43 against the 45 floor, under it since 21 Nov.
+  - 4.5 h of sleep last night.
+  - **Guardrail fired:** readiness under 30 on 4 of the last 5 mornings, and 7-day HRV under the
+    floor for 3+ days. The next quality session goes easy and the gym drops to 2 sets. W4 already
+    is that.
+  - **Sunday's FTP gate is closed today.** Any one of its three conditions moves the test to
+    Tue 1 Dec, and two are tripped: 7-day HRV and readiness.
+    - Both can clear by Sunday. The race-weekend lows (39 and 38) leave the 7-day window by the
+      29th, so if nightly HRV holds near 46, the 7-day is about 46 on Sunday.
+    - Readiness has to reach 30, and Saturday night has to be at least 5 h.
+  - **Sustained strain:** 7-day HRV will probably reach its 7th day under the floor on Fri 27,
+    mostly because of those two race nights. A question for the W4 review.
+- **Zwift's tests:**
+  - FTP Test [Standard] runs about 45 min. The warm-up ends with 3 min at 110 % and 2 min at
+    120 % of Zwift's FTP. Then 20 min of free ride with no target. FTP is 95 % of the 20-min
+    average, as in the plan's test.
+  - The ramps add 20 W a minute, and the Lite version 10 W (Zwift's pick under 175 W). Both
+    score 75 % of the best minute.
+  - Zwift Insider recommends a ramp for a first test. It also says ramps overstate FTP for
+    riders with a strong anaerobic side.
+  - Inside a workout, Tab skips the block. In free ride, Tab starts a split. Splits and workout
+    blocks land in the FIT as laps.
+  - Forum reports say Zwift can show power as a 3-second average.
+- **Stale line in `PLAN.md`:** Edge rides since 3 Nov compute IF at about 155 W, not the 200 W
+  placeholder.
+
+**Recommended**
+- **Zwift records indoor rides, the Edge outdoor ones.**
+  - Both read the crank meter, so all power sits on one scale, and each ride reaches Garmin
+    Connect once.
+  - Zwift already works and posts to Strava. Switching to the Edge would have meant turning off
+    Zwift's upload and sorting out Strava duplicates.
+  - The costs: no TSS or IF on indoor rides (NP ÷ FTP by hand), and Garmin calendar workouts
+    don't reach Zwift.
+- **FTP Test [Standard] over the ramps,** although Zwift Insider favours a ramp for a first test.
+  - One protocol keeps 29 Nov, 19 Jan and 9 Mar comparable.
+  - 20 minutes is closer to a 3-hour race ride.
+  - The ramps' 75 % assumes a typical rider.
+  - The Galaxy Run showed Enri can hold back early and finish strong.
+  - For a test without pacing, the alternative is Ramp Test [Lite], on all three dates.
+- **Pacing the 20 min:**
+  - Start at about 140 W, with no change before minute 5.
+  - Check at 5, 10 and 15: breathing, a slow HR creep, cadence. Add 5 W when all three hold.
+  - Drop 10 W on a red flag and never stop. Everything left in the last 2–3 min.
+  - Hold the 3-second number in a narrow band.
+  - The full list is in `PLAN.md` under Tests.
+
+**Agreed**
+- The recording split above. Never start the Edge or the watch on the trainer as well.
+- **FTP tests are Zwift's FTP Test [Standard], from 29 Nov.**
+  - Zwift's FTP is set to 140 W first, so the warm-up asks 154 and 168 W. At Garmin's 155 W it
+    would ask 170 and 186.
+  - Turn ERG off if that block passes 8/10.
+  - No Tab during the test.
+- **Upper A is not made up.**
+  - W4 is a recovery week and the guardrail has fired.
+  - Every free slot either loads the lats before Saturday's swim benchmark or stacks onto
+    Thursday's run and Legs intro.
+  - The last Upper A was 9 Nov. Base 1's first three weeks at 2–3 reps in reserve absorb the gap.
+- **Thu 26 goes ahead:** stairs are pain-free.
+- **Fri 27 as written, capped:** under ~115 W and HR ≤ 147 outside the 3×1 min.
+- `CLAUDE.md`: `virtual_ride` is a ride key (agreed 23 Nov), with notes on TSS/IF, speed and laps.
+- `ATHLETE.md`: the trainer setup, the cleats and the knee on stairs.
+- `PLAN.md`: the Tests section, W4, the trainer rules and the FTP line.
+
+**Next**
+- **Thu 26:** 30 min easy if nothing is sore, then the Legs intro.
+- **Fri 27:** the capped rehearsal with two fans. Set the 3-second power display and Zwift's FTP
+  to 140 W, and open the FTP Test [Standard] preview.
+- **Sun 29:** decide on waking. Either the test, or 60–90 min Z2 and the test on Tue 1 Dec.
+- **W4 review, 29 Nov:**
+  - the test and swim results
+  - the sustained-strain check
+  - how trainer sessions with steps reach Zwift once Base starts
+- **Still open:**
+  - the outer heel of the shoes
+  - a weigh-in, none since 18 Oct
+
+**Sources**
+- [Zwift Insider: How (and why) to take an FTP test on Zwift](https://zwiftinsider.com/zwift-ftp-tests)
+- [Zwift Insider: Zwift update 1.90](https://zwiftinsider.com/update-1-90-146371)
+- [Zwift: new on-screen metrics](https://www.zwift.com/news/32990-boost-your-indoor-cycling-performance-with-new-on-screen-metrics-on-zwift)
+- [Zwift Support: Connecting your devices for cycling](https://support.zwift.com/pairing-your-devices-for-cycling-HJIFDrw5S)
+- [Zwift Forums: 3–5 second average power](https://forums.zwift.com/t/3-5-second-average-power/6967)
+
+---
+
+## 2026-11-23 — Galaxy block trimmed; trainer in; aero bars by 20 Dec
+
+**What Enri said**
+- The Galaxy Run is done. Asked whether `PLAN.md`'s race content should go.
+- The cockpit is a flat aero handlebar. Clip-ons that fit will take longer to find, and the bike
+  fit depends on them.
+- Smart trainer: a ThinkRider X2 Max, arrived 22 Nov. A cassette goes on and it's set up on 24 Nov.
+- Bike: XDS X-Lab RS5, stock except the tyres. Asked Claude to look up what's needed on the web.
+- Gym: Glory Gym, about 10 min by motorbike. Cycling shoes: Shimano RC503 (SPD-SL), EU 42 wide.
+- Run shoes: Novablast 5 wide, first run 13 Jun, 580 km in Garmin Connect's gear log.
+- Registered for 70.3 Da Nang. The Galaxy chip time matches the watch: 2:08:06.
+- Fuel: Lecka gels, passion fruit. Will try other gels, maple syrup and sugar water. In the Galaxy
+  Run, Lecka gels and the organiser's electrolyte drink only.
+- Tết: not travelling, free to train.
+- Race kit: has a race belt, two bottle cages and a top-tube bag. Will get a tri suit, elastic
+  laces, and a saddle mount with two more cages.
+
+**Found**
+- **RS5 cockpit:** a one-piece Branta alloy aero bar and stem, with the hoses in a groove under the
+  bar. On the XS: 80 mm stem, 380 mm bar, 165 mm cranks, stack 530, reach 371.
+  - No clip-on made for it turned up. Common clip-ons (Redshift, Profile Design) clamp to round
+    31.8 mm bar sections.
+  - road.cc found the bar flexy, and it comes in only one width.
+- **Groupset:** Shimano 105 12-speed per road.cc, whose test bike may be an older model year. The
+  stock cassette isn't Shimano. Count the cogs before buying the trainer's cassette, match the
+  range if possible, and check the trainer's freehub is a standard road HG body.
+- **Trainer:** direct drive, ±2 % power claimed (third-party listings), ANT+ and Bluetooth. It will
+  read differently from the crank meter, so every ride records the crank meter.
+- **Lecka gel:** about 25 g of carbohydrate and 50 mg of sodium (a retailer's listing).
+  - 60 g/h on the bike is about 2.5 gels an hour, and 90 g/h about 3.5, so drinks have to carry
+    part of it.
+  - 50 mg of sodium a gel is far below the 500 mg/h starting point.
+  - Sugar water and maple syrup are mostly sucrose, which digests into glucose and fructose, so
+    both fit the plan's glucose-plus-fructose rule.
+- **Tết 2027:** the Ministry of Home Affairs announced 4–10 Feb for public servants. Companies
+  choose one of three options.
+
+**Recommended**
+- A separate round bar and stem, to raise with the shop: standard clip-ons fit, and the fitter can
+  choose the stem length. Not clip-ons hung off computer-mount bolts. Not decided; Enri is still
+  looking for clip-ons.
+- Claude offered a lower-body fit now (saddle height, setback, cleats) for the knee. Enri chose one
+  fit with the bars on.
+- The shoes are at 580 km with the knee still open: a second pair before the long runs pass 15 km.
+  A suggestion, not a plan change.
+
+**Agreed**
+- **`PLAN.md` trimmed of the Galaxy block:** the race targets and pacing, the W0–W3 days, the
+  race-pace rule, the Galaxy row in Sessions by phase, the long-run exception, the start-time item
+  and the source link. W0–W3 are one row in the season table, so the W-numbers don't move.
+  - Moved to Fuel: the race-morning breakfast and gel. Race-week sleep now runs Monday to Friday.
+  - The sub-7 marker "a fresh half of about 2:15" is met.
+  - "Where you stand" waits for the W4 rewrite, as agreed on 22 Nov.
+  - The race plan lives on in this log (29 Oct, 22 Nov), in `ATHLETE.md` and in git.
+- **Aero bars on by Sun 20 Dec,** then one fit; until then, the hoods. About four weeks on the bars
+  before the 19 Jan FTP test let that test, and Build's race-power work, be ridden on the bars.
+- **The trainer, this week:** Tue 24 and Fri 27 ride it first, and the Sun 29 FTP test moves onto
+  it, per the plan's trainer rule. Two fans, power from the crank meter, no ERG. The rest of the
+  trainer week goes into the 29 Nov rebuild.
+- **Tết:** W14–W15 get rebuilt with the Build weeks, at the W12 review at the latest.
+- **`ATHLETE.md`:** the bike, cockpit, cycling shoes, trainer, run shoes, fuel, race kit, gym,
+  registration, chip time and Tết.
+
+**Next**
+- **Tue 24:** fit the cassette, ride the trainer, and check the Edge records the crank meter.
+- **Wed 25:** if stairs still hurt, see a physio.
+- **Sun 29:** the FTP test on the trainer, then set FTP on every device.
+- **After the first trainer ride syncs:** add its `sport` key to the ride keys in `CLAUDE.md`.
+  Indoor and outdoor rides differ in HR and speed, so read them apart.
+- **W4 review, 29 Nov:** rebuild Base with the trainer week and the bars date, then push W5.
+- **By mid-December:** clip-ons, or a cockpit swap.
+- **Still open:**
+  - the knee on stairs
+  - the cleat colour (PD-R550 pedals usually ship with yellow, 6° float)
+  - the outer heel of the shoes
+  - a weigh-in, none since 18 Oct
+
+**Sources**
+- [road.cc: X-Lab RS5 review](https://road.cc/review_v2/x-lab-rs5-review-entry-level-road-bike-features-105-and-a-power-meter-on-an-exceptionally-finished-frame)
+- [Bike Insights: RS5 XS geometry](https://bikeinsights.com/bike-geometries/6a14bd203698e4001a23e000-2026-xds-x-lab-rs5-base-xs)
+- [Escape Collective: X-Lab line review](https://community.escapecollective.com/t/x-lab-bikes-a-brief-review-of-the-line/5778)
+- [bike24: Redshift clip-ons for 31.8 mm bars](https://www.bike24.com/p2921373.html)
+- [The Feed: Lecka energy gel](https://thefeed.com/products/lecka-energy-gel)
+- [Báo Quốc tế: Tết 2027 schedule](https://baoquocte.vn/chot-lich-nghi-tet-nguyen-dan-dinh-mui-7-ngay-451229.html)
+- [manuals.plus: ThinkRider X2Max](https://manuals.plus/asin/B0DJKNNHPL)
+
+---
+
+## 2026-11-22 — W2–W3 and Galaxy Run review; sub-6:30 is the goal
+
+**What Enri said**
+- Galaxy Run: ran by feel, keeping HR from passing 182 early. Sub-2:10 came within reach, then
+  sub-2:08. "I could've pushed harder."
+- No cramp, no twinge.
+- Left knee: a little discomfort from km 18 on, 1/10, stride unaffected. 3–4/10 after the finish
+  on stairs. Almost gone by the evening.
+- Slept 1–1.5 h on Saturday night. The watch recorded 12 min.
+- Wants to lock in sub-6:30 at the 70.3. Chose to re-target now and rebuild the Base weeks at the
+  W4 review on 29 Nov, after the tests.
+
+**Found**
+- **No entry for 15 Nov.** The W3 workouts pushed that day used the 2:15-plan bands (`Run · 7 km,
+  1 km @ 6:35 + 1 km @ 6:20`), but that session's entry is missing. This one covers W2 and W3.
+- **Galaxy Run** (start 03:32, 26.1 °C feels-like, 84 % humidity):
+  - **2:08:06 on the watch for 21.00 km**, 6:06/km. Sub-2:10, and a PB by 17:51.
+    - Elapsed reads 2:11:41 because the watch was started at 03:29 and paused until 03:32,
+      before the start.
+  - km 1–3 at 6:14, 6:20 and 6:34, km 4–18 at 6:11 on average, then 5:31, 5:32 and 5:05. First
+    10 km in 62:31, last 11 km in 65:36 (5:58/km): a negative split of about 2 min.
+  - Lap HR 171–178 from km 2 to the finish. Never above 182; 46 s above 180. The km 3 and km 4
+    checks read 169 and 175.
+  - No drift over km 1–18: pace:HR −1.4 %, power:HR +0.3 %.
+  - Cadence 184 spm over the first 5 km, 195 over the last 3, 187 overall. On 18 Oct it fell to
+    152–164.
+  - Sleep: 3.1 h on Friday night (03:14–06:30, after the full lesson) and 1–1.5 h on Saturday.
+- **Against 18 Oct**, a near-matched pair: both started about 04:00 at 26.1 °C feels-like, on
+  2.5 h of sleep or less.
+  - km 2–8: 6:26/km at HR 186 then, 6:15 at HR 174 now. km 2–12: 6:35 at HR 184, then 6:15 at
+    HR 174.
+  - So 11–20 s/km faster at 10–12 bpm lower. Part of it is the day: 18 Oct was at 100 % humidity
+    and went out too fast (km 3 at 6:03, HR 188).
+  - The last 3 km at 5:05–5:32 on HR 176–178 say there was more. A fresh, slept half of about
+    2:05–2:06 looks available.
+  - Garmin's post-race VO2max (42.7) and HM prediction (2:07:47) are fitted to this race, so they
+    don't confirm it.
+- **W2, 9–15 Nov:** 10.4 h against 10.5, load 1,134. Run 30.7 km, ride 1.4 h (the Fri 13 ride was
+  skipped), swim 4.0 h (6.2 km), gym 1.3 h.
+  - **Thu 12, 2×4 km** (18:48, 35 °C feels-like): km at 6:02–6:17. Lap HR over 182 on 5 of 8 km
+    (184–186), max 188. The slow-down rule agreed on 8 Nov wasn't applied. The cool-down was
+    29 s.
+  - **Sat 14, easy run** (treadmill, 12:05): HR 159, with 28.5 of the 46 min in Z3.
+  - **Sun 15, long run:** on the treadmill at 11:13, not outdoors at 04:30, so the race-weather
+    read was lost a second time. 8 km at 8:25/km and HR 155, then 6 km at 6:06/km and HR 183,
+    max 191, with 8.9 min in Z5.
+  - 27 % of run time in Z0–2.
+- **W3, 16–22 Nov:** 8.1 h against 6.5. No gym, as planned. Run 28.3 km with the race.
+  - **Tue 17, ride:** 88 min at NP 112, IF 0.72.
+  - **Thu 19** (18:51, 35 °C feels-like): 1 km at 6:27 (planned 6:35), HR 170; 1 km at 6:06
+    (planned 6:20), HR 176.
+  - **Fri 20:** the full 103 min lesson where the plan said skip or shorten it, then lights-out
+    at 03:14 on the night that counted.
+  - **Sat 21:** no shakeout run recorded.
+  - Sleep averaged 5.1 h over the five recorded nights before the race night, against 8 h in bed
+    planned for Monday to Thursday.
+- **Recovery:**
+  - 7-day HRV below the floor from 23 Oct to 13 Nov, BALANCED at 46–48 from 14 to 20 Nov in the
+    taper, then 44–45 and UNBALANCED after the two short nights.
+  - Readiness POOR on 11 of the 22 November mornings.
+  - Chronic load from 756 to 1,063 over November. ACWR 1.1, status PRODUCTIVE.
+- **Run aerobic marker** (pace at HR 148–157): 7:40–8:35 on Aug–Oct mornings, with no trend.
+  Nothing comparable since 11 Oct: only evening heat and treadmills.
+- **Bike:** 1.4–1.5 h a week since 9 Nov, against 4.3 h in W1. Best 20 min still 124 W (6 Nov).
+  FTP is Garmin's 155 W estimate, untested; 54 min at NP 128 on 6 Nov puts it no lower than
+  about 130. Cadence 61–76 rpm.
+- **Swim:** about 6 km a week in W1–W2, up from under 1.5 km a week before W0. The watch doesn't
+  count the freestyle: on 14 Nov it logged 2 freestyle lengths and 24 "drill" lengths of 0.5 s.
+  Nothing has measured freestyle since 7 Nov (425 m continuous, about 3:01/100 m).
+- **Weight:** no weigh-in since 18 Oct.
+- **Knee:** the third episode in three weeks, always the outer left knee, always late in a run:
+  1 Nov (late in an easy 12 km), 8 Nov (3–4/10 in a slow cool-down), 22 Nov (from km 18, then
+  on stairs).
+
+**Sub-6:30: where the minutes are**
+
+| Leg | Sub-6:30 line | 22 Nov | Gap | Evidence |
+|---|---|---|---|---|
+| Swim | 47:00 | ~3:00/100 m over 425 m in a 25 m pool with push-offs: ~60 min in the sea with the beach | 13–16 min | weak: unmeasured since 7 Nov |
+| Bike | 3:02, ~133 W on the bars | 76 % of 155 = 118 W: ~3:23 on the hoods, ~3:12 on the bars | ~21 min; ~10 with the bars | medium: power meter, no test |
+| Run | 2:32 | fresh 2:08, HR capped, 1–1.5 h of sleep | ~2–6 min | good fresh; none off the bike or in heat |
+| T1 + T2 | 8:00 | never practised | ~2 min | none |
+
+- About 40 min to find in 24 weeks, or about 30 once the bars are on: ~11 from the bars, 13–16
+  from the swim, ~10 from FTP, 2–6 from the run, ~2 from transitions.
+- With the bars fitted at today's estimated power, the projection sits on the sub-7 line.
+
+**Guardrails**
+- **Short night:** 3.1 h and 1–1.5 h before the race fired the 2:15-plan trigger. Enri raced
+  HR-led instead, and it worked.
+- **Readiness** below 30 on 13, 14 and 15 Nov (1, 19, 17), so Sun 15 should have gone easy. It
+  ran as planned.
+- **Sustained strain:** 7-day HRV was under the floor for 22 days, to 13 Nov. It came back in the
+  taper.
+- **Zones:** 27 % of run time in Z0–2 in W2, against 75 %. The easy runs above 157 are the part to
+  fix.
+- **Pain:** 1/10 from km 18 with the stride unchanged, 3–4/10 on stairs after the finish. The
+  in-run rule didn't clearly fire. The 3-day physio rule falls on Wed 25.
+- **Long run:** the race is the plan's one exception to the 10 % rule.
+
+**Recommended**
+- Claude recommended a physio before Base 1 starts on 30 Nov: a third episode in the same spot,
+  and Base adds long runs, the Legs session and a new bike position. Enri's call; not decided at
+  the review.
+
+**Agreed**
+- **Sub-6:30 is the 70.3 goal** from today, with sub-7:00 as the fallback. `ATHLETE.md` and
+  `PLAN.md` say so.
+- **No power or split targets before the tests.** The Base weeks get rebuilt from scratch at the
+  W4 review on 29 Nov, on the FTP test and the swim benchmark.
+- **Focus, in order:**
+  1. **Bike:** aero bars and a fit by 30 Nov (about 11–12 min at the same power on the plan's
+     model), then FTP (about 4–5 min per 10 W). Three rides every week; a smart trainer would
+     make that hold. Cadence 85–90 rpm, fuelling from 60 to 90 g/h.
+  2. **Swim:** frequency and technique, with hand-timed checks. A 4th swim is the likely change
+     at the redesign.
+  3. **Run:** keep the speed, don't chase it. Easy at HR ≤ 157, long runs at HR 150–155 toward
+     7:00/km, bricks and heat, the knee settled.
+  4. **Free minutes:** transitions, sleep before key days, gut training, a weekly weigh-in.
+- **W4 rules,** now in `PLAN.md`:
+  - Thu 26: the run and the Legs lifts only if stairs are pain-free.
+  - Sat 28: the swim benchmark hand-timed; lights-out 21:30.
+  - Sun 29: the FTP test, unless Saturday night was under 5 h, 7-day HRV is under the floor or
+    readiness is under 30. Then 60–90 min in Z2, and the test moves to Tue 1 Dec.
+- **The W12 tests** (19 and 23 Jan) are the first checkpoint for the sub-6:30 line.
+
+**Pushed to the Garmin calendar** (23 Nov, when Enri asked)
+
+| Date | Workout |
+|---|---|
+| Tue 24 | Ride · Easy spin 45' (new, optional), then Strength · Upper A light |
+| Thu 26 | Run · Easy 30' (new), then Strength · Legs light (new) |
+| Fri 27 | Ride · Z2 60' + 3×1' hard (new) |
+| Sat 28 | Run · Easy 30', then Swim · Benchmark (new) |
+| Sun 29 | Ride · FTP test 20' (new), then Run · Jog 10' (new) |
+
+- `Run · Easy 30'` holds HR ≤ 150, the cap for the first runs after the race. Its note carries the
+  stairs gate and the knee score.
+- `Strength · Legs light`: a lap-button warm-up step, then 9 straight-sets groups with lap-button
+  rests. Leg swings, band walks and bodyweight squats warm up; goblet squat, Romanian deadlift,
+  Bulgarian split squat, leg curl, and standing and seated calf raises go at 2×8. The split squat
+  starts with the rear foot on the floor.
+- `Swim · Benchmark`, 25 m pool: 200 m breaststroke and 4×25 m freestyle to warm up, then the
+  three tests in `PLAN.md` order. Each ends on the lap button, so the step time is the hand time:
+  the longest continuous freestyle, 5 min rest, 100 m freestyle, 3 min rest, 200 m breaststroke.
+- `Ride · FTP test 20'`: the plan's warm-up (20 min with 3×1 min fast, 5 min hard, 10 min easy),
+  then the 20 min test with no watt target. The short-night fallback and "set FTP on every device"
+  are in its note.
+- `Ride · FTP test 2×8'` is in the library, not on the calendar, for a morning without 20 clear
+  minutes. It serves the January and March tests too.
+- `Ride · Easy spin 45'` holds HR ≤ 135. `Ride · Z2 60' + 3×1' hard` holds HR ≤ 147, with the
+  hard minutes untargeted.
+
+**Next**
+- **Mon 23:** weigh in, in Garmin Connect.
+- **All week:** 8 h in bed. 7-day HRV back over the floor (45) before the FTP test.
+- **Wed 25:** if stairs still hurt, see a physio.
+- **By 30 Nov:** aero bars and a bike fit. Tell the fitter about the left knee and the
+  unverified 42/58 power-balance reading.
+- **W4 review, 29 Nov:** read the FTP test and the swim benchmark, rebuild Base for sub-6:30
+  from scratch, push W5.
+- **Still open:**
+  - the chip time, if it differs from 2:08:06
+  - the shoes: 616 km of running on record, if every run was in them; check the outer heel
+  - the gym's name for `ATHLETE.md`
+
+---
+
 ## 2026-11-08 — W1 review; W2 held, Thu 12 capped
 
 **What Enri said**

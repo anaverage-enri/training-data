@@ -65,8 +65,11 @@ value. It does not mean zero.
 **Sessions (`activities`)**
 
 - `sport` splits one discipline across several keys, so filter on all of them: rides are `cycling`
-  (recorded on the watch, up to 16 Oct 2026) and `road_biking` (Edge 540, from 19 Oct 2026), runs
-  are `running` and `treadmill_running`, swims are `lap_swimming` and `open_water_swimming`.
+  (recorded on the watch, up to 16 Oct 2026), `road_biking` (Edge 540, outdoors, from 19 Oct 2026)
+  and `virtual_ride` (Zwift on the trainer, from 24 Nov 2026); runs are `running` and
+  `treadmill_running`; swims are `lap_swimming` and `open_water_swimming`. Read indoor and outdoor
+  rides apart: indoors there is no weather and no coasting, and `virtual_ride` speed and distance
+  are Zwift's virtual ones.
 - `load` is Garmin's training load for the session. `te_aerobic` and `te_anaerobic` are Training
   Effect, 0–5.
 - `z1_min` … `z5_min` are minutes in Garmin's five HR zones. `z0_min` is the time below zone 1 —
@@ -74,8 +77,10 @@ value. It does not mean zero.
 - `duration_min` is the length of the session. `moving_min` only means something for runs, rides
   and walks.
 - `speed_kmh`: run pace in min/km is `60 / speed_kmh`; swim pace per 100 m is `6 / speed_kmh`.
-- `avg_power` and `norm_power` are running power on runs and a power meter on rides. `tss` and
-  `intensity_factor` exist only on rides.
+- `avg_power` and `norm_power` are running power on runs and the crank power meter on rides,
+  indoors too (it is Zwift's power source). `tss` and `intensity_factor` exist only on rides
+  recorded by the Edge or the watch. Zwift uploads leave them blank, so take `norm_power` ÷ the
+  FTP in `raw/profile.json`.
 - `cadence` is steps per minute on foot, rpm on the bike, strokes per minute in the pool.
 - `rpe` is my rating on Garmin's 10–100 scale (30 means 3/10). `feel` runs 0 very weak, 25 weak,
   50 normal, 75 strong, 100 very strong.
@@ -96,7 +101,8 @@ value. It does not mean zero.
 
 **FIT units.** The `fit` command prints Garmin's raw fields: speed in m/s, distance in m, times in
 seconds, timestamps in UTC (I am UTC+7). For running, `avg_cadence` is strides per minute —
-double it for steps — and `avg_step_length` and `avg_vertical_oscillation` are in mm.
+double it for steps — and `avg_step_length` and `avg_vertical_oscillation` are in mm. In Zwift
+files, every workout block and every free-ride split is a lap.
 
 ## Working style
 
