@@ -39,21 +39,31 @@
     quad. About 7 km of cramping and limping to the finish.
   - Splits: 6:03–6:54/km to km 15, except km 10 at 7:23. From km 16, 7:13–8:14/km, except km 20
     at 6:32. Cadence fell from about 176 to 152–164 spm.
+- **22nd November 2026:** Galaxy Run 2026, 21KM (https://vm.vnexpress.net/galaxy-run-2-2026).
+  Second half marathon, and a PB.
+  - 2:08:06 chip time, the same as the watch, for 21.00 km on the watch: 6:06/km, sub-2:10,
+    and 17:51 faster than 18th October. Start about 03:32 in District 7, 26 °C feels-like,
+    84 % humidity.
+  - Slept 3.1 h on Friday night and 1–1.5 h on Saturday night.
+  - Ran by feel, keeping HR under 182 early. Lap HR 171–178 from km 2, never above 182.
+  - Splits: 6:14, 6:20 and 6:34 for km 1–3, 6:11 on average for km 4–18, then 5:31, 5:32 and
+    5:05. A negative split of about 2 min, with more left to give.
+  - Cadence rose from 184 to 195 spm, 187 on average.
+  - No cramp or twinge. The outside of the left knee: 1/10 from km 18 with the stride unchanged,
+    then 3–4/10 on stairs after the finish, almost gone by the evening.
 
 ## Upcoming events
-- **22nd November 2026:** Galaxy Run 2026, 21KM (https://vm.vnexpress.net/galaxy-run-2-2026)
-  - Registered. A redemption run for 18th October. A goal sub-2:10, set on 29th October. Pacing
-    and fallbacks are in `PLAN.md`.
 - **9th May 2027:** Ironman 70.3 Da Nang (https://www.ironman.com/races/im703-danang)
-  - Goal sub-7:00, stretch sub-6:30. Swim in freestyle.
+  - Registered. Goal sub-6:30, set on 22nd November 2026 after the Galaxy Run. Sub-7:00 is the
+    fallback. Swim in freestyle.
 
 ## Current block
 - **A race:** Ironman 70.3 Da Nang
-- **Phase:** Galaxy Run block to 29th November (W0–W4), then Base 1 from 30th November.
-  Calendar and sessions in `PLAN.md`.
+- **Phase:** W4, recover and test, to 29th November: the swim benchmark on the 28th and the FTP
+  test on the 29th. Base 1 from 30th November, with the Base weeks rebuilt for sub-6:30 at the W4
+  review on 29th November. Calendar and sessions in `PLAN.md`.
 - **Weekly hours available:** 12+ (swim, bike, run, long run, long ride, brick, gym)
 - **Weekly hours target:**
-  - November build weeks (W1–W2): 10.5 h. Less in the taper and recovery weeks.
   - Base: 13.5–15 h.
   - Build: 13–15.5 h.
   - Specific: 12.5–15 h.
@@ -64,7 +74,8 @@
   - From 30th November: three sessions a week (Upper A, Legs, Upper B), at a gym with machines
     and free weights.
   - Before that: Upper A on Mondays only.
-  - Membership from 2nd November 2026. The place isn't recorded yet.
+  - Membership from 2nd November 2026 at Glory Gym
+    (https://maps.app.goo.gl/6vnJtxnGKJX2jx1XA), about 10 min from home by motorbike.
   - The gym is shared, so machines get taken and people work in. Sessions run in straight sets:
     every set of one exercise before the next, with no supersets or alternating pairs. Rest steps
     on the watch end on the lap button, not on a timer. Both since 2nd November 2026.
@@ -72,7 +83,7 @@
 ## Weekly schedule
 Trains every day. Only the swim lessons are fixed; the rest can move to fit the training plan.
 The week follows `PLAN.md`, which holds the sessions. This is its shape from 30th November.
-The Galaxy Run block in November has its own days in `PLAN.md`.
+W4, to 29th November, has its own days in `PLAN.md`.
 
 | Day | Morning | Evening |
 |---|---|---|
@@ -93,6 +104,8 @@ Time constraints:
   riding, not about weaving through traffic.
 - **Swim nights:** lessons end around 19:30 and the pool is far. Home at 20:30–21:00, and
   after dinner and a shower it is 22:30–23:00. An early night on Wednesday and Friday is hard.
+- **Tết 2027** (4–10 February, announced for public servants): no travel, free to train (23rd
+  November 2026).
 
 ## Thresholds and zones
 Garmin is the source of truth. `raw/profile.json` holds the current HR zones per sport, power
@@ -103,12 +116,17 @@ Not tested yet: bike FTP and swim CSS. Garmin's FTP left its 200 W placeholder o
 2026, the day of the 150 km ride, but not from a test.
 
 ## Injury history and constraints
-- No diagnosed injuries so far (2nd November 2026).
-- Knees, 1st November 2026: mild pain on the outside of the left knee late in an easy 12 km, gone
-  by that night, and a bit on the outside of the right knee. No stride change in the data. Not seen
-  by a physio. To be reassessed if it shows up again during a session.
-- Cramps in the 18th October half marathon (see Race history): the open issue before 22nd
-  November.
+- No diagnosed injuries so far (22nd November 2026).
+- Knees: the outside of the left knee, three times in three weeks, always late in a run. Not seen
+  by a physio.
+  - 1st November 2026: mild pain late in an easy 12 km, gone by that night, and a bit on the
+    outside of the right knee. No stride change in the data.
+  - 8th November: 2–3/10 over the first 11 km of the treadmill rehearsal, 0–1 in the fast 5 km,
+    3–4 in the slow cool-down. Gone by the evening.
+  - 22nd November, Galaxy Run: 1/10 from km 18 with the stride unchanged, then 3–4/10 on stairs
+    after the finish. Almost gone by the evening, and pain-free on stairs by 24th November.
+- Cramps: in the 18th October half marathon (see Race history). None in the 22nd November half,
+  run at an even, HR-capped effort.
 
 ## Equipments
 
@@ -125,14 +143,35 @@ Not tested yet: bike FTP and swim CSS. Garmin's FTP left its 200 W placeholder o
 - Swim trunk: Speedo Eco Endurance+
 
 ### Bike
-- Bike: X-Lab RS5 size XS (https://xds.co/en-intl/products/rs5), bought 27th September 2026
+- Bike: XDS X-Lab RS5 size XS (https://xds.co/en-intl/products/rs5), bought 27th September 2026.
+  Stock parts except the tyres: Shimano 105, 12-speed per road.cc's review, and 165 mm cranks.
+- Cockpit: the stock Branta one-piece alloy aero bar and stem, 80 mm stem and 380 mm bar, with the
+  hoses in a groove under the bar. It has no round section, so standard 31.8 mm clip-ons don't
+  fit. Clip-ons and the bike fit are pending, with the bars targeted for 20th December (23rd
+  November 2026).
 - Tyres: GP5000S TR 700x32
 - Pedals: Shimano PD-R550
 - Power meter: built-in Branta Alloy Power Meter Crankset, on every ride since 27th September 2026
-- Cycling shoes:
-- Smart trainer:
+- Cycling shoes: Shimano RC503 (SPD-SL), black, EU 42 wide. Yellow cleats, 6° float (24th
+  November 2026).
+- Smart trainer: ThinkRider X2 Max (direct drive), arrived 22nd November 2026. First rides on 24th
+  November, on Zwift.
+  - Zwift records every indoor ride, with the crank meter as its power source and the HRM 600 for
+    heart rate. It uploads the ride to Garmin Connect as `virtual_ride`, and to Strava.
+  - The Edge records outdoor rides. Never both on one ride: Garmin would count the load twice.
 
 ### Run
-- Shoes: ASICS Novablast 5 (26.0 cm, wide version)
+- Shoes: ASICS Novablast 5 (26.0 cm, wide version), first run 13th June 2026. 580 km in Garmin
+  Connect's gear log on 23rd November 2026.
+
+### Fuel
+- Gel: Lecka energy gel, passion fruit: about 25 g of carbohydrate and 50 mg of sodium a gel,
+  from a retailer's listing (check the pack).
+- Galaxy Run, 22nd November 2026: Lecka gels and the organiser's electrolyte drink only.
+- Trying other options from 23rd November 2026: other gels, maple syrup, sugar water.
+
+### Race kit
+- Have: a race belt, two frame bottle cages, a top-tube bag.
+- To get: a tri suit, elastic laces, a saddle mount with two more bottle cages.
 
 > Note when equipment changes — it creates step changes in the data that  look like fitness changes but aren't.

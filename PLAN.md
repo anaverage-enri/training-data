@@ -1,7 +1,8 @@
 # Training Plan — Ironman 70.3 Da Nang
 
-The plan from 28 Oct 2026 to race day, Sunday 9 May 2027. The 70.3 is the A race. The Galaxy Run
-on 22 Nov is a goal race inside the plan. Weeks run Monday to Sunday, and W0 starts Monday 26 Oct.
+The plan from 28 Oct 2026 to race day, Sunday 9 May 2027. The 70.3 is the A race. Weeks run Monday
+to Sunday, and W0 starts Monday 26 Oct. W0–W3 were the Galaxy Run block, raced in 2:08:06 on
+22 Nov. Its plan and review are in `LOG.md` (29 Oct to 22 Nov).
 
 Each review checks the past week against this plan and the guardrails at the end. The plan
 changes when the data says it should, and every change goes in `LOG.md`.
@@ -9,6 +10,9 @@ changes when the data says it should, and every change goes in `LOG.md`.
 ---
 
 ## Where you stand (28 Oct 2026)
+
+Out of date since the Galaxy Run. The 22 Nov read for the 70.3 is **Where the minutes are**,
+under the 70.3 targets below. The W4 review on 29 Nov rewrites this section.
 
 **Recovery.** Still STRAINED.
 - 7-day HRV is 44 ms, below the 48–63 ms baseline (LOW).
@@ -48,66 +52,6 @@ changes when the data says it should, and every change goes in `LOG.md`.
 
 ## Targets
 
-### Galaxy Run, Sunday 22 Nov
-
-**Target: sub-2:10**, your A goal, set on 29 Oct.
-- That is 6:10/km.
-- The watch read 21.16 km on 18 Oct, so aim for **6:07 on the watch**. 6:10 on the watch
-  finishes at about 2:10:30.
-
-**Where the data stands:**
-- At HR 180–181 you ran 6:14–6:15/km for 4–5 km (24 Sep and 1 Oct, 05:00 starts, 26 °C
-  feels-like).
-- Two build weeks won't move fitness much.
-- On 18 Oct, km 3–5 at 6:03–6:18 put HR at 188–189, and the cramps started at km 13.
-
-So the plan rests on an early, firm check. Whatever the clock says, success is a PB under
-2:25:57 with no cramps.
-
-Set auto-lap to 1 km.
-
-| km | Pace on the watch | HR |
-|---|---|---|
-| 1 | 6:12–6:15 | settle in; HR lags in the first km |
-| 2–4 | 6:07 (6:05–6:09) | **check km 3 and km 4**: lap HR over 182 on either → Plan B |
-| 5–15 | 6:07 (6:05–6:09) | ≤ 185; two laps in a row over → 6:20 to km 18 |
-| 16–21.1 | hold it; from km 18, race what is left | — |
-
-- **Projection:** 6:13 for km 1, then 20.16 km at 6:07, gives 2:09:32. Easing to 6:20 somewhere
-  in km 5–15 lands at about 2:11–2:13.
-- **Plan B**, after the km 4 check: 6:30–6:35 at HR ≤ 180 to km 18, then push. That lands around
-  2:16.
-
-**The 2:15 plan.** Start on this instead of 6:07 if any of these holds:
-- under 5 h of sleep on Saturday night
-- feels-like of 29 °C or more at the start
-- a cramp, or a calf or hamstring twinge, on 8 or 15 Nov
-
-| km | Pace | HR cap |
-|---|---|---|
-| 1–5 | 6:35–6:40 | ≤ 175 |
-| 6–15 | 6:20–6:25 | ≤ 182 |
-| 16–21.1 | hold it; from km 18, race what is left | — |
-
-- Keep the first 5 km under the cap even if it feels slow.
-- Projection: 32:55 + 63:40 + 38:07 at 6:15/km = 2:14:42.
-
-**The race-pace sessions** on 5, 8, 12 and 15 Nov show what 6:07 costs. The W3 review reads
-them.
-- The Sunday mornings count most, because they are run in race weather.
-- If 6:07 kept pushing HR over 182 there, the km 4 check will probably fire. Starting on the
-  2:15 plan would then be about a minute faster than Plan B, and less likely to end in cramps.
-- You decide at that review.
-
-**Fuel:**
-- Breakfast 2.5–3 h before the start: about 100 g of carbohydrate, food you know.
-- A gel 10 min before the start, then gels at about 35, 70 and 105 min.
-- Electrolyte drink at the aid stations, for 300–600 mg of sodium an hour.
-- Rehearse all of it on 8 and 15 Nov.
-
-**Sleep:** Friday 20 Nov is the night that counts, so skip or shorten the lesson. Lights-out
-around 20:30 on Saturday.
-
 ### Ironman 70.3 Da Nang, Sunday 9 May
 
 The course:
@@ -118,6 +62,10 @@ The course:
 
 In 2023, about 59 % of finishers went under 7:00.
 
+**Goal: sub-6:30**, set on 22 Nov after the Galaxy Run. Sub-7:00 is the fallback. The Base weeks
+get rebuilt around it at the W4 review on 29 Nov, once the FTP test and the swim benchmark give
+real numbers. No power or split targets change before then.
+
 | | Sub-7:00 line | Sub-6:30 line |
 |---|---|---|
 | Swim 1.9 km, with beach entry and exit | 52:00 (~2:40/100 m) | 47:00 (~2:24/100 m) |
@@ -127,9 +75,36 @@ In 2023, about 59 % of finishers went under 7:00.
 | Run 21.1 km | 2:45:00 (7:49/km, aid stations walked) | 2:32:00 (7:12/km) |
 | **Total** | **6:57:00** | **6:29:00** |
 
-**The run is the leg most likely to break sub-7.** Running 2:45 in 35–40 °C after the bike needs a
-fresh pace of about 6:45/km at HR 165–170. Today it is about 6:57: the last 12 km of the 27 Sep
-long run, at HR 168 and 25 °C.
+**Where the minutes are (22 Nov):**
+
+| Leg | Sub-6:30 line | 22 Nov | Gap | Evidence |
+|---|---|---|---|---|
+| Swim | 47:00 | ~3:00/100 m over 425 m in a 25 m pool with push-offs: ~60 min in the sea with the beach | 13–16 min | weak: unmeasured since 7 Nov |
+| Bike | 3:02, ~133 W on the bars | 76 % of 155 = 118 W: ~3:23 on the hoods, ~3:12 on the bars | ~21 min; ~10 with the bars | medium: power meter, no test |
+| Run | 2:32 | fresh 2:08, HR capped, 1–1.5 h of sleep | ~2–6 min | good fresh; none off the bike or in heat |
+| T1 + T2 | 8:00 | never practised | ~2 min | none |
+
+- About 40 min to find in 24 weeks, or about 30 once the bars are on: ~11 from the bars, 13–16
+  from the swim, ~10 from FTP, 2–6 from the run, ~2 from transitions. With the bars fitted at
+  today's estimated power, the projection sits on the sub-7 line.
+- **Bike:** the bars are worth 11–12 min at the same power on the model below. FTP is worth about
+  4–5 min per 10 W, sized after the 29 Nov test. 155 W is Garmin's estimate; 54 min at NP 128 on
+  6 Nov puts it no lower than about 130.
+- **Swim:** the watch doesn't count freestyle, so progress is hand-timed until the CSS tests.
+- **Run:** the Galaxy Run's 2:08 sits close to the 2:05 marker. What's untested is the run after
+  90 km in 35–40 °C. Pace at HR 148–157 was 7:40–8:35 on Aug–Oct mornings, against the marker's
+  7:00 at HR 150–155.
+
+**Focus, in order:**
+1. **Bike, the most controllable minutes:** aero bars on by 20 Dec, then one fit; the FTP test;
+   three rides every week, which the trainer (since 22 Nov) makes hold; cadence 85–90; fuelling to
+   90 g/h.
+2. **Swim, the biggest gap with the least data:** frequency and technique, hand-timed checks. A
+   4th swim is the likely change at the redesign.
+3. **Run, protect the speed:** easy at HR ≤ 157, long runs at HR 150–155, bricks and heat. No new
+   speed work.
+4. **Free minutes:** transitions (the T1 beach run and T2), sleep before key days, gut training, a
+   weekly weigh-in.
 
 **The bike is the leg you can bank**, once the aero bars are on. The model below is calibrated on
 the 150 km ride: it predicts 24.9 km/h, and the ride averaged 24.6.
@@ -147,7 +122,7 @@ for the headwind, the bridges and the U-turns.
 - **Sub-7:00:**
   - aero bars and FTP ≥ 160 W, for a race power of about 118–122 W
   - 1,500 m of continuous freestyle
-  - a fresh half of about 2:15, and the Galaxy Run is the first read
+  - a fresh half of about 2:15: met, 2:08:06 on 22 Nov
   - long-run pace at HR 150–155 improving to about 7:30/km (morning, feels-like ≤ 30 °C)
   - 18 km long runs without cramps
 - **Sub-6:30:**
@@ -175,14 +150,11 @@ for the headwind, the bridges and the U-turns.
 
 | Wk | Monday | Phase | h | Long ride + brick | Long run | Notes |
 |---|---|---|---|---|---|---|
-| 0 | 26 Oct | Absorb | ~7 | — | Sun 1 Nov: 12 km easy | easy only |
-| 1 | 2 Nov | Galaxy build | 10.5 | — (Tue/Fri 60–90 min) | Sun 8: **18 km rehearsal** | |
-| 2 | 9 Nov | Galaxy build | 10.5 | — | Sun 15: 15 km, 6 at race pace | |
-| 3 | 16 Nov | Taper + race | 6.5 | — | **Sun 22: Galaxy Run** | |
+| 0–3 | 26 Oct | Galaxy block | — | — | Sun 22 Nov: **Galaxy Run**, 2:08:06 | done; in `LOG.md` |
 | 4 | 23 Nov | Recover + test | 9 | Sun 29: FTP test + 10 min | — | Sat 28: swim benchmark |
-| 5 | 30 Nov | Base 1 | 13.5 | 2:15 + 10 | 13 km | aero bars fitted |
+| 5 | 30 Nov | Base 1 | 13.5 | 2:15 + 10 | 13 km | |
 | 6 | 7 Dec | Base 1 | 14 | 2:30 + 10 | 14 km | |
-| 7 | 14 Dec | Base 1 | 14.5 | 2:45 + 10 | 15 km | |
+| 7 | 14 Dec | Base 1 | 14.5 | 2:45 + 10 | 15 km | Sun 20: aero bars on (target) |
 | 8 | 21 Dec | Recovery | 9 | 2:00 easy | 10 km | Sat 26: 400 m continuous |
 | 9 | 28 Dec | Base 2 | 14 | 2:45 + 15 | 15 km | Fri 1 Jan: 2:00 ride |
 | 10 | 4 Jan | Base 2 | 14.5 | 3:00 + 15 | 16 km | |
@@ -209,11 +181,11 @@ for the headwind, the bridges and the U-turns.
 - **Taper:** about 40 % less volume in W26 and 65 % less in W27, keeping intensity and frequency
   (Bosquet 2007).
 - **Long-run limit:** no long run is more than 10 % longer than the longest run of the previous
-  30 days. The Galaxy Run itself is the one exception (Frandsen 2025).
-- **Tết:** the 4–10 Feb holiday is still a proposal. If the official days differ, put W14's long
-  run and long ride on the first two holiday days, and keep mùng 1–3 (Sat 6–Mon 8 Feb) for
-  family. If you travel without the bike, swap the rides for runs and swims. Mon 8 Feb is one of
-  the family days, so W15 has no Monday swim.
+  30 days (Frandsen 2025).
+- **Tết:** the Ministry of Home Affairs announced 4–10 Feb for public servants, and companies
+  choose one of three options. You aren't travelling and are free to train through the holiday
+  (23 Nov), so W14–W15 no longer need family days or a ride-to-run swap. They get rebuilt with
+  the Build weeks, at the W12 review at the latest; until then the rows above stand.
 - **Too much in a week?** Peak weeks reach 15–15.5 h. Drop in this order:
   1. the optional Tuesday run
   2. Upper B, cut to 2 sets or skipped
@@ -224,7 +196,7 @@ for the headwind, the bridges and the U-turns.
 
 ## The week
 
-The week from 30 Nov. The Galaxy block (W0–W4) has its own day tables below.
+The week from 30 Nov. W4 has its own day table below.
 
 | Day | Morning | Evening | Lights-out |
 |---|---|---|---|
@@ -273,14 +245,17 @@ The week from 30 Nov. The Galaxy block (W0–W4) has its own day tables below.
 - **No gym on Thursday.** The run is the hard session, and lights-out is 22:00 before the
   Friday ride.
 
-**When the trainer arrives:**
+**The trainer** (ThinkRider X2 Max, since 22 Nov). The Base rebuild on 29 Nov applies these:
 - Tuesday's bike quality moves to about 19:00 indoors, with a 10–15 min run straight after.
   Tuesday morning becomes a sleep-in, which leaves three early starts.
 - Legs moves to Wednesday, 06:30–07:30. The lesson that evening works the arms, and Thursday's
   run is about 35 h later.
 - From Build, an optional 30–45 min easy spin goes on Thursday.
-- FTP tests move indoors.
-- Note the date in `ATHLETE.md`.
+- FTP tests move indoors from 29 Nov, as Zwift's FTP Test [Standard] (see **Tests**).
+- Record power from the crank meter, not the trainer's own reading, so indoor and outdoor numbers
+  stay on one scale. Zwift records indoor rides, with the crank as its power source, and the Edge
+  records outdoor ones. Never both on one ride: Garmin would count the load twice.
+- Fans from the start. On the 8 Nov treadmill run, still indoor air cost about 5 bpm.
 
 **If the lessons stop:** two structured 60-min swims on Wednesday and Friday evenings take their
 place.
@@ -303,7 +278,6 @@ place.
 
 | Phase | Tue bike quality | Fri ride | Thu run quality (by HR in heat) | Mon own swim | Gym |
 |---|---|---|---|---|---|
-| Galaxy, W1–3 | 75–90 min Z2 + 6×1 min at 95–105 rpm | 60–75 min Z2 | W1 3×2 km, W2 2×4 km at 6:07–6:10, lap HR ≤ 182; W3 2×1 km at 6:07 | drills from the lessons + 8–12×25 m freestyle | Upper A on Mon, 2 sets, light, + band lateral walks 2×15 steps each way; none in W3 |
 | Base 1, W5–7 | 1:15: 3×10 min tempo at 80–90 rpm + 6×1 min spin-ups | 1:00 Z2; first rides on the aero bars | 8×30–45 s uphill on bridge ramps; W7 6×2 min at 10K effort | 12–16×50 m → 6×100 m; add 50–100 m to one continuous swim each week | Upper A 45 min + Legs 50–55 (moderate loads) + Upper B 45 |
 | Base 2, W9–11 | 1:30: sweet spot 3×12 → 3×15 → 2×20 min | 1:00 Z2 on the bars | 3×8 → 3×10 → 4×10 min at HR 173–180 | 4×200 m → continuous 600–800 m | Upper A 45 + Legs 55 (add pogo hops and A-skips) + Upper B 45 |
 | Build, W13–18 | 1:30: threshold 4×8 → 3×10 → 2×15 → 2×20 min | 1:15 with 2×15 min at race power | tempo 2×15 → 25 → 30 min at HR 170–178; every other week 5×1 km at 10K effort | CSS sets 8–10×100 m at CSS + 5 s; 3×400 m with sighting; continuous 1,000 → 1,500 m | Upper A 45 + Legs 35 (squat and RDL 3×5–6, the rest at 2 sets) + Upper B 30 (2 sets) |
@@ -449,100 +423,70 @@ and 13 Mar, and the simulation swim on 17 Apr.
 
 ---
 
-## Galaxy block, day by day
-
-**Race-pace rule** for every session at 6:07–6:10: lap HR stays at or below 182, the line the
-race checks at km 3–4. If the pace needs more, slow down.
-- On Thursday evenings the heat will make you slow down. Heat costs pace, not fitness.
-- The Sunday mornings are the real test of 6:07. Note the km where HR crossed 182.
-
-### W0, 26 Oct–1 Nov: absorb
-Easy only. The one early start is Sunday's easy run.
-
-| Day | Session |
-|---|---|
-| Mon 26 | badminton (done) |
-| Tue 27 | 5 km easy (done): 8:00/km at HR 156, 35 °C feels-like |
-| Wed 28 | lesson (done) |
-| Thu 29 | rest; a 20–30 min walk |
-| Fri 30 | sleep in, no ride; lesson in the evening |
-| Sat 31 | 40 min easy at HR ≤ 155, around 07:00; lights-out 21:30 |
-| Sun 1 | 12 km at HR ≤ 157, from 05:00 |
-
-On Sunday 1 Nov, if that morning's readiness is below 25 or 7-day HRV is still at 44 or lower,
-run 8 km instead.
-
-### W1, 2–8 Nov
-
-| Day | Session |
-|---|---|
-| Mon 2 | gym: Upper A at 2 sets, light (3–4 reps in reserve), to learn the machines; band lateral walks, 2×15 steps each way |
-| Tue 3 | 75 min Z2 (HR ≤ 147) with 6×1 min at 95–105 rpm |
-| Wed 4 | lesson |
-| Thu 5 | 15 min easy, 3×2 km at 6:07–6:10 with 2 min jog, 10 min easy |
-| Fri 6 | 60–75 min Z2; lesson |
-| Sat 7 | 35 min easy + 6×20 s strides; own swim #1; lights-out 21:00 |
-| Sun 8 | **dress rehearsal** |
-
-**Dress rehearsal, Sunday 8 Nov:**
-- Start at the race start time, or 04:30 if it is not published yet.
-- 18 km or 2:15: 12 km at HR ≤ 157, then 5 km at 6:07–6:10, then 1 km easy. If the easy part runs
-  long, shorten it and keep the 5 km.
-- Race breakfast, race shoes and race kit. A gel 10 min before, then gels at 35, 70 and 105 min.
-- Write down everything you eat and drink.
-
-### W2, 9–15 Nov
-
-| Day | Session |
-|---|---|
-| Mon 9 | gym: Upper A at 2 sets, light; band lateral walks, 2×15 steps each way |
-| Tue 10 | 75–90 min Z2 with spin-ups |
-| Wed 11 | lesson |
-| Thu 12 | 15 min easy, 2×4 km at 6:07–6:10 with 3 min jog, 10 min easy |
-| Fri 13 | 60 min Z2; lesson |
-| Sat 14 | 35–40 min easy + strides; own swim #2 |
-| Sun 15 | 15 km from 04:30: 8 easy, 6 at 6:07–6:10, 1 easy; second fuel rehearsal |
-
-### W3, 16–22 Nov
-
-| Day | Session |
-|---|---|
-| Mon 16 | rest + mobility |
-| Tue 17 | 60 min easy with 3×2 min brisk |
-| Wed 18 | lesson, easy |
-| Thu 19 | 7 km: 3 easy, 2×1 km at 6:07, 2 easy |
-| Fri 20 | sleep in; skip or shorten the lesson; lights-out 22:00 |
-| Sat 21 | 20 min shakeout + 4 strides; bib pickup at SECC; carbohydrate-rich meals you know (6–8 g/kg); lights-out ~20:30 |
-| Sun 22 | **Galaxy Run** |
-
-### W4, 23–29 Nov
+## This week: W4, 23–29 Nov
 
 | Day | Session |
 |---|---|
 | Mon 23 | rest |
-| Tue 24 | optional 45 min spin; gym in the evening: Upper A, 2 sets |
-| Wed 25 | lesson |
-| Thu 26 | 30 min easy if nothing is sore; then learn the Legs lifts at an easy weight, 2×8: goblet squat, Romanian deadlift, split squat, leg curl, calf raises |
-| Fri 27 | 60 min Z2 with 3×1 min hard; lesson |
-| Sat 28 | 30 min easy; **swim benchmark** in the afternoon |
-| Sun 29 | **FTP test** at 05:00, then a 10 min jog |
+| Tue 24 | set up the trainer; optional 45 min easy spin on it; gym in the evening: Upper A, 2 sets |
+| Wed 25 | lesson; if stairs still hurt (the left knee), see a physio |
+| Thu 26 | only if stairs are pain-free: 30 min easy if nothing is sore; then learn the Legs lifts at an easy weight, 2×8: goblet squat, Romanian deadlift, split squat, leg curl, calf raises |
+| Fri 27 | 60 min Z2 with 3×1 min hard, on the trainer, under ~115 W and HR ≤ 147 outside the 3×1 min: the rehearsal for Sunday's setup (below); lesson |
+| Sat 28 | 30 min easy; **swim benchmark** in the afternoon, hand-timed; lights-out 21:30 |
+| Sun 29 | **FTP test**: Zwift's FTP Test [Standard], in the morning after a full night (no 04:30 alarm), then a 10 min jog. Any one of under 5 h of sleep, 7-day HRV under the floor or readiness under 30: ride 60–90 min Z2 instead, and test on Tue 1 Dec |
+
+**Trainer rides this week:**
+- Two fans from the start.
+- Zwift records, with the crank meter as its power source (checked 24 Nov). Don't start the Edge
+  or the watch as well.
+- **Friday's rehearsal:** set Zwift's power display to the 3-second average and Zwift's FTP to
+  140 W, and open the FTP Test [Standard] preview to see its blocks.
+- **The test:** Zwift's FTP Test [Standard], paced as in **Tests**: start the 20 min at about
+  140 W. No Tab during the workout: it skips the block.
+
+**W4 review, 29 Nov:** read the FTP test and the swim benchmark, then rebuild the Base weeks for
+sub-6:30.
 
 ---
 
 ## Tests
 
-**FTP** on Sun 29 Nov, Tue 19 Jan and Tue 9 Mar.
-- Warm up 20 min with 3×1 min fast, then 5 min hard, then 10 min easy.
-- Then ride 20 min as hard as you can hold evenly. FTP is 95 % of the 20-min average.
-- If you cannot get 20 uninterrupted minutes on a safe road at 05:00, do 2×8 min with 10 min easy
-  between. FTP is then 90 % of the average of the two.
-- **After every test, set FTP on the Edge 540, the watch and Garmin Connect.** Until then the IF
-  and TSS in the table are wrong.
+**FTP** on Sun 29 Nov, Tue 19 Jan and Tue 9 Mar: Zwift's **FTP Test [Standard]** on the trainer,
+set up as in **The trainer** under The week. The same test every time, so the three compare.
+- About 45 min. The warm-up ends with 3 min at 110 % and 2 min at 120 % of Zwift's FTP, then
+  20 min of free ride: no target, the gears set the power, and ERG is off. FTP is 95 % of the
+  20-min average. Each block is a lap in the file.
+- **Before the test, set Zwift's FTP to the last tested FTP**, 140 W for the first, so the warm-up
+  targets fit. If the 120 % block feels harder than 8/10, turn ERG off and finish it by feel: the
+  warm-up isn't scored.
+- **No Tab during the workout.** Inside a workout it skips the block.
+- **Not Zwift's ramp tests:** one protocol keeps the three tests comparable, 20 minutes is closer
+  to a 3-hour race ride, and the ramp's 75 % of the best minute assumes a typical rider.
+- If a test has to happen outdoors and 20 uninterrupted minutes aren't possible, do 2×8 min with
+  10 min easy between. FTP is then 90 % of the average of the two.
+- **After every test, set FTP on the Edge 540, the watch, Garmin Connect and Zwift.** Until then
+  the IF and TSS in the table are wrong.
+
+**Pacing the 20 min.** Nobody knows a power is holdable before the test; the test finds out.
+Start a little under, check at fixed points, and add only what the effort proves.
+- **Start** at the last tested FTP, which is 5 % under its 20-min power. For the first test, about
+  140 W: the best 5, 10 and 20 min on record (24 Nov) are 147, 132 and 126 W, none of them all-out.
+- **No change before minute 5.** The start always feels easy, because HR lags 2–3 min.
+- **Check at minutes 5, 10 and 15:** breathing deep and rhythmic, with a few words possible; HR in
+  a slow creep; cadence steady in the same gear. All three hold: add 5 W.
+- **Red flags:** breathing out of control before minute 10, HR still climbing several beats a
+  minute after minute 8, or cadence sagging in the same gear. Drop 10 W and hold. Never stop.
+- **The last 2–3 min:** everything left.
+- **On screen:** hold the 3-second number in a narrow band, about 138–145 W at the start of the
+  first test, and move the band by the checks.
+- A slightly low FTP is cheap: the next test corrects it. A fade costs the whole test.
 
 **Swim benchmark** on Sat 28 Nov:
 - the longest continuous freestyle at an easy effort
 - a 100 m freestyle time
 - a 200 m breaststroke time
+- Hand-time all three. The watch doesn't count freestyle: on 14 Nov it logged 2 freestyle
+  lengths.
 
 **CSS test** on Sat 23 Jan and Sat 13 Mar, once 400 m continuous is possible.
 - 400 m time trial, 10 min easy, then a 200 m time trial.
@@ -582,6 +526,9 @@ Read everything over 7-day windows.
 - On the bike: 60 g an hour in Base 1, 75 g in Base 2, 90 g from Build. Use glucose and fructose
   products.
 - Runs over 75 min: 30–60 g an hour.
+- Race morning: breakfast 2.5–3 h before the start, about 100 g of carbohydrate from food you
+  know, and a gel 10 min before the start. That was the Galaxy Run routine, rehearsed on 8 Nov.
+  Use it on the 4 Apr simulation.
 - Every long session is gut training for race day (Jeukendrup).
 
 **Eating for the gym:**
@@ -612,7 +559,8 @@ than usual. They did not go with dehydration or blood sodium (Schwellnus 2011).
 
 **Sleep:**
 - Keep the lights-out times in the week table, and nap on weekend afternoons.
-- In race weeks, spend 8 h in bed Monday to Thursday.
+- In race weeks, spend 8 h in bed Monday to Friday. Friday night counts most: before the Galaxy
+  Run it was 3.1 h.
 - Reviews read sleep as a 7-day average. The 2021 consensus (Walsh) recommends an individual
   sleep plan rather than a fixed 7–9 h.
 
@@ -620,17 +568,28 @@ than usual. They did not go with dehydration or blood sodium (Schwellnus 2011).
 
 ## Equipment and admin
 
-- **Aero bars and a bike fit** by 30 Nov, so the position gets five months. Start on the bars on
-  quiet roads and add aero time on the Friday ride. Note the date in `ATHLETE.md`: speed at the
-  same power will step up.
-- **FTP:** set it on every device after each test. The Edge uses 200 W today and the watch about
-  162 W.
+- **Aero bars, then one bike fit.** The RS5's stock cockpit is a one-piece alloy aero bar and stem
+  with no round section, so standard 31.8 mm clip-ons don't clamp to it.
+  - **Target: on by Sun 20 Dec.** Race power comes from tested FTP, and power on the bars is
+    usually lower at first. About four weeks on the bars before the 19 Jan test let that test, and
+    Build's race-power work from 25 Jan, be ridden on the bars.
+  - **Worth asking the shop:** a separate round bar and stem. Standard clip-ons fit it, and the
+    fitter can choose the stem length. Ask whether the hoses and the headset spacers take a
+    standard stem.
+  - Don't hang clip-ons off computer-mount bolts. They aren't made to carry your weight on the
+    pads.
+  - **One fit once the bars are on.** Tell the fitter about the outer left knee, the unverified
+    42/58 balance reading, and the XS geometry: stack 530, reach 371, 80 mm stem, 380 mm bar,
+    165 mm cranks.
+  - Until then, ride on the hoods. Start on the bars on the trainer or on quiet roads, and add aero
+    time on the Friday ride. Note the date in `ATHLETE.md`: speed at the same power will step up.
+- **FTP:** set it on every device after each test, Zwift included. Edge rides since 3 Nov compute
+  IF at about 155 W, Garmin's estimate, and the watch uses about 162 W.
 - **Own swims:** use the watch's drill mode for drills and kick, so freestyle lengths get counted.
-- **To confirm:**
-  - The Galaxy Run start time. It also sets the alarm for 8 Nov.
-  - From the 70.3 athlete guide: the swim start format and time, the cutoffs, the aid-station
-    products (train with them), the transition layout.
-- **Race kit:** tri suit, race belt, elastic laces, cages for 2–3 bottles, a top-tube bag.
+- **To confirm** from the 70.3 athlete guide: the swim start format and time, the cutoffs, the
+  aid-station products (train with them), the transition layout.
+- **Race kit:** in hand, a race belt, two frame cages and a top-tube bag. Still to get: a tri suit,
+  elastic laces, and a saddle mount with two more cages, for four bottles in all.
 
 ### Race week
 
@@ -654,7 +613,6 @@ than usual. They did not go with dehydration or blood sodium (Schwellnus 2011).
 - [endurance-data: 2023 finish times](https://www.endurance-data.com/en/statistics/827-ironman-703-vietnam/)
 - [Racecheck: reviews](https://racecheck.com/races/ironman-703-vietnam/)
 - [IRONMAN wetsuit rules](https://www.slowtwitch.com/news/global-rule-standard-announced/)
-- [Galaxy Run 2026](https://vm.vnexpress.net/galaxy-run-2-2026)
 - [Tết 2027 date](https://thuvienphapluat.vn/hoi-dap-phap-luat/tet-nguyen-dan-2027-vao-ngay-nao-duong-lich-138080787.html)
 
 **Training:**
